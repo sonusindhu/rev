@@ -22,10 +22,30 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css">
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script>
-            //var companyUrl = "/";
+            var companyUrl = "{!! asset('/') !!}";
         </script>
 
-        <?php //echo $this->Html->script(array('jquery.min.js', 'jquery-ui.js', 'bootstrap.js', 'bootstrap-collapse.js', 'icheck.js', 'bootstrap-select.js', 'jquery.bxslider.js', 'sweetalert.min.js', 'jquery.mCustomScrollbar.js', 'moment.js', 'bootstrap-datetimepicker.js', 'jquery.ajax.form.min.js', 'basic.js', 'jquery.mask', 'formatting', 'sidebar_nav.js', 'reverse_main.js')); ?>
+        
+        <script src="{!! asset('/js/jquery.min.js') !!}"></script>
+        <script src="{!! asset('/js/jquery-ui.js') !!}"></script>
+        <script src="{!! asset('/js/bootstrap.js') !!}"></script>
+        <script src="{!! asset('/js/bootstrap-collapse.js') !!}"></script>
+        <script src="{!! asset('/js/icheck.js') !!}"></script>
+        <script src="{!! asset('/js/bootstrap-select.js') !!}"></script>
+        <script src="{!! asset('/js/jquery.bxslider.js') !!}"></script>
+        <script src="{!! asset('/js/sweetalert.min.js') !!}"></script>
+        <script src="{!! asset('/js/jquery.mCustomScrollbar.js') !!}"></script>
+        <script src="{!! asset('/js/moment.js') !!}"></script>
+        <script src="{!! asset('/js/bootstrap-datetimepicker.js') !!}"></script>
+        <script src="{!! asset('/js/jquery.ajax.form.min.js') !!}"></script>
+        <script src="{!! asset('/js/basic.js') !!}"></script>
+        <script src="{!! asset('/js/jquery.mask.js') !!}"></script>
+        <script src="{!! asset('/js/formatting.js') !!}"></script>
+        <script src="{!! asset('/js/sidebar_nav.js') !!}"></script>
+        <script src="{!! asset('/js/reverse_main.js') !!}"></script>
+        
+        
+        
         <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>
 
@@ -34,6 +54,12 @@
     <body ng-controller="dataCtrl" nv-file-drop="" uploader="uploader">
         <div class="Middle_website" ng-controller="empCtrl" >
             <?php //echo $this->element('company_header'); ?>
+            
+            @include('layouts/cheader'); <!-- app/views/angular-stuff.php -->
+            @include('layouts/csidebar'); <!-- app/views/angular-stuff.php -->
+
+            
+
 
             <?php //echo $this->element('company_sidebar'); ?>
 
@@ -87,7 +113,9 @@
 
                     });
         </script>
+
         <script src="{!! asset('/js/angular.min.js') !!}"></script>
+        <script src="{!! asset('/js/ui-bootstrap-tpls.min.js') !!}"></script>
         <script src="{!! asset('/js/angular-file-upload.js') !!}"></script>
         <script src="{!! asset('/js/angular-sanitize.min.js') !!}"></script>
         <script src="{!! asset('/js/ckeditor/ckeditor.js') !!}"></script>

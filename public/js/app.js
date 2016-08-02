@@ -1,6 +1,6 @@
 $('.portfolioloader').show();
 var myApp = angular.module('myApp', ['ui.bootstrap', 'ngSanitize', 'angularFileUpload']);
-var BASE_URL = "http://reverseadvisor.picnframes.info/developer/";
+var BASE_URL = "http://localhost/reverse/public/";
 var secondsToWaitBeforeSave = 1;
 
 myApp.controller('dataCtrl', ['$scope', '$http', '$sce', '$compile', 'FileUploader', '$timeout', '$window', function ($scope, $http, $sce, $compile, FileUploader, $timeout, $window) {
