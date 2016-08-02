@@ -1,0 +1,86 @@
+.sys_asgn_id{
+     float: left;
+    margin-top: 8px;
+} 
+.dash_table .licsnc_btn {
+    border-radius:3px;
+  background-color: #e35b24;
+  border: medium none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 15px;
+  position: absolute;
+  right: 21px;
+  text-transform: capitalize;
+  top: 25px;
+  z-index: 1;
+}
+.new_admin_btn .new_btn {
+  position: absolute;
+  right: 1px;
+  top: -15px;
+}
+      .new_admin_btn .new_btn .com_admin_btns{
+        background-color:#E85E24;
+      border:none;
+      }
+      
+      .new_admin_btn .new_btn .com_admin_btns:hover{
+       background-color:#70bc50;
+       opacity:10;
+      }
+#ImageHere {
+ // border: 1px solid #ccc;
+  height: auto;
+  margin-top: 20px;
+  padding: 10px;
+  width: auto;
+}
+  #ImageHere  img{
+     width:50%;
+     
+  }
+.cmpUpload .fileUpload {
+  background-color: #e35b24;
+  border: medium none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  height: 35px;
+  margin: 0;
+  overflow: hidden;
+  padding: 6px;
+  position: relative;
+  width: 87px;
+}
+.fixed_width{
+    margin-left:0px !important;
+    width:300px;
+}
+.fxed_txtwidth{
+    width:130px;
+}
+.rolenew .bootstrap-select{
+    width:100%;
+}
+.validationBorder
+{
+    border:1px solid red !important;
+}
+.text_center{
+    text-align:center !important;
+}
+ .validationBorder::-moz-placeholder {
+  color: red !important;
+}
+
+.validationBorder::-webkit-input-placeholder {
+    color: red !important;
+}
+   
+.deleteIcon{
+    margin-top:42px !important;
+}
+
+.cncel_btn{ cursor: pointer; }

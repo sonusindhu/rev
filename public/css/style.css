@@ -1,0 +1,7233 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+body {
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	background:#edeef2 ;
+}
+a:focus, a:hover {
+	outline: none;
+	text-decoration: none;
+
+}
+.btn:focus, .btn:active {
+	outline: none !important;
+	text-decoration: none;
+}
+.hdr {
+	background-color: #fff;
+	border-top: 3px solid #e35b24;
+	box-shadow: 0 0 4px #ccc;
+	height: 80px;
+	position: fixed;
+	z-index: 9;
+	width: 100%;
+}
+.logo_dv {
+}
+.branch_assignment {
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+.logo_dv img { 
+	margin-top: 17px;
+	padding-left: 78px;
+}
+.hdr .ryt_dv {
+	float: right;
+}
+.hdr .ryt_dv ul {
+	float: right;
+	padding: 0;
+	padding-right: 0px;
+	margin-top: 8px;
+	padding-right: 0px;
+}
+.hdr .ryt_dv ul li {
+	list-style-type: none;
+	display: inline;
+	margin-right: 35px;
+}
+.hdr .ryt_dv ul li:last-child {
+	margin-right: 0px;
+}
+.hdr .ryt_dv ul li a {
+	color: #777777;
+	font-size: 20px;
+	font-weight: 500;
+}
+.pro_img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+.hdr .ryt_dv .dropdown .caret .fa {
+	font-size: 26px;
+	position: absolute;
+	top: -5px;
+}
+.hdr .ryt_dv .dropdown .caret {
+	border-top: 4px solid transparent;
+}
+.hdr .ryt_dv .dropdown-menu {
+	border: 0px;
+	border-radius: 0;
+	margin-top: 20px;
+	padding-right: 0 !important;
+	width: 100%;
+	box-shadow: none;
+}
+.hdr .ryt_dv .dropdown-menu > li > a {
+	font-size: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #000;
+}
+.hdr .ryt_dv .dropdown-menu > li {
+	margin-right: 0px;
+}
+.notify {
+	background-color: #e35b24;
+	border-radius: 18%;
+	color: #fff;
+	font-size: 11px;
+	height: 16px;
+	position: absolute;
+	right: 12px;
+	text-align: center;
+	top: -12px;
+	width: 16px;
+}
+.hdr .dropdown-menu.act_sbmenu {
+	border: medium none;
+	box-shadow: 1px 0 5px #ccc;
+	height: 170px;
+	padding-top: 91px;
+	position: absolute;
+	text-align: right;
+	top: -49px;
+	z-index: -1;
+}
+.hdr .act_cls {
+	padding: 0px 19px;
+}
+.act_sbmenu .fa {
+	margin-left: 10px;
+	font-size: 16px;
+}
+.hdr .dropdown-menu.act_sbmenu a {
+	color: #727272;
+	font-size: 16px !important;
+	font-weight: 300 !important;
+}
+.hdr .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	background-color: #fff;
+	color: #e15a24;
+	text-decoration: none;
+}
+/*.left_sidebar {
+	width: 240px;
+	float: left;
+	background-color: #191c23;
+	position: fixed;
+	height: 100%;
+	top: 80px;
+}*/
+.left_sidebar .navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+	margin-top: 0px;
+	height: 100%;
+}
+.left_sidebar .navbar-nav > li {
+	float: left;
+	width: 100%;
+}
+.left_sidebar .navbar-nav > li > a {
+  border-left: 9px solid transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.left_sidebar .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: transparent;
+}
+.left_sidebar .fa {
+	font-size: 18px;
+	margin-right: 14px;
+}
+.left_sidebar .navbar-nav > .active > a, .navbar-nav a:hover {
+	background-color: #414653;
+}
+.left_sidebar .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	background-color: #414653;
+	color: #fff;
+	border-left: 9px solid #e85e24;
+}
+.left_sidebar .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	background-color: #414653;
+	color: #fff;
+	border-left: 9px solid #e85e24;
+}
+.left_sidebar .navbar-brand {
+	display: none;
+}
+.logo_new img {
+	margin-top: 17px;
+	padding-left: 78px;
+}
+/*.ryt_maindv {
+  background-color: #edeef2;
+  overflow: hidden;
+  padding: 100px 20px 20px 260px;
+  top: 107px;
+  width: 100%;
+  z-index: -1;
+}*/
+.spc {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.graph_sec {
+  height: 95px;
+  margin-left: 0;
+  padding: 15px;
+  width: 100%;
+}
+
+.graph_sec p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.graph_sec h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 18px;
+  text-align: right;
+}
+.graph_sec span {
+	float: right;
+}
+.graph_sec img{
+	width:50px;
+}
+.grph_dv {
+	background-color: #fff;
+	margin-bottom:20px;
+	padding: 20px;
+}
+.graph_sec:hover {
+	opacity: 0.8;
+}
+.width19 {
+	width: 20%;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+.width19:first-child{
+	padding-left:0px;
+}
+.width19:last-child{
+	padding-right:0px;
+}
+.graph_sec:first-child {
+	margin-left: 0px;
+}
+.clr_1 {
+	background-color: #f54e4e;
+}
+.clr_2 {
+	background-color: #5a595d;
+}
+.clr_3 {
+	background-color: #eb9f1a;
+}
+.clr_4 {
+	background-color: #53b70d;
+}
+.clr_5 {
+	background-color: #043049;
+}
+.dash_table {
+	background-color: #fff;
+	padding: 20px ;
+}
+.tabl_clr {
+	background: rgba(243,243,243,0.6);
+}
+
+.dash_table .licsnc_btn {
+  background-color: #e35b24;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 7px 20px;
+  position: absolute;
+  right: 21px;
+  text-transform: capitalize;
+  top: 25px;
+  z-index: 1;
+}
+.dash_table .licsnc_btn:hover {
+	background-color: #70BC50;
+
+}
+
+.dash_table .licsnc_btn:focus{
+	color:#fff;
+}
+.dash_table .table > thead > tr > th {
+	border-bottom: 0 none;
+	display: table-cell;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 16px 18px;
+	vertical-align: middle;
+	position: relative;
+}
+
+/* .td_padd .table tr td {
+
+	padding: 10px 18px !important;
+}*/
+.dash_table .table tr td {
+	border-top: 0 none;
+	color: #626262;
+	display: table-cell;
+	font-size: 15px;
+	font-weight: normal;
+	padding: 10px 18px;
+	vertical-align: middle;
+}
+
+.dash_table .table tr td a {
+	color: #626262;
+}
+.dash_table .table-hover > tbody > tr:hover {
+	background-color: #e9e8ec;
+}
+
+.rw_back {
+	background-color: #f3f3f3;
+}
+.snd_msg {
+	background-color: #e85e24;
+	border-radius: 3px;
+	padding: 10px 10px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	float: left;
+	width: 100%;
+	text-transform: capitalize;
+	text-align: center;
+}
+.snd_msg img {
+	margin-right: 12px;
+}
+.send_msg .snd_msg {
+  font-size: 16px;
+  padding: 8px 15px;
+  width: 103px;
+  border: none;
+}
+
+.snd_msg:hover, .snd_msg:focus {
+	background-color: #70bc50;
+	color: #fff;
+}
+.mar50 {
+	margin-top: 30px;
+}
+.send_msg .snd_msg img {
+  margin-right: 4px;
+  margin-top: -3px;
+  width: 20px;
+}
+.dash_table .fnt_st {
+	font-size: 17px !important;
+	font-weight: 500 !important;
+	padding: 20px !important;
+	text-transform: uppercase;
+}
+.copyryt {
+	position: absolute;
+	bottom: 96px;
+}
+.copyryt p {
+	color: #fff;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: center;
+}
+.copyryt span {
+	float: left;
+	margin-top: 3px;
+	width: 100%;
+}
+.copyryt span a {
+	color: #fff;
+}
+.login_frm {
+	background-color: #edeef2;
+	position: relative;
+	width: 100%;
+	top: 16%;
+}
+.login_frm p {
+	font-size: 16.67px;
+	font-weight: 300;
+	text-align: center;
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 15%;
+}
+.login_frm a {
+	color: #e75d24;
+}
+.login_frm img {
+	left: 50px;
+	position: absolute;
+	top: 98px;
+	width: 270px;
+	z-index: 1;
+}
+.margn {
+	margin-top: 16%;
+}
+.login-dv {
+	background-color: #fff;
+	height: auto;
+	margin-bottom: 5%;
+	margin-top: 4%;
+	padding: 45px 90px 90px;
+}
+.login-dv .radio label, .checkbox label {
+	color: #5b5a5a;
+	font-size: 16px;
+	font-weight: 300;
+	padding-left: 0;
+}
+.login-dv .icheckbox_square-orange, .iradio_square-orange {
+	margin: -2px 12px 0 0;
+}
+.login-dv span a {
+	color: #bc483b;
+	float: right;
+}
+.login-dv .checkbox span a {
+	color: #e75d24;
+	float: right;
+	font-size: 16px;
+	font-weight: 300;
+}
+.login-dv input[type="text"] {
+	background: url(../images/envelop.png) no-repeat scroll;
+	background-position: 0px;
+}
+.usr_img input[type="text"] {
+	background: url(../images/user.png) no-repeat scroll;
+	background-position: 0px;
+}
+.usr_img input[type="text"]:focus {
+	background: url(../images/user_focus.png) no-repeat scroll !important;
+	background-position: 0px !important;
+}
+.login-dv .form-control {
+	color: #babbbc;
+	font-size: 16px;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: -moz-use-text-color -moz-use-text-color #ccc;
+	border-image: none;
+	border-radius: 0;
+	border-style: none none solid;
+	border-width: medium medium 1px;
+	box-shadow: none;
+	height: 46px;
+	padding: 6px 10px 6px 43px;
+	position: relative;
+}
+.login-dv input[type="password"] {
+	background: url("../images/lockicon.png") no-repeat scroll rgba(0, 0, 0, 0);
+	background-position: 6px 8px;
+}
+.login-dv input[type="password"]:focus {
+	background: url(../images/lok_focus.png) no-repeat scroll;
+	background-position: 6px 8px;
+}
+.login-dv .form-control:focus {
+	border-bottom: 1px solid #e75d24;
+}
+.login-dv input[type="text"]:focus {
+	background: url(../images/envelop_focus.png) no-repeat scroll;
+	background-position: 0px;
+}
+.addone {
+	color: #e75d24;
+}
+.login-dv .form-group {
+	margin-bottom: 46px;
+	position: relative;
+}
+.frm_txt p {
+	color: #888a8b;
+	font-size: 13px;
+	line-height: 22px;
+	text-align: left;
+	margin-bottom: 0px;
+}
+.signupfrm img {
+	left: -5px;
+	position: absolute;
+	top: 199px;
+	z-index: 1;
+	width: 330px;
+}
+.signupfrm .checkbox span a {
+	padding-left: 5px;
+}
+.ryt_btns {
+	float: right;
+	padding-right: 78px;
+}
+
+.ryt_btns ul {
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	margin-top: 23px;
+}
+.ryt_btns ul li {
+	list-style-type: none;
+	display: inline;
+}
+.ryt_btns ul li a {
+	color: #5a595d;
+	font-size: 22px;
+	font-weight: 500;
+	margin-right: 34px;
+	text-transform: capitalize;
+}
+.ryt_btns ul li:hover a {
+	color: #e35b24;
+}
+.ryt_btns ul li:last-child a {
+	margin-right: 0px;
+}
+.fnt_icons {
+	font-size: 20px;
+	position: absolute;
+	top: 8px;
+	color: #babbbc;
+}
+.fnt_icons:focus {
+	border-bottom: 1px solid red;
+}
+.padd_lft5 {
+	padding: 0px 5px;
+}
+.star {
+	color: #e75d24;
+	font-size: 30px;
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+.login-dv h3 {
+	color: #888a8b;
+	font-size: 28px;
+	font-weight: 400;
+	margin-bottom: 48px;
+	margin-top: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.signupfrm small {
+	font-weight: 300 !important;
+	padding-left: 6px;
+}
+.login-dv .btn-default {
+	background-color: #70bc50;
+	border: medium none;
+	border-radius: 0;
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+	height: 77px;
+	width: 100%;
+	text-transform: uppercase;
+	margin-top: 40px;
+}
+.login-dv .btn-default:hover {
+	background-color: #E75D24;
+}
+.footer p {
+	color: #929495;
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 15px;
+	text-align: center;
+}
+.ftr {
+	background-color: #fff;
+}
+.btm_text {
+	clear: both;
+	font-size: 16.67px;
+	font-weight: 300;
+	margin-bottom: 15%;
+	overflow: hidden;
+	text-align: center;
+}
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+}
+.footer, .push {
+	height: auto;
+}
+.footer, .push {
+	clear: both;
+}
+.hdr .ryt_dv .msg_drpdwn {
+	box-shadow: 1px 0 5px #ccc;
+	height: 300px;
+	overflow-y: scroll;
+	padding: 0 20px 0 0;
+	width: 300px;
+	right: 18px;
+	top: 28px;
+	left: auto;
+}
+.msg_drpdwn img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 15px;
+	float: left;
+	position: relative;
+}
+.msg_drpdwn p {
+	margin-bottom: 0px;
+	font-size: 14px;
+	margin-top: 5px;
+}
+.msg_drpdwn li {
+	margin: 15px 0px;
+}
+.time_fnt {
+	font-size: 14px;
+}
+.ryt_dv .dropdown-menu.msg_drpdwn a {
+	margin-top: 0px;
+	padding: 20px 15px !important;
+	border-bottom: 1px solid #ddd;
+}
+.ryt_dv .dropdown-menu.msg_drpdwn a:hover {
+	background-color: #f5f5f5 !important;
+	color: #5b5a5a !important;
+}
+.ryt_dv .dropdown-menu.msg_drpdwn:first-child a {
+	margin-top: 0px;
+}
+.ryt_dv .dropdown-menu.msg_drpdwn li {
+	position: relative;
+}
+.online {
+	background-color: #0c0;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	height: 10px;
+	left: 50px;
+	position: absolute;
+	top: 70px;
+	width: 10px;
+}
+.offline {
+	background-color: #ccc;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	height: 10px;
+	left: 50px;
+	position: absolute;
+	top: 70px;
+	width: 10px;
+}
+.msg_drpdwn .see_more {
+	background-color: #f5f5f5;
+	margin-top: 0;
+	text-align: center;
+	width: 100%;
+	float: left;
+}
+.msg_drpdwn .see_more a {
+	color: #5b5a5a;
+	text-decoration: none;
+	font-size: 14px !important;
+	float: left;
+	width: 100%;
+	padding: 10px !important;
+}
+.trms_services .modal-dialog {
+	width: 488px;
+	margin: 73px auto;
+}
+.edit_license .modal-dialog {
+	margin: 73px auto;
+	width: 850px;
+}
+ .modal-body {
+	padding: 0px 30px;
+	position: relative;
+}
+.trms_list ul {
+  margin: 0 0 20px;
+  padding: 0 0 0 13px;
+}
+.trms_list ul li {
+  color: #3e3f3f;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 27px;
+  padding: 0;
+}
+.modal-header {
+  border-bottom: medium none;
+  padding: 15px 30px 15px;
+}
+.modal-header .close {
+  background-color: #000;
+  border-radius: 50%;
+  height: 35px;
+  margin-top: -2px;
+  opacity: 1;
+  padding: 10px;
+  position: absolute;
+  right: -12px;
+  top: -16px;
+  width: 35px;
+}
+.close img {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10px;
+}
+ .modal-title {
+	border-bottom: 1px solid #e5e5e5;
+	color: #3e3f3f;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.42857;
+	margin: 0;
+	padding-bottom:8px;
+	text-transform: uppercase;
+	text-align:left;
+}
+ .modal-content {
+	border-radius: 5px;
+	padding-bottom: 0px;
+}
+.edit_license .modal-body {
+	overflow: hidden;
+	padding: 0 15px;
+}
+.edit_license span a {
+	font-size: 16px;
+	margin-top: -1px;
+	color: #e35b24;
+	font-weight: 400;
+	margin-left: 30px;
+	text-transform: capitalize;
+}
+.edit_license .form_fields .form-group {
+	margin-bottom: 15px;
+	width:100%;
+}
+
+.edit_license .btn.btn-default {
+	float: right;
+	background-color: #a8a8a8;
+	padding: 10px 17px;
+	border-radius: 0px;
+	color: #fff;
+}
+.brdr0 {
+	border: medium none !important;
+	margin: 15px 0 9px 15px !important;
+}
+.edit_license .backclr {
+	background-color: #E85E24;
+	background-color: #e85e24;
+	border-color: #e85e24;
+	color: #fff;
+	padding: 10px 10px;
+	border-radius: 0px;
+	float: left;
+}
+.edit_license .btn:hover {
+	opacity: 0.8;
+}
+
+
+.form_tab .nav-tabs > li a {
+	background-color: #fff;
+	border: medium none;
+	border-radius: 0;
+	box-shadow: 0 -5px 9px -5px #ccc inset;
+	color: #565353;
+	float: left;
+	margin-right: 10px;
+	padding: 22px 37px 22px 16px;
+	text-align: left;
+	text-transform: capitalize;
+}
+.form_tab .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	border-width: 0;
+	box-shadow: 0 3px 0 #e95e24 inset !important;
+	cursor: pointer;
+}
+.form_tab .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	border-color: transparent;
+}
+.form_tab .nav-tabs {
+	border-bottom: medium none transparent;
+}
+.tab_outer {
+	background-color: #fff;
+	margin-top: 1px;
+	overflow: hidden;
+	padding: 20px;
+}
+.tab_outer .grph_dv{
+	padding:0px;
+}
+.tab_outer .dash_table{
+	padding:0px;
+}
+.form_tab .close_tab i {
+	background-color: #ccc;
+	border-radius: 50%;
+	bottom: 0;
+	color: #fff;
+	height: 20px;
+	margin: auto;
+	padding-top: 3px;
+	position: absolute;
+	right: 4px;
+	text-align: center;
+	top: -1px;
+	width: 20px;
+}
+/*.form_tab .close_tab i.active-i{
+		background-color: #999;
+	}*/
+.form_tab .nav-tabs > li.active > a .active-i {
+	background-color: #999;
+}
+.form_fields .form-group {
+	float: left;
+	margin-bottom: 8px;
+	padding:0px -15px;
+	width: 50%;
+}
+.form_fields .form-control {
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #d6d5d5;
+	border-radius: 3px;
+	box-shadow: none;
+	color: #666;
+	display: block;
+	font-size: 14px;
+	height: 35px;
+	line-height: 1.42857;
+	padding: 6px 12px;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+	width: 100%;
+}
+.form_fields textarea {
+	background-color: #f3f3f3;
+	background-image: none;
+	border: 1px solid #d6d5d5;
+	border-radius: 3px;
+	box-shadow: none;
+	color: #626262;
+	display: block;
+	font-size: 14px;
+	height: 120px;
+	resize: none;
+	line-height: 1.42857;
+	padding: 6px 12px;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+	width: 100%;
+	margin-bottom:20px;
+}
+.hyt_60 {
+	height: 80px !important;
+}
+.form_fields .fileUpload {
+  background-color: #e35b24;
+  border: medium none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  height: auto;
+  margin-top: 10px;
+  overflow: hidden;
+  padding: 7px;
+  position: relative;
+  width: 120px;
+}
+.form_fields .fileUpload input.upload {
+  cursor: pointer;
+  font-size: 20px;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.form_fields .form-control::-moz-placeholder {
+  color: #d7d7d7;
+}
+.form_fields .fileUpload:focus, .fileUpload:active {
+	box-shadow: none;
+}
+.form_fields .up_res .fileUpload:hover {
+	background-color: #70BC50;
+	border:none;
+}
+.form_fields h3 {
+	border-bottom: 2px solid #e85e24;
+	color: #626262;
+	font-size: 24px;
+	font-weight: 500;
+	margin: 10px 0px 32px;
+	padding-bottom: 15px;
+	
+	
+}
+.form_fields label {
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 5px;
+	padding-top: 8px;
+	color: #000;
+	
+}
+.rest_pass_icon {
+	textalign:center;
+}
+.rest_pass_icon img{
+	width:23px;
+}
+.form_fields .btns {
+	background-color: #e35b24;
+	color: #fff;
+	float: left;
+	font-weight: 300;
+	margin-top: 0;
+	padding: 14px 26px;
+	font-size: 16px;
+	text-transform: capitalize;
+}
+.btns_back {
+	background-color: #a8a8a8 !important;
+	margin-left: 30px;
+}
+.form_fields .btns:hover {
+	opacity: 0.8;
+}
+.tabl_padd {
+	padding: 0px -15px;
+}
+.form_fields caption {
+	color: #626262;
+	font-size: 20px;
+	padding-bottom: 15px;
+	padding-top: 0;
+	text-align: left;
+}
+.form_fields .table td {
+	border-top: 0 none;
+	font-size: 15px;
+	padding: 8px 30px;
+	font-weight: 300;
+}
+.form_fields .table td a {
+	color: #626262;
+}
+.form_fields .table td a:hover {
+	color: #E97C4F;
+}
+.form_fields .table-hover > tbody > tr:hover {
+	background-color: #e9e9e9;
+}
+.form_fields .tabl_padd p {
+	margin-top: 26px;
+}
+
+
+.manage_licsn_tabl .radio, .checkbox {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.form_fields .tabl_padd p a {
+	border: 1px solid #e35b24;
+	padding: 15px;
+	color: #df5a23;
+}
+.form_fields .tabl_padd p a:hover {
+	border: 1px solid #000;
+	color: #000;
+}
+.manage_licsn_tabl td {
+	border-top: 0px !important;
+}
+.manage_licsn_tabl .table tbody th {
+	border-top: 0 none;
+	font-size: 16px;
+	padding: 8px 0;
+	color: #626262;
+	font-weight: 400;
+}
+.manage_licsn_tabl .table tbody td {
+  color: #000;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  vertical-align: middle;
+  padding: 4px 15px;
+}
+.manage_licsn_tabl .table tbody td:first-child{
+	padding-left:0px;
+	
+}
+.license_user .table tbody td:first-child{
+	padding-left:15px ;
+}
+
+.soft_input .table tbody td:first-child{
+text-align:center;
+padding-right:0px;
+}
+.manage_licsn_tabl .table > tbody + tbody {
+	border-top: 0px;
+}
+.manage_licsn_tabl .table .padd_lft {
+	padding-left: 15px;
+}
+.panel_outer td{
+	padding: 5px 30px;
+	font-size: 14px;
+	background-color:#f9f9f9;
+	
+	
+}
+.panelinner td{
+	background-color:#f9f9f9;
+}
+
+.manage_licsn_tabl .fa {
+	color: #8a8a8a;
+	font-size: 12px;
+	font-weight: 300;
+	margin-right: 2px;
+}
+.license_user {
+	margin:0
+}
+.license_user .table td a:hover {
+	color: #626262;
+}
+.spn_cls span a {
+  background-color: #e35b24;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 5px;
+  padding: 3px 10px;
+  text-align: center;
+  width: 37px;
+}
+.hding_span{
+	   position: absolute;
+    right: 0px;
+    top: -11px;
+}
+.license_user .table tbody th {
+  font-size: 16px;
+  padding: 15px 0;
+  font-weight: 400;
+}
+.license_user .table tbody td {
+	padding: 8px 15px;
+	text-align: left;
+	color:#626262;
+}
+.padd_15lft {
+	padding-left: 15px !important;
+}
+.manage-lender .table tr td:first-child {
+  text-align:left;
+}
+.manage-lender .table tr td {
+  text-align: center;
+}.software_inputs td span a {
+	background-color: #f3f3f3;
+	border: 1px solid #a09d9d;
+	border-radius: 5px;
+	color: #626262;
+	float: left;
+	padding: 5px 8px;
+}
+
+.software_inputs td span {
+	float: left;
+}
+.software_inputs td {
+	padding: 5px 10px !important;
+	vertical-align: middle !important;
+	text-align: left;
+}
+.software_inputs .icheckbox_square-orange {
+	opacity: 0;
+	display: none;
+}
+.software_inputs .btn-group > .btn, .btn-group-vertical > .btn {
+	background-color: #f3f3f3;
+	border: 1px solid #ccc;
+	box-shadow: none;
+	color: #626262;
+	float: left;
+	position: relative;
+	margin-right: 10px;
+	border-radius: 4px !important;
+}
+/*.software_inputs .btn-group > .btn:hover, .btn-group-vertical > .btn:hover, .btn-group > .btn:focus, .btn-group-vertical > .btn:focus, .btn-group > .btn:active, .btn-group-vertical > .btn:active, .btn-group > .btn.active, .btn-group-vertical > .btn.active {
+	background-color: #d7d7d7 !important;
+	color: #fff;
+}*/
+.software_inputs .btn-primary:hover{
+	background-color: #d7d7d7 ;
+	color: #fff;
+}
+.soft_input {
+ 
+  margin: 0 0px;
+}
+.soft_input th, td {
+	text-align: left;
+	font-size: 13px;
+}
+.soft_input .form-control{
+	text-align:center
+}
+.soft_input th {
+	text-align: center;
+}
+.more.active {
+	box-shadow: none;
+}
+.more #myTabDrop1{
+	  background-color: #e85e24;
+    color: #fff;
+}
+.more .caret {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid;
+ 
+  position: absolute;
+    right: 14px;
+    top: 30px;
+
+}
+.edit_menu .tabl_mar{
+	margin:0px 27px;
+}
+.tabl_mar{
+	margin:0px 27px;
+}
+
+.bg_white{
+	background-color:#fff !important;
+}
+.more #myTabDrop1-contents a {
+	margin-right: 0;
+	width: 100%;
+}
+.more .dropdown-menu {
+	border: none;
+	padding: 0;
+}
+.more #myTabDrop1-contents a.active, .more #myTabDrop1-contents a:hover {
+  background-color: #f0f0f0;
+  color: #5b5a5a;
+}
+.more #myTabDrop1-contents a {
+  padding: 16px;
+}
+.more .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	background-color: #fff;
+	box-shadow: 0 -1px 2px #ccc inset;
+}
+.dis_input .form-control {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: medium none;
+}
+.passwd_strg {
+	border: 1px solid #a09d9d;
+	border-radius: 5px;
+	height: auto;
+	left: 51%;
+	padding: 4px 10px;
+	position: absolute;
+	width: 260px;
+	top:53%;
+}
+.passwd_strg h5 {
+	color: #191c23;
+}
+.passwd_strg p {
+	color: #191c23;
+	font-size: 12px;
+	line-height: 19px;
+}
+.passwd_strg img {
+	left: -20px;
+	position: absolute;
+	top: 9px;
+}
+.passwd_strg .progress {
+	background-color: #f3f3f3;
+	border-radius: 0;
+	box-shadow: none;
+	height: 4px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+.passwd_strg .progress-bar {
+	background-color: #f3f3f3;
+	box-shadow: none;
+}
+.pass_dv .form-control:focus + passwd_strg {
+	display: block;
+}
+.send_msg .modal-dialog {
+	margin: 73px auto;
+	width:650px;
+}
+.send_msg .sel_box .bootstrap-select{
+	width: 100% !important;
+}
+.send_msg .modal-content {
+	float: left;
+}
+.employe_Send_msg  .modal-content {
+	float: none;
+}
+.employe_Send_msg .form-group {
+  margin-bottom:0px;
+}
+.send_msg .form-control {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: none;
+  height: 35px;
+}
+.send_msg textarea {
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: none;
+	height: 150px;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom:15px;
+	resize: none;
+}
+.send_msg textarea:focus{
+	  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.send_popup_spc textarea {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.send_msg .modal-body {
+  padding: 20px 30px;
+  position: relative;
+  padding-top:0px;
+}
+.send_msg textarea:focus {
+	border-color: #66afe9;
+}
+.send_msg .btn.dropdown-toggle.btn-default {
+	background-color: #fff;
+	border-radius: 4px;
+	height: 35px;
+	border: 1px solid #ccc;
+}
+.send_msg .btn.dropdown-toggle.btn-default:hover, .send_msg .btn.dropdown-toggle.btn-default:focus, .send_msg .btn.dropdown-toggle.btn-default:active {
+	background-color: #fff !important;
+	height: 35px;
+	box-shadow: none;
+	border: 1px solid #ccc;
+	color: #626262;
+	outline: none !important;
+}
+.send_msg .bootstrap-select.btn-group .dropdown-menu {
+	width: 100%;
+	border-radius: 0px;
+}
+.send_msg .dropdown-menu {
+	margin: 0;
+	padding: 0;
+}
+.send_msg .dropdown-menu > li > a {
+	padding: 8px 20px;
+}
+.send_msg .dropdown-menu > li > a:focus {
+ 
+  background-color:#dfdede;
+  color:#333;
+}
+.send_msg .dropdown-menu > li > a:hover{
+ 
+  
+  color:#333;
+}
+.send_msg a{
+	/*background-color:#F5F5F5;*/
+}
+.send_msg .btn .caret {
+	opacity: 0;
+}
+.send_msg .dropdown-toggle {
+	background: url(../images/caret.png) no-repeat;
+	background-position: right;
+}
+.send_msg .btn-group .dropdown-toggle:active, .btn-group.open .dropdown-toggle {
+	outline: 0 none;
+	background: url(../images/caret.png) no-repeat;
+	background-position: right;
+	box-shadow: none;
+}
+.reports_stats{
+  border-bottom: 1px solid #ccc;
+    margin-bottom: 14px;
+    margin-top: 0px;
+    padding-bottom: 30px;
+	z-index:1
+}
+.reports_stats h3{
+ border-bottom: 2px solid #e85e24;
+    color: #626262;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 32px;
+    padding-bottom: 15px;
+}
+.reports_stats .form-inline .form-control {
+
+  float: right;
+  width: 100%;
+  margin-top:0px;
+  height:35px;
+}
+.reports_stats .form-group{
+	width:100%;
+}
+.reports_stats label{  
+	padding-top:6px;
+	font-size:14px;
+	text-align:left;
+	font-weight:300;
+}
+.edit_menu textarea{
+	height:75px;  
+	background-color:#fff;
+}
+.edit_menu .table tbody td {
+ 
+  vertical-align: top;
+}
+
+.reports_stats .form-inline .input-group {
+
+  width: 100%;
+}
+.manage_licsn_tabl .table .panel_outer td:first-child{
+	padding-left:30px  ;
+}
+
+.manage_licsn_tabl .table .panelinner td:first-child{
+	padding-left:45px ;
+}
+
+
+
+.partnerusr .panelinner td:first-child{
+	padding-left:30px !important;
+}
+.new_pro_btns{
+	   position: absolute;
+    right: 0;
+    top: -11px;
+}
+
+.terminate_btn{
+	position: absolute; left: 15px;
+}
+.terminate .form-group  .control-label {
+ 
+  width: 150px;
+}
+
+	
+.edit_menu .edit_table .table tbody tr th.w-200 {
+	width:200px;
+} 
+
+.inputwidth .form-control{
+	width:130px;
+		color:#70bc50;
+		font-weight:400;
+
+}
+.inputwidth .input-active-color{
+	color:#fe0000 ;
+}
+
+/*-------------------compny_admin-------------------------*/
+
+
+.loanprog .cus_pro_td {
+ 
+  width: 100px;
+}
+.compny_admin_leftbar .nav > li > a > img {
+  width:15px;
+  margin-right:10px;
+}
+
+
+.compny_admin_leftbar .navbar-nav > li > a {
+  border-left: 9px solid transparent;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+.compny_admin_leftbar .copyryt {
+  bottom: 80px;
+
+}
+.com_admin_btns {
+  background-color: #70BC50;
+  border-radius: 3px;
+  color: #fff;
+  float: right;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  padding: 8px 15px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.com_admin_btns_btns {
+  background-color: #cecece;
+  border: medium none;
+  border-radius: 3px;
+  color: #fff;
+  float: right;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  padding: 8px 15px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.com_admin_btns_btns:hover{
+	opacity:0.8
+}
+ .com_admin_btns:hover , .com_admin_btns:focus{
+	 color:#fff;
+	 background-color: #e35b24;
+ }
+.com_ryt_dv .form_fields h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-top: 0;
+  padding-bottom: 11px;
+  position: relative;
+}
+.smll_fnt small{
+	color:#E35B24;
+	margin-left:15px;
+	font-size:16px;
+}
+.com_ryt_dv .dash_table .table > thead > tr > th {
+  font-size: 16px;
+  font-weight: 400;
+}
+.com_ryt_dv .dash_table .table tr td {
+  padding: 4px 18px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.mar22{
+	margin:22px 0px;
+}
+  .com_ryt_dv .marg_btm0{
+	margin-bottom:10px;
+}
+.companyadmin_outer{
+	background:transparent;
+	padding:0px;
+	
+}
+.sep_div{
+	background:#fff;
+	padding:20px;
+	box-shadow:1px 2px 4px #ccc;
+}
+.tab_mar{
+margin-top:20px;
+}
+
+
+.div_mar{
+	margin:0px 0px;
+}
+.small_box{
+	border:1px solid #53b70d;
+	height:auto;
+	overflow:hidden;
+	margin-right:10px;
+	margin-top:25px;
+	
+}
+.div_mar .col-md-2 {
+	width:20%;
+
+}
+
+.small_box span {
+  background-color: #53b70d;
+  float: left;
+
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  position:relative;
+}
+.small_box span img {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin:  auto;
+}
+.marryt0{
+	margin-right:0px;
+}
+.small_box h5 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+.small_box h6{
+  text-align:center;
+  font-weight: 400;
+  font-size: 14px;
+
+}
+.div_mar a{
+	color:#626262;
+}
+.paddbtm30{
+	padding-bottom:20px;
+}
+.small_box:hover{
+	opacity:0.8;
+}
+
+.tooltp_cls .btn-default {
+  background-color: transparent;
+  color: #333;
+  border-color:transparent;
+  margin-left:-1px;
+  padding:0px 12px;
+}
+.com_ryt_dv .tooltp_cls .btn-default:focus, .btn-default:active{
+	background-color:transparent !important;
+	box-shadow:none;
+	margin-left:-1px       ;
+}
+.login-dv .form-group .btn-default:focus, .btn-default:active{
+	background-color:#e75d24 !important;
+	margin-left:0px;
+}
+
+.tooltp_cls .btn.btn-default img {
+  width: 27px;
+}
+.tooltp_cls img{
+	margin-right:0px;
+}
+
+.tooltp_cls {
+	position:relative;
+}
+.tooltp_cls .btn-group .btn-default a span {
+  background-color: #000;
+  color: #fff;
+  display: none;
+  font-size: 13px;
+  left: 0;
+  margin: auto auto auto 0;
+  padding: 2px;
+  position: absolute;
+  right: 0;
+  top: -25px;
+  width: 79px;
+}
+
+.tooltp_cls .btn-group .btn-default:hover a span{
+	display:block;
+}
+
+
+.pdng_lft0{
+	padding-left:0px;
+}
+.pdng_ryt0{
+	padding-right:0px;
+}
+
+.new_spn_cls span {
+  font-size: 20px;
+  margin-left: 45px;
+}
+.new_spn_cls span a{
+	font-size:17px;
+	width:45px;
+}
+
+.btm_btns a {
+  background-color: #e35b24;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0;
+  padding: 8px 18px;
+  
+  text-align: center;
+  text-transform: capitalize;
+  width: 105px;
+}
+.btm_btns button[type=button]{
+	background-color: #e35b24;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0;
+  padding: 8px 18px;
+  text-align: center;
+  text-transform: capitalize;
+  border:none;
+  width: 105px;
+}
+.btm_btns button[type=button]:hover{
+	background-color:#70BC50;
+}
+.btm_btns button[type=submit]{
+	background-color: #e35b24;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0;
+  padding: 8px 18px;
+  text-align: center;
+  text-transform: capitalize;
+  border:none;
+  width: 105px;
+}
+.btm_btns button[type=reset]{
+	background-color: #C5C5C5;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0;
+  padding: 8px 18px;
+  text-align: center;
+  text-transform: capitalize;
+  border:none;
+  width: 105px;
+}
+.btm_btns button[type=button]:hover{
+	background-color:#70BC50;
+}
+.btm_btns button[type=submit]:hover{
+	background-color:#70BC50;
+}
+
+.btm_btns a:hover {
+	background-color:#70BC50;
+	
+	color:#fff;
+}
+
+#create_notice .btm_btns a {
+width: auto
+}
+
+.new_lender .cncel_btn{
+	background-color:#b6b6b6;
+	margin-left:10px;
+}
+.new_lender .cncel_btn:hover{
+	opacity:0.8;
+		background-color:#b6b6b6;
+	
+}
+.btm_btns a:first-child{
+	margin-left:0px;
+}
+/*.outer_padding .dash_table .licsnc_btn {
+
+  right: 0;
+ 
+  top: 0;
+}*/
+.show_filter .form-group{
+	width:100%;
+	margin-bottom:10px;
+	
+}
+.createnew_len .form-control{
+	background-color:#fff;
+	
+	
+}
+.show_filter span {
+	color:#626262;
+	font-size:15px;
+	margin-left:0px;
+  
+}
+.show_filter{
+	background-color:#EDEEF2;
+	padding:20px 0px;
+	
+}
+.show_filter .icheckbox_square-orange {
+
+  margin-right: 15px;
+}
+.soft_feature{
+	 width:398px;
+}
+.mbtm0{
+	margin-bottom:0px !important;
+}
+.sep_div .table-responsive{
+	clear:both;
+	margin-bottom:0px;
+}
+
+.profile_manage td img{
+	margin-left:0px;
+}
+.profile_manage th:last-child{
+	float:right;
+	margin-right:0px;
+	
+}
+
+.new_profile .checkbox{ 
+		text-align:center;
+	}
+	.state_licensing .table tr th{
+		padding-left:15px;
+
+}
+.state_licensing th:nth-child(2) {
+  width: 250px;
+}
+.state_licensing td img{
+ float: left;
+    margin-right: 10px; 
+}
+.state_dv label {
+  color: #626262;
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 5px;
+}
+.nmlsdv .state_dv .form-control{
+	margin-bottom:20px;
+}
+.state_dv label:first-child {
+  width: 170px;
+}
+.statelicensedv .modal-dialog{
+	width:650px;
+	}
+
+.statelicensedv .checkbox{
+	text-align:center;
+
+}
+.statelicensedv  .bg_Clr{
+	background-color:#f3f3f3;
+}
+
+.statelicensedv .modal-body {
+  padding: 5px 30px;
+
+}
+.statelicensedv .table tbody td {
+ 
+  padding: 2px 15px;
+  
+}
+.statelicensedv .com_admin_btns{
+	float:left;
+	width:150px;
+}
+
+.branch_dv .form_fields .form-group {
+  
+  margin-bottom: 10px;
+  width:100%;
+ 
+}
+.branch_dv .form_fields .form-group  label{
+	padding-left:0px;
+	width:150px;
+	
+}
+.branch_dv .modal-dialog {
+  width: 930px;
+}
+
+.lender .btn{
+	border-radius: 0;
+    padding: 10px;
+	
+	box-shadow:none;
+	background-color:transparent;
+	
+	
+}
+
+
+
+.lender .btn.active{
+	
+	background-color:#70bc50 !important;
+	border-color:transparent;
+}
+.lender .btn:hover{
+	background-color:transparent;
+
+	
+}
+.lender .btn.active:hover{
+		background-color:#70bc50;
+		border-color:#70bc50;
+}
+.modal-dialog {
+  margin: 30px auto;
+  width: 800px;
+}
+.lender .btn:active {
+	margin-left:0px;
+	background-color:#70BC50;
+}
+
+
+.new_lender .nav > li > a {
+  background-color: #e95e25;
+  border-radius: 0 ;
+  color: #fff;
+  padding: 10px 15px;
+border:none;
+margin-right:2px;
+box-shadow:none;
+
+
+
+}
+
+.credt_setting .btm_btns.setting_btn{
+	margin-top:20px;  
+}
+.new_lender .nav > li > a:hover{
+	border:none;
+box-shadow: 0 3px 0 #e95e24 inset ;
+background-color:#fff;
+color:#626262;
+ 
+}
+.new_lender .modal-header{
+	
+	background-color:#DCDBDA;
+}
+.new_lender .modal-title {
+  border-bottom: 0 none;
+  padding-bottom:0px;
+}
+.id_dv {
+  margin-top: 10px !important;
+  float: left;
+}
+.full_note p{
+	   color: #626262;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+.read_more {
+	  font-size: 14px;
+    font-weight: 300;
+	color:#F00 !important;
+}
+.tips p{
+	 font-size: 14px;
+    font-weight: 300;
+	color:#626262;
+	margin-bottom:0px;
+}
+.doc_check .iradio_square-orange {
+  background-position: -120px 0;
+  margin-right: 10px;
+}
+.tips strong{
+	font-weight: 400;
+	font-size: 14px;
+}
+.upload_date {
+  font-size: 14px;
+  left: 170px;
+  position: absolute;
+  top: 17px;
+  width: 300px;
+}
+.states_dv .btn {
+  height: 36px;
+  padding: 7px 0 0;
+  width: 36px;
+}
+.states .checkbox{
+	margin:10px 0px 10px 0px;
+}
+.states .icheckbox_square-orange {
+
+  margin-right: 13px;
+}
+.region_dv .modal-dialog {
+  width: 900px;
+}
+.region_dv .checkbox {
+  margin: 0px 0;
+  
+}
+.region_dv .btm_btns{
+	margin-top:20px;
+}
+
+.region_dv h5 {
+  border-bottom: 1px solid #ddd;
+  color: #626262;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-top: 0;
+  padding-bottom: 9px;
+  position: relative;
+}
+.region_dv .states label {
+  padding-top:5px;
+  
+}
+.states label {
+  padding-top: 10px;
+  font-weight: 300;
+  font-size: 14px;
+}
+.region_dv .close_btn{
+	 float: left;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+    padding: 8px 26px;
+	background-color:#b6b6b6;
+	color:#fff;
+	border-radius:0px;
+	border:none;
+}
+.region_dv .close_btn:hover{
+
+	opacity:0.8;
+}
+.high_res span{
+	font-size:16px;
+	margin-left:10px;
+}
+.new_lender .modal-body {
+  
+ padding:0px 0px;
+}
+.new_lender .nav-tabs {
+  border-bottom: medium none;
+  background-color: #fff;
+  padding: 0px 0px;
+  margin:0px;
+}
+.new_lender .nav > li.active a {
+    background-color: #fff;
+    color: #5b5a5a;
+	box-shadow: 0 3px 0 #e95e24 inset ;
+
+ 
+}
+.new_lender .general_dv {
+  padding: 20px 0px 0px 0px;
+}
+
+.new_lender .general_dv h4 {
+  border-bottom: 1px solid #ddd;
+  color: #626262;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 0;
+  padding-bottom: 15px;
+  position: relative;
+  font-weight: 500;
+}
+ 
+.general_dv .form-group {
+  margin-bottom: 8px;
+  width: 100%;
+}
+.general_dv .fields_padd {
+  margin-bottom: 30px;
+  padding: 0 0px;
+  padding-right: 0;
+}
+
+ 
+
+
+.general_dv label {
+  font-size: 14px;
+  font-weight: 300;
+}
+.agg_log0 img{
+	margin-top:10px;
+}
+.new_lender .general_dv h5 {
+  color: #626262;
+  float: left;
+  font-size: 16px;
+  margin-top: 0px;
+  font-weight:500;
+  padding-bottom: 0;
+}
+.general_dv .bootstrap-select {
+	width:100%;
+}
+.new_lender .btm_btns {
+  margin: 0;
+
+  padding-top: 0px;
+  clear:both;
+}
+
+.new_lender .mar15{
+	margin:0px 15px;
+}
+.mailing_address .form-group {
+  margin-bottom: 8px;
+  width: 100%;
+}
+.mailing_address .control-label{
+	padding-left:0px;
+	padding-right:0px;
+	text-align:left;
+	font-size:14px;
+	font-weight:300;
+	width:120px;
+}
+.contcts td{
+	font-size:15px;
+	color:#626262;
+}
+.contcts td a{
+	
+	color:#626262;
+}
+.contcts tr td:last-child {
+  text-align: center;
+  width: 200px;
+  float: right;
+}
+.contcts tr th:last-child {
+  text-align: center;
+  width: 200px;
+  float: right;
+}
+/*.docu tr td:last-child {
+
+  width: 150px;
+ 
+}*/
+.adrs tr td:last-child {
+
+  width:auto;
+  padding-right:0px;
+ 
+}
+
+.adrs tr td:first-child {
+	width:120px;
+}
+/*.docu tr th:last-child {
+  
+  width: 150px;
+ 
+}*/
+.contcts td img{
+	margin-left:20px;
+}
+.contcts td:first-child img{
+		margin-left:0px;
+}
+.new_lender .modal-dialog {
+  margin: 30px auto;
+  width:701px;
+}
+.new_lender .new_btn {
+  position: absolute;
+  right: 1px;
+  top: 0px;
+}
+/*.new_btn .com_admin_btns{
+	background-color:#70BC50;
+	font-size:15px;
+	
+}*/
+
+
+.new_btn .com_admin_btns:hover{
+	opacity:0.8;
+	color:#fff;
+}
+.new_lender .refreshbtn {
+  position: absolute;
+  right: 28%;
+  top: -7px;
+}
+.refreshbtn .com_admin_btns{
+	background-color:#70BC50;
+	font-size:15px;
+}
+.states_checkbox .checkbox label{
+	width:200px;
+	margin:5px 0px;
+}
+.states_checkbox .icheckbox_square-orange {
+	float:left;
+	margin-right:10px;
+}
+.states_checkbox .padd_left{
+	padding-left:0px;
+}
+.form-control:focus {
+  border-color: #66afe9;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+  outline: 0 none;
+}
+.login_frm .form-control:focus {
+  border-color:none;
+  box-shadow: none;
+
+}
+.states_checkbox .padd_right{
+	padding-right:0px;
+}
+
+.tip_textarea textarea{
+	width:100%;
+	height:250px;
+	border:1px solid #ddd;
+	border-radius:3px;
+	resize:none;
+	padding:10px;
+	margin-bottom:20px;
+}
+.adnote .tip_textarea{
+	margin-bottom:20px;
+}
+.newtip .tip_textarea{
+	margin-bottom:20px;
+}
+.Preview_dv {
+	width:100%;
+	min-height:250px;
+	border:1px solid #ddd;
+	border-radius:3px;
+	
+	padding:10px;
+	
+}
+.newtip .Preview_dv {
+
+	margin-bottom:0px;
+   
+	
+}
+
+.popup_inner .fileUpload {
+  background-color: #e35b24;
+  border: medium none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  height: auto;
+  margin-right: 8px;
+  margin-top: -4px;
+  overflow: hidden;
+  padding: 8px 12px;
+  position: relative;
+  width: 105px;
+}
+.popup_inner .fileUpload:hover {
+	background-color:#53B70D;
+}
+.tip_textarea .send_msg .form-control{
+	margin-top:0px;
+}
+.new_lender .mar30{
+	margin:0px 30px;
+}
+
+.updoc_sec .form-control{
+	width:100%;
+	float:left;
+}
+.updoc_sec label{
+	width:100%;
+	float:left;
+}
+.updoc_sec  .fileUpload {
+ 
+  height: 35px;
+background-color:#fff;
+border:1px solid #ddd;
+  width: 53px;
+  text-align:center;
+  padding:2px;
+  margin-top:0px;
+  border-radius:0px 3px 3px 0px;
+}
+.updocuments .form-control{
+	width:auto;
+	float:left;
+	border-right:0px;
+	background-color:#fff;
+	border-radius:3px 0px 0px 3px;
+}
+
+.updoc_sec  .fileUpload:hover{
+	background-color:#fff;
+}
+
+.top0 .form-control{
+	margin-top:0px;
+}
+.martp20{
+	margin-top:20px;
+}
+.addfee_slidr{
+	width:100%;
+}
+.addfee_slidr .bx-wrapper	{width:100%;
+
+} 
+.addfee_slidr .bx-viewport .slide{width:100%  !important;
+height:350px;
+} 
+.addfee_slidr .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+  bottom: 0;
+  right: 5px;
+  top: 98px;
+  width: auto;
+}
+.addfee_slidr .bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline;
+}
+.addfee_slidr .bx-wrapper .bx-pager.bx-default-pager a {
+  border-radius: 15px;
+  height: 15px;
+  margin: 10px 5px;
+  width: 15px;
+ 
+  background-color: #fff;
+  border: 1px solid #626262;
+}
+.addfee_slidr .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #E35C25 none repeat scroll 0 0 !important;
+   border: 1px solid #E35C25 ;
+}
+.addfee_slidr .bx-wrapper .bx-viewport {
+  
+  border: 0px solid transparent;
+  box-shadow: none;
+  left: 0;
+ 
+}
+.smal_info {
+  background-color: #eb9f1b;
+  border-radius: 5px;
+  float: left;
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 7px;
+}
+.infinty {
+  background-color:#70bc50;
+  border-radius: 5px;
+  float: left;
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.blnk_info{
+	background-color:#ee280d;
+	
+  border-radius: 5px;
+  float: left;
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 7px;
+}
+.addfee_slidr .icheckbox_square-orange {
+vertical-align:top;
+}
+.reassign_table td{
+	font-size:14px;
+}
+.addfee_slidr .table tr th:first-child{
+	padding-left:0px;
+}
+.addfee_slidr .table tr td:first-child{
+	padding-left:0px;
+}
+#Fees .table tr th:first-child{
+	padding-left:0px;
+}
+#Fees .table tr td:first-child{
+	padding-left:0px;
+}
+.reassign_table .com_admin_btns {
+  font-size: 14px;
+  padding: 4px 27px;
+}
+.reassign_table td a:hover{
+	color:#fff !important;
+}
+.re_dv .modal-dialog {
+  margin: 73px auto;
+  width: 610px;
+}
+.reassign_table .form-control{
+	margin-top:0px;
+	height:44px;
+	
+}
+.reassign_table  .bootstrap-select{
+	width:100%;
+	margin-bottom:20px;
+}
+.re_dv .btm_btns{
+	margin:20px 0px;
+}
+.re_dv .modal-footer{
+	padding:0px;
+}
+.re_dv .modal-content {
+
+  padding-bottom: 0;
+}
+ .confirm_dv{
+	border-top:0px;}
+.loan_prog .table tr th{
+	padding-left:15px;
+	padding-right:15px;
+	
+}	
+
+ .modal .mCSB_scrollTools  .mCSB_dragger_bar {
+  background-color: rgba(234, 96, 34, 0.75);
+ 
+}
+ .modal  .mCSB_scrollTools .mCSB_draggerRail {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal .mCSB_scrollTools {
+  opacity: 1;
+}
+.modal .mCSB_dragger_bar {
+ background-color: rgba(234, 96, 34, 0.75);
+
+}
+#Adddocumnts .general_dv {
+	height: auto;
+}
+
+.new_lender .modal-footer {
+  border-top: 0px solid #e5e5e5;
+  padding: 20px 0px;
+  text-align: center;
+  clear:both;
+}
+
+.com_ryt_dv .cncel_btn{
+	background-color:#b6b6b6;
+	margin-left:10px;
+}
+.com_ryt_dv .cncel_btn:hover{
+	opacity:0.8;
+	background-color:#b6b6b6;
+}
+.new_profile .table tr td:first-child{
+	padding-left:0px;
+	width:261px;
+}
+.new_profile .table tr th:first-child{
+	padding-left:0px;
+}
+
+  .up_arws  span{
+    float: left;
+    padding-top: 0px;
+	padding-right:20px;
+	color:#70bc50;
+	background:url(../images/downarw.png) no-repeat;
+	background-position:right ;
+
+ }
+   .up_arws  span.active{
+   	background:url(../images/uparw.png) no-repeat;
+	background-position:right ;
+	color:#fe0000;
+ }.lender .wid50{
+	 width:100px;
+ }
+ .lender .table td:last-child{
+	 padding-left:0px;
+	 width:100px;
+ }
+ 
+ .up_arws a {
+  color: #70bc50 !important;
+  text-decoration:underline;
+}
+/*
+.admin_drpdown span{
+float:right;
+}*/
+.admin_drpdown .dropdown-menu{
+	background-color:#191c23;
+	color:#fff;
+	width:100%;
+	padding:0px;
+	
+}
+.admin_drpdown .dropdown-menu > li > a {
+  color: #fff;
+  font-size: 13px;
+  padding: 6px 48px;
+}
+.admin_drpdown .dropdown-menu > li a:hover{
+	background-color:#E85E24;
+	color:#fff;
+
+}
+.admin_drpdown .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: #E85E24;
+  color: #fff;
+  text-decoration: none;
+  box-shadow:none;
+}
+
+.admin_drpdown .caret{
+	opacity:0
+}
+.admin_drpdown .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+ 
+  box-shadow:none;
+}
+.upimgae_btn{
+	margin-top:20px;
+}
+.upimgae_btn .fileUpload {
+  background-color: #70bc50;
+  border: medium none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  height: 40px;
+  margin: 0;
+  overflow: hidden;
+  padding: 8px;
+  position: relative;
+  width: 131px;
+}
+.upimgae_btn .fileUpload:hover{
+	  opacity:0.8
+}
+.upimgae_btn .fileUpload input.upload {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+}
+.res_fields .form-group {
+ 
+  width: 100% ;
+}
+.statelicensedv .btn.btn-lg.active.btn-primary {
+  background:#e85e24 none repeat scroll 0 0;
+  border: 1px solid transparent;
+  box-shadow:none;
+}
+.statelicensedv .btn:active, .btn.active{
+  
+  box-shadow: none;
+  border:1px solid #ccc;
+  background:none;
+}
+.statelicensedv .btn.btn-lg {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #ccc;
+  margin-left:0px;
+}
+.statelicensedv .table td:last-child{
+	text-align:center;
+}
+.statelicensedv .btn-lg, .btn-group-lg > .btn {
+ 
+  font-size: 14px;
+ 
+  padding: 6px 9px;
+}
+ .btm_btns .cncel_btn{
+	background-color:#b6b6b6;
+	margin-left:10px;
+}
+ .btm_btns .cncel_btn:hover{
+	opacity:0.8;
+		background-color:#b6b6b6;
+	
+}
+.modal-footer{
+	 padding: 20px 30px;
+	text-align:center;
+	border-top:0px;
+}
+.statelicensedv .modal-body{
+	height:300px;
+}
+
+.loan_prog .sec-col{
+	background:rgba(217,217,217,0.5);
+}
+
+.loan_prog .nxt-col{	background:rgba(239,239,239,0.5);
+}
+.loan_edit .table tr th {
+  font-size: 14px;
+  padding: 10px;
+  border-top:0px;
+  font-weight:400;
+  color:#626262;
+}
+.loan_edit .bak_clr{
+background-color:#efefef;
+text-align:center;
+border-right:5px solid #FFF;
+width:90px;
+}
+.loan_edit .outerr{
+  background: #b5b4b4 none repeat scroll 0 0;
+    border-radius: 6px;
+    color: #000;
+    margin: 0px;
+    padding: 6px;
+	overflow:hidden;
+	width:90px;    
+}
+.width_fix{
+	width:100px;
+	display:inline-block;
+}
+ .monthlycap1 .outerr{
+	 width:90px;
+ }
+ .monthlycap1 .bak_clr{
+	  width:90px;
+ }
+
+ .fixedrate1 .bak_clr{
+	  width:90px;
+ }
+   .fixedrate1 .outerr{
+	 width:100%;
+ }
+
+.loan_edit .form-control{
+	background-color:#fff;
+}
+.loan_edit .table tr td {
+	padding:5px 10px;
+} 
+.loan_edit  .spn_lft{
+	  float: left;
+    padding-left: 6px;
+}
+.loan_edit  .spn_ryt{
+	  float: right;
+    padding-right: 6px;
+}
+.loan_edit .table td:nth-child(8){
+	text-align:center
+}
+.loan_edit .table td:last-child{
+	text-align:center
+}
+.loan_edit .table th:nth-child(8),th:nth-child(9){
+	text-align:center;
+	
+}
+.loan_edit  .width_td{
+	width:50px;
+}
+.loan_edit .checkbox label{
+	width:48px;
+}
+.loan_edit .span_clr a {
+  color: #e95e24;
+  font-size: 14px;
+  padding-left: 12px;
+  text-decoration: underline;
+}
+.aag-new_price .upimgae_btn .fileUpload {
+ 
+  width: 236px;
+  text-align: center;
+}
+.aag-new_price .records_btn {
+	float:left;
+	 width: 236px;
+	    background-color: #a8a8a8;
+    color: #fff !important;
+    font-size: 17px;
+
+}
+.aag-new_price .table tr td .records_btn:hover{
+	opacity:0.8;
+}
+.aag-new_price .table tr td{
+	padding-left:0px;
+	
+}
+.aag-new_price .table tr td:last-child{
+	padding:5px 0px;
+}
+.loan_edit .table tr .pdng_ryt{
+	padding-right:0px;
+	font-size:18px;
+}
+.loan_edit .chk_ryt{
+	float:right;
+}
+.loan_edit .chk_ryt label{
+	width:auto;
+	margin-top:-13px;
+}
+.loan_edit .chk_ryt .icheckbox_square-orange {
+ 
+  margin-right: 13px;
+}
+.aag-new_price small{
+	padding-left:8px;
+}
+.fixed_rate tr th{
+	text-align:center;
+}
+.loan_edit .checkbox{
+	text-align:center;
+}
+.fixed_rate .bak_clr {
+  background-color: #efefef;
+  border-right: 5px solid #fff;
+  text-align: center;
+  width: 70px;
+}
+.fixed_rate .wdth{
+	width:100px;
+	text-align:center;
+}
+.residual_income .form-group {
+  margin-bottom: 8px;
+  width: 100%;
+}
+.residual_income .cus_wid{
+	width:19.8%;
+	float:left;
+
+}
+.residual_income label {
+  color: #626262;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 3px;
+  text-align: center;
+  width: 100%;
+}
+.residual_income .form-control{
+	text-align:center;
+	padding-left:15px;
+}
+.res_fields .form-group {
+ 
+  width: 100% !important;
+
+}
+.send_popup_spc .form-control{
+	margin-top:0px;
+
+}
+.send_popup_spc .mrgnTop .showUsersList .bootstrap-select{
+	margin-top:8px;
+	width:100%;
+}
+.send_popup_spc .form-group {
+	margin-bottom:0px;
+}
+
+
+.pass_fields .form-group {
+	width:50% !important;
+}
+.pass_fields .form-group:last-child {
+	margin-bottom:0px;
+}
+.margtp10{
+	margin-top:10px;
+	
+
+}
+.new_profile .table tbody td {
+ 
+  padding: 10px 15px;
+
+}
+.btn_width{
+	width:120px;
+}
+
+
+.icons_cls {
+	position:relative;
+	
+}
+
+ .cus_pro_td{
+	width:50px;
+	text-align:center !important;
+	position:relative;
+}
+.cus_pro_td .icons_cls {
+  background-color: #000;
+  color: #fff;
+  display: none;
+  font-size: 13px;
+left:none;
+  padding: 6px;
+  position: absolute;
+  top: -15px;
+  right: 0;
+  margin-left:0px;
+  width:100%;
+}
+.cus_pro_td a:hover .icons_cls {
+	display:block;
+}
+.general_dv .cus_pro_td .icons_cls {
+ 
+  left: none;
+  width: 70px;
+}
+.role_manage .table tr td:first-child {
+  width: 320px;
+}
+
+.rolenew .form-group {
+width:100%;
+  margin-bottom: 5px;
+  position:relative;
+	
+}
+.rolenew .form-control {
+  background-color: #fff;
+  
+}
+.rolenew .btn.btn-default {
+  height: 40px;
+  padding: 9px;
+}
+.rolenew .icheckbox_square-orange {
+ margin-right: 10px;
+}
+.rolenew .input-group-btn .btn.btn-default:hover,.input-group-btn .btn.btn-default:focus ,.input-group-btn .btn.btn-default:active{
+	background-color:#E85E24;
+	border-color:#E85E24;
+	color:#fff;
+}
+
+.state_licensing .table tr td:first-child{
+	
+	width:200px;
+}
+
+.notice_dv .nav-tabs{
+	background-color:#DCDBDA;
+	padding:0px 30px;
+}
+.notice_dv .popup_inner{
+	padding-left:30px;
+	padding-right:30px;
+}
+.notice_dv .popup_inner label{
+	padding-left:0px;
+	padding-right:0px;
+	
+}
+.ckeditor {
+	margin-bottom:0px;
+}
+.notice_dv .martp5{
+	margin-top:5px ;
+}
+.notice_dv .width_td{width:50px;
+}
+.wid-100{
+	width:200px;
+}
+.table_wdth{
+	width:550px;
+}
+
+.notice_dv .add_fee .table tr td:first-child{
+
+	padding:0px 0px;
+}
+.add_fee .table tr td{
+		padding:0px 0px;
+}
+.des-td{
+	width:400px;
+}
+.addfee_popup .general_dv{
+	height:400px;
+}
+.addfee_popup .marbtm20{
+	margin-bottom:20px;
+}
+.mortgagee .modal-dialog {
+
+  width: 900px;
+}
+.ad_cntcts .modal-dialog {
+
+  width: 900px;
+}
+.flt_ryt{
+	float:right;
+}
+.mortgagee .padd_lft{
+	padding-left:10px;
+}
+.mortgagee .padd_ryt{
+	padding-right:10px;
+}
+.mortgagee  .form-group .control-label{
+	padding-left:0px;
+}
+.mortgagee .form-group .form-control{
+	padding-right:0px;
+}
+.states_sel_all h4 .checkbox{
+	float:right;
+}
+.states_sel_all h4 .checkbox .icheckbox_square-orange{
+	margin-right:10px;
+}
+.mar-20{
+	margin-top:20px;
+}
+.reassign_table .input-group-addon{
+	background-color:#fff;
+}
+.re_dv h4{
+	border-bottom:0px;
+}
+.licensing_branch .modal-dialog {
+
+  width: 600px;
+}
+.licensing_branch .table td img{
+	margin-right:15px;
+}
+
+.view_branch .modal-header {
+
+  padding: 30px 30px;
+  background-color: #e35b24;
+}
+.view_branch .modal-title {
+  border-bottom: medium none;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  padding-bottom: 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+.view_branch .head_row {
+/*  border-right: 1px solid #ccc;*/
+  min-height: 170px;
+  padding-left:0px;
+}
+.view_brnch_modal h4{  border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    padding-left: 0;}
+.view_branch .head_row:last-child{
+	border-right:0px;
+}
+.view_branch .head_row  h5{font-size: 14px;
+    font-weight: 400;}
+.view_branch .head_row  p{font-size: 14px;
+    font-weight: 300;}
+.view_branch .modal-body{
+	padding:20px 20px;
+	}
+	
+.lookup {
+  position: absolute;
+  right: 22px;
+  top: 6px;
+}
+	.branch_dv .btm_btns{
+		margin-bottom:20px;
+		margin-top:20px;
+	}
+	.branch_dv .modal-header {
+ 
+  padding: 20px 30px;
+}
+	.updte_license .btm_btns{
+		margin-bottom:20px;
+	
+	}
+	.updte_license .modal-header {
+ 
+  padding: 20px 30px;
+}
+.docdv .width50{
+	width:50px;
+}
+	
+
+.new_lender .marg_5 {
+  margin-top: 10px;
+}
+.adres_tab .table td {
+	padding: 6px 30px;
+}
+.adres_tab  .form-control,.gnrl .form-control ,.feedv .form-control,.ad_cntcts .form-control ,.updoc_sec .form-control  ,.hiring_popups .form-control{
+	background-color:#fff;
+} 
+.adres_tab .mailing_address {
+	margin-bottom:10px;
+}
+.popup_inner .form-control {
+  background-color: #fff;
+  
+}
+.title_head .general_dv h4{
+	padding-bottom:40px;
+	
+
+}
+.title_head .title_spn1 {
+  float: left;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+ .fee_title .title_spn1{
+	float:left;
+	margin-top:12px;
+}
+
+.new_licensee .form-group {
+  margin-bottom: 8px;
+  width: 100%;
+}
+.new_licensee .form-group:last-child{
+	margin-bottom:0px;
+}
+.new_comp_admin .general_dv label {
+  font-size: 14px;
+  font-weight: 400;
+}
+.new_comp_admin .general_dv h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 0;
+  padding-bottom: 9px;
+}
+.new_comp_admin .new_btn {
+  position: absolute;
+  right: 1px;
+  top: 9px;
+}
+
+.mrg_btn h5 {
+  margin-top: 9px;
+  min-height: 50px;
+}
+.margns {
+  color: #626262;
+  float: left;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.setting_dv .wdth{
+	width:200px;
+}
+.setting_dv {
+  width: 700px;
+}
+.setting_dv .btm_btns button[type="submit"] {
+ 
+  width: 100%;
+}
+.softinputs .form-group {
+ 
+  margin-bottom: 8px;
+  
+ 
+}
+.softinputs .form-group label {
+	text-align:left;
+}
+.ad_cntcts .popup_inner h4{
+	padding-bottom:10px;
+}
+
+
+.setfeedefaults_table .table .wideth{
+	width:250px;
+	padding-left:0px;
+}
+.send_popup_spc .inpt_search .form-control{
+	margin-top:0px;
+}
+.inpt_search .search_dv{
+	padding-left:0px;
+	padding-right:0px;
+}
+/*------Employee Management------*/
+.usecompanyacc .checkbox label{
+font-size:14px;
+font-weight:300;
+}
+.employe_link {
+  margin-top: 0px;
+}
+.employe_li {
+	margin:0px 0px 20px 0px ;
+	padding:0px;
+	overflow:hidden;
+	
+}
+.employe_link .employe_li li{
+	float:left;
+	list-style-type:none;
+}
+.employe_link .employe_li li a {
+  border-right: 1px solid #ccc;
+  color: #626262;
+  padding: 5px 15px;
+}
+.employe_link .employe_li li:hover a{
+	color:#E85E24;
+}
+.employe_link .employe_li li:last-child a{
+	border-right:0px;
+}
+.employe_link .employe_li li.active a{
+	color:#E95E25;
+}
+
+.imgup .fileUpload{
+	width:100%;
+	
+	margin-top:10px;
+	
+	 
+		  font-size: 16px;
+		  border-radius:3px;
+}
+.fileUpload:hover{
+	   background-color: #70bc50
+}
+
+
+.send_msg .bdy_dte .form-control {
+  margin-top: 0;
+  border-radius: 4px 0px 0px 4px !important;
+  height: 35px;
+}
+.send_msg  .bdy_dte {
+	padding-left:15px;
+	padding-right:15px;
+	
+}
+.age_span{
+	    background-color: #e35b24;
+    border-radius: 4px;
+    color: #fff;
+    padding: 6px 8px;
+    position: absolute;
+    right: -33px;
+    top: 2px;
+	width:33px;
+	text-align:center;
+}
+.sufx_dv label{  float: left;
+    padding-right: 15px;
+	width:100px;
+}
+.sufx_dv .bootstrap-select  {
+	
+	height:35px;
+	width:50% !important;
+}
+.sufx_dv .btn.dropdown-toggle.btn-default:hover, .send_msg .btn.dropdown-toggle.btn-default:focus, .send_msg .btn.dropdown-toggle.btn-default:active {
+
+  height: 35px;
+ 
+}
+.sufx_dv  .btn.dropdown-toggle.btn-default {
+  
+  height: 35px;
+}
+ .sufx_dv .bootstrap-select .dropdown-menu li{
+	 	 display:block;
+		 float:none;
+ }
+ 
+ .sufx_dv .bootstrap-select .dropdown-menu li a{
+	 border-right:0;
+	 display:block;
+	 width:100%;
+ }
+.emp_sec .form-group label {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: right;
+  width: 100px;
+}
+.cntactdetail_sec .form-group label {
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 6px;
+}
+.employe_img img{
+	width:100%;
+}
+.employe_link .form-group{
+	margin-bottom:10px;
+}
+.yrs_small {
+  position: absolute;
+  right: -74px;
+  top: 12px;
+}
+.childrn_sec{
+	margin-bottom:10px;
+}
+	 .childrn_sec img {
+		 
+		 margin-top:0px;
+		 
+	 }
+.imgup{margin-bottom:20px;
+}
+
+
+.childrn_sec .age_span {
+  background-color: #e35b24;
+  border-radius: 4px;
+  color: #fff;
+  padding: 6px 8px;
+  position: relative;
+  right: 0;
+  top: 7px;
+  width:33px;
+  text-align:center
+}
+.childrn_sec label {
+  font-size: 14px;
+  margin-bottom: 12px;
+  width: 100%;
+  font-weight: 300;
+}
+ .childrn_sec .form-control{
+	 margin-top:0px;
+	 height:44px;
+ }
+.trshicon .mar13{
+	  margin-top:5px;
+  }
+.new_lender .employe_link h4 {
+overflow:hidden;
+  padding-bottom: 6px;
+ 
+}
+.new_lender .emp_title h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+.emp_title .title_head .title_spn1 {
+  float: left;
+  margin-top: 16px;
+}
+
+/*.childrn_sec .dropdown-menu li a{
+	 border-right:0;
+	 display:block;
+	 width:100%;
+ }
+   .childrn_sec .dropdown-menu li{
+	 	 display:block;
+		 float:none;
+ }
+*/ .childrn_sec .bdy_dte .form-control{
+	 background-color:#fff;
+ }
+ .employe_link .tip_textarea textarea{
+	 background-color:#fff
+ }
+.employe_link .tip_textarea label {
+  color: #626262;
+  font-size: 16px;
+  font-weight: 400;
+}
+	 	
+.cntactdetail_sec {
+  margin: 20px  0px;
+}
+
+.new_lender .cntactdetail_sec h4 {
+  border-bottom: 0 none;
+  font-size: 16px;
+  font-weight: 400;
+}
+.ryt_maindv {
+  background-color: #edeef2;
+  overflow: hidden;
+  padding: 80px 20px 20px 68px;
+  top: 107px;
+  width: 100%;
+  z-index: -1;
+}         
+.branch_assignment ul{
+	margin:0px;
+	padding:0px;
+}
+.branch_assignment ul li {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  list-style-type: none;
+  width: 100%;
+}
+.branch_assignment .com_admin_btns{
+	font-size:16px;
+}
+.new_lender .branch_assignment h5 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-top: 0;
+  width: 100%;
+}
+.social_sites_table .dtepick .form-control{
+	margin-top:0px;
+	height:35px;
+	
+}
+.social_sites_table .dtepick .form-group{
+	margin-bottom:0px;
+}
+.social_sites_table .table tbody td {
+  font-size: 14px;
+  padding: 3px 10px;
+  font-weight:300;
+}
+.social_sites_table .table tbody th {
+	font-size:16px;
+	font-weight:400;
+}
+.social_sites_table .dtepick {
+	width:300px;
+}
+.social_sites_table .table tbody td:first-child {
+	width:131px;
+	text-align:left;
+}
+.employe_link  .lft30 {
+	padding-left:30px !important;
+}
+
+.hiring_decision .com_admin_btns{
+	font-size:14px;
+	font-weight:400;
+	width:100%;
+}
+.hiring_decision .td-col-2 .dtepick {
+  width: 150px;
+  float:left;
+}
+.hiring_decision .icheckbox_square-orange {
+  background-position: 0 0;
+  margin-right: 0px;
+}
+	.hiring_decision .td-col-2 .dtepick {
+ margin-left:10px;
+}
+
+.hiring_decision  .table tbody td:first-child {
+	width: 250px;
+}
+.hiring_decision .td-col-2 .checkbox{
+	float:left;
+
+}
+.hiring_decision .table tbody td {
+  color: #000;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 2px 0;
+  vertical-align: middle;
+}
+.hiring_decision .table .inner_th th:last-child {
+	padding-left:0px;
+}
+.hiring_decision .table .inner_th th {
+  font-size: 15px;
+  padding: 24px 0px 8px 0px;
+  font-weight:400;
+}
+
+ .employe_link h4 {
+	 font-weight:400;
+	 font-size:17px;
+ }
+
+.hiring_decision .table .trbrdr > th {
+  border-top: 1px solid transparent;
+  padding: 30px 0 8px;
+vertical-align:middle;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.hiring_decision .table td a {
+	color:#fff
+  
+}
+.hiring_decision .table td:hover a {
+	color:#fff
+}
+.hiring_decision {
+  overflow: visible;
+}
+
+.hiring_decision .form-group {
+  margin-bottom: 0;
+  width: 100%;
+}
+.excption_chk .checkbox label {
+  float: left;
+  margin-top: 0;
+  text-align: left;
+  width: auto;
+}
+.excption_chk .com_admin_btns{
+	width:180px;
+	  padding: 7px 15px;
+}
+.excption_chk .icheckbox_square-orange {
+ 
+  margin-right: 10px;
+}
+
+.btn_bck{
+	background-color:#ccc;
+}
+.btn_bck:hover{
+	background-color:#ccc;
+	opacity:0.8
+}
+.file_view img{
+	margin-top:-4px;
+}
+.trbrdr{
+	border-bottom:1px solid #ccc;
+}
+.oficial_decision .checkbox label{
+	margin-right:20px;
+	
+}
+
+.oficial_decision .checkbox .icheckbox_square-orange{
+		margin-right:10px;
+}
+.excption_chk {
+  width: auto;
+}
+
+
+.hiring_decision .trbrdr .checkbox{
+		text-align:center;
+	}
+
+.hiring_decision .check_mar .checkbox{
+		text-align:center;
+	}
+
+
+.hiring_popups textarea {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  height: 266px;
+  line-height: 27px;
+  overflow: hidden;
+  padding: 15px;
+  resize: none;
+  width: 100%;
+  margin-bottom:0px;
+}
+.hiring_popups label {
+  font-size: 14px;
+  font-weight: 300;
+}
+.hiring_popups h5 {
+  font-size: 14px;
+  font-weight: 400;
+
+}
+.editqualificate label{
+	padding-top:0px;
+}
+.hiring_popups h2{
+	 margin-top: 0px;
+  margin-bottom: 21px;
+}
+.hiring_popups h2 a {
+  color: #e85e24;
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 300;
+}
+.hiring_popups .modal-footer {
+ 
+  padding: 20px 30px;
+ 
+}
+.hiring_popups .modal-dialog{
+	width:800px;
+}
+.adres_tab textarea{
+	background-color:#fff;
+}
+.noticediv .table td:first-child{
+width:200px;
+}
+.docu .name-width{
+	width:300px;
+}
+
+.adnote .btmmar  ,.addoc .btmmar ,.newtip .btmmar ,.createnotice .btmmar ,.ad_cntcts .btmmar {
+	margin-bottom:20px;
+}
+.updoc_sec .form_fields .form-group:last-child{
+	margin-bottom:20px;
+}
+.ad_cntcts .btmmar{
+	margin-top:20px;
+}
+.btm_btns input[type=button]{
+	background-color: #e35b24;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  padding: 8px 18px;
+  text-align: center;
+  text-transform: capitalize;
+  border:none;
+  width: 105px;
+}
+.createnotice .btm_btns button[type="submit"] {
+ 
+  width: auto;
+}
+
+.cust_padd .form-group label{
+	padding-top:0px;
+}
+.btm_btns input[type=button]:hover{
+	background-color:#70BC50;
+}
+.btm_btns input[type=submit]{
+	background-color: #e35b24;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  padding: 8px 18px;
+  text-align: center;
+  text-transform: capitalize;
+  border:none;
+  width: 105px;
+}
+.btm_btns input[type=button]:hover{
+	background-color:#70BC50;
+}
+.btm_btns input[type=submit]:hover{
+	background-color:#70BC50;
+}
+
+
+.employe_link  .form-control{
+	background-color:#fff;
+	height:35px;
+}
+.drag_img {
+  position: absolute;
+  right: 24px;
+  top: 4px;
+}
+.hiring_popups .form-control{
+	background-color:#fff;
+}
+.hiring_popups .form-group{
+	width:100%;
+	margin-bottom:8px;
+}
+.del_icon img{
+	margin-top:4px;
+}
+.hiring_popups small {
+  color: #626262;
+  float: left;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 6px;
+  text-align: center;
+  width: 100%;
+}
+	
+	
+	
+.hiring_popups .modal-header{
+	padding:10px 30px;
+}
+	
+	
+.title_head .emp_title .title_spn1 {
+  float: left;
+  margin-top: 16px;
+  margin-left: 0;
+}	
+.view-notes p {
+  font-weight: 300;
+  line-height: 27px;
+  margin-top: 27px;
+}
+.view-notes > h4 {
+  font-size: 19px;
+  font-weight: 400;
+}
+.view-notes h6 {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.onbord_tabl .wdth_50{
+	width:50px;
+}
+.onbord_tabl .wdth_110{
+	width:110px;
+}
+
+.emp_acc p{
+margin-top:9px;
+float:left;
+
+color:#626262;
+}
+.emp_acc a{
+	color:#E85E24;
+	text-decoration:underline;
+	ont-size: 14px;
+  font-weight: 300;
+}
+.emp_acc label {
+  float: left;
+  font-size: 14px;
+  font-weight: 300;
+}
+.emp_acc span{
+	margin-left:15px;
+}
+.emp_acc .res_pdng span {
+  margin-left: 0px;
+}
+.emp_acc .icheckbox_square-orange {
+  
+  margin-right: 10px;
+}
+.emp_acc .chnge{
+	  margin-top: 0px;
+    position: absolute;
+}
+.loan_orgin {
+  left: -100px;
+  position: absolute;
+}
+.role_cls label{
+	width:50px;
+}
+.emp_acc .ad_licnse{
+	  margin-top: 8px;
+    position: absolute;
+}
+
+.log_details label {
+  width: 100px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.log_details {
+	background-color:#f3f3f3;
+	padding:10px 30px;
+	margin-top:20px;
+}
+.log_details  .anchr a{
+   border: 1px solid #e85e24;
+    border-radius: 3px;
+    color: #e85e24;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 7px 19px;
+	margin-right:15px;
+	text-decoration:none;
+}
+.edit_login a {
+  color: #e85e24;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 15px;
+  text-decoration: underline;
+}
+.using4 a{
+	color:#3d9202;
+	font-weight:400;
+	text-decoration:none;
+	  position: absolute;
+    right: -76px;
+    top: 18px;
+}
+ .employe_link .mbtm20{
+	margin-bottom:20px;
+}
+.log_details p{
+	margin-bottom:15px;
+}
+
+.martp20{
+	magin-top:20px;
+}
+.emp_account1 .acount1{
+	
+  margin-top: 8px;
+  position: absolute;
+  right: -187px;
+
+}
+.emp_account1 .using4 a {
+ 
+  top: 18px;
+  width: 249px;
+}
+.search_dv .btn {
+  height: 35px;
+  padding: 0px 12px;
+}
+.search_dv .fa{
+	color:#a09d9d;
+}
+.search_dv .input-group-btn > .btn:hover, .input-group-btn > .btn:focus, .input-group-btn > .btn:active {
+  background-color: #fff;
+border-color:#ccc;
+}
+.inpt_search .search_dv .input-group .input-group-btn > .btn:hover, .input-group .input-group-btn > .btn:focus, .input-group .input-group-btn > .btn:active {
+  background-color: #fff !important;
+border-color:#ccc;   
+}
+.roles_asigns .form-group:last-child{
+	margin-bottom:20px;
+}
+.roles_asigns .form-group label{
+	font-size:14px;
+	font-weight:300;
+}
+.employe_link .employeeuser-license .table tr th, .employe_link .employeeuser-license .table tr td{
+	padding:4px 8px 4px 0px ;
+}
+.lender_access{
+	overflow-x:visible;
+}
+
+.employe_link .employeeuser-license .table tr th{
+
+	font-size:16px;
+	font-weight:400;
+}
+.employeeuser-license .form-control {
+  height: 35px;
+}
+
+.NMLSinputfield .form-group{
+	width:40%;
+}
+.NMLSinputfield  .checkbox{
+	overflow:hidden;
+}
+.NMLSinputfield .icheckbox_square-orange {
+  
+  margin-right: 10px;
+}
+.NMLSinputfield small{
+	
+	margin-left:15px;}
+	
+.employeeuser-license .checkbox label{
+	
+ 
+  padding-top: 5px;
+
+}
+.employeeuser-license .thwidth{
+	width:300px;
+}
+.employeeuser-license .chkwidth{
+	width:50px;
+}
+.AddStateLicense{   float: left;
+    margin-left: 15px;
+    margin-top: 19px;}
+.usecompanyacc .checkbox{
+	    float: left;
+    margin-left: 40px;
+    margin-top: 3px;
+    width: 400px;
+}
+.usecompanyacc .icheckbox_square-orange {
+ margin-right:15px;
+}
+.usecompanyacc .AddStateLicense{
+	margin-top:0px;
+}
+.trash_popup h5{
+	font-size:21px;
+	color:#626262;
+	font-weight:400;
+}
+.trash_popup{
+	text-align:center;
+}
+.trash_popup h2{
+		font-size:26px;
+	color:#3e3f3f;
+	margin-top:10px;
+}
+.trash_popup p{
+		font-size:15px;
+	color:#626262;
+	margin-bottom:0px;
+}
+.dlt_popups .modal-footer {
+  border-top: 0 none;
+  padding: 20px 30px;
+  text-align: center;
+}
+.loan_prog .lender .table tr td{
+	padding-left:15px;
+}
+.aag-new_price .table .paddng40{
+	padding-top:40px;
+}
+.aag-new_price .table tr th img {
+  position: absolute;
+  width: 160px;
+}
+.anualcap .tdwidth{
+	width:100px;
+}
+.anualcap .tdinputwidth{
+	width:220px;
+	position:relative;
+}
+.anualcap .perctge {
+  position: absolute;
+  right: -4px;
+  top: 15px;
+}
+. annualcapedit .modal-dialog {
+
+  width: 900px;
+}
+.anualcap .table tr td, .anualcap .table tr th {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+.anualcap .table tr th {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 17px 15px;
+}
+
+.anualcap .checkbox{
+	text-align:center;
+}
+.anualcap .com_admin_btns {
+	float:left;
+	    padding: 7px 10px;
+		 font-size: 15px;
+    font-weight: 400;
+}
+.anualcap .form-control ,.annualcapedit .form-control {
+	background-color:#fff;
+}
+.anualcap  .table tr .paddtp{
+	padding-top:20px;
+}
+.anualcap {
+  background-color: #efefef;
+  margin-bottom: 0px;
+  min-height: 489px;
+  margin-top: 00px;
+}
+.annualcapedit .pdng_ryt15{
+	padding-right:15px;
+	padding-left:0px;
+}
+.annualcapedit .form-group {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.annualcapedit  .bootstrap-select {
+	width:100%;
+}
+.ratecap  .bootstrap-select {
+	width:50%;
+}
+.ratecap label{
+	text-align:right;
+}
+.manage_licsn_tabl textarea{
+	margin-bottom:0px;
+}
+.cusmarg {
+	width:49%;padding:0px;float:left;
+}
+.annualcapedit .mag20{
+	margin-top:20px;
+}
+.cusmarg .form-control{
+	margin:10px 0px;
+}
+.mrg_btn .com_admin_btns {
+  
+  font-size: 15px;
+    font-weight: 400;
+  float:right;
+      padding: 7px 10px;
+	  margin-top:8px;
+ 
+}
+.cusmarg1 {
+	width:49%;padding:0px;float:right;
+}
+.cusmarg1 .form-control{
+	margin:10px 0px;
+}
+.cusmarg .form-control:first-child{
+	margin-top:0px;
+}
+.cusmarg1 .form-control:first-child{
+	margin-top:0px;
+}
+.annualcapedit h4{
+	border-bottom:0px;
+}
+
+.annualcapedit small{
+	font-size:17px;
+	font-weight:300;
+	color:#3e3f3f;
+	  left: 31px;
+    position: absolute;
+    top: 51px;
+}
+.fixedrate .modal-dialog {
+
+  width: 700px;
+}
+.fixedrate .form-group{
+	width:100%;
+}
+
+.fixedrate .table tr .dollr_td{
+	text-align:right;
+	padding:0px;
+}
+.fixedrate .perctge {
+  position: absolute;
+  right: 17px;
+  top: 16px;
+}
+.fixedrate .bps1 {
+  position: absolute;
+  right: 6px;
+  top: 16px;
+}
+.bps_sel{
+	  position: absolute;
+    right: 74px;
+    top: 11px;
+    width: 17%;
+}
+.fixedrate  .form-control {
+
+  width: 140px;
+}
+.fixedrate .Dolrsign {
+  left: -2px;
+  position: absolute;
+  top: 16px;
+}
+.fixedrate .table tr th {
+  
+  padding: 12px 15px;
+}
+.fixed_pro_rate .form-control{
+	width:100%;
+}
+.loan_edit .com_admin_btns{
+	margin-right:15px;
+}
+.fixed_rate {
+	width:700px;
+}
+.createnewpricerate .modal-dialog {
+ 
+  width: 600px;
+}
+.createnewpricerate p{
+	font-size:18px;
+	color:#3e3f3f
+	font-weight:300;
+	line-height:30px;
+	margin-bottom:0px;
+}
+.retirement_solutions .loan_edit .outerr {
+  width: 120px;
+} 
+.retirement_solutions  .loan_edit .bak_clr {
+   width: 120px;
+}
+.retirement_solutions .loan_edit .width_td {
+  width: 100px;
+}
+
+.solutions{
+	width:180px;
+}
+.loan-fees .title_table{
+	   border-bottom: 2px solid #e85e24;
+    color: #626262;
+	   font-size: 20px;
+   margin-top: 0;
+    padding-bottom: 17px;
+}
+.loan-fees .table tr td .form-control{
+	background-color:#fefcfc;
+	width:120px;
+	
+}
+.loan-fees .seccol{
+	width:220px;
+	
+}
+.loan-fees .table tr td , .loan-fees .table tr th{
+	padding-left:0px;
+}
+.loan-fees .wid100{
+	width:100px;
+}
+.loan-fees .table .wid400{
+	width:400px;
+	padding-left:15px;
+}
+.loan-fees .table .padng_ryt{
+	padding-right:15px;
+}
+.bc_clr {
+  background-color: #edeef2;
+  box-shadow: 0px -1px 2px #ccc;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  margin:  auto;
+}
+.loan-fees .table tr .dropdown-toggle{
+	width:200px;
+}
+.loan-fees .seccol span{ 
+    float: left;
+    width: 250px;}
+
+.loan-fees .table .seccol span .form-control{
+	width:100%;
+}
+.loan-fees .table tr .paddtop27{
+	padding-top:27px;
+}
+
+.loan-fees .checkbox {
+  text-align:center;
+  
+}
+.titletopback{
+	background-color:#d9d9d9;
+}
+.st_default{
+	background-color: #f3f3f3;
+    color: #626262;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 10px;
+    padding: 6px
+}
+
+.loan-fees .table tr th:first-child{
+	padding-left:15px;
+}
+.close_shape{
+	 position: absolute;
+    right: 10px;
+    top: 25px;
+    width: 17px;
+}
+
+.newtip .btm_btns a {
+  width: auto;
+}
+
+
+.lookup-branch .checkbox{  float: left;
+    margin-right: 10px;
+    margin-top: -8px;
+    width: auto;}
+	
+.rolenew .iradio_square-green {
+margin-right:10px;
+} 
+.rolenew .form-group > p {
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 15px;
+  padding-bottom: 8px;
+}
+.records_sec .form-group > p {
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 15px;
+  padding-bottom: 8px;
+}
+.records_sec .form-group ul{
+	margin:20px 0 0;
+	padding:0px;
+}
+.records_sec .form-group li {
+  display: inline;
+  float: left;
+  margin-bottom: 2px;
+  margin-left: 15px;
+}
+.records_sec .form-group li:first-child {
+	margin-left:0px;
+}
+.rolenew .iradio_square-orange {
+  background-position: -120px 0;
+  margin-right: 5px;
+}
+.sve_width{
+	 float: right;
+    margin-top: 0;
+    width: 50px;}
+	.new_role_popup .modal-dialog{
+		width:600px;
+	}
+	.records_sec .form-group li .form-control{
+		width:320px;
+		font-size:11px;
+	}
+	.records_sec .form-group li p {
+  margin-top: 10px;
+
+  text-align: right;
+}
+	.records_sec .form-group li p a{
+	color:#626262;
+	text-decoration:underline;
+	}
+	.records_sec .form-group li p img {
+		margin-top:-5px;
+	}
+		.records_sec .form-group li img{
+			margin-top:6px;
+		}
+		.records_sec ul.output_dv{
+			margin-top:0px;
+		}
+		.output_dv .svelink {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.output_dv .fxed_txtwidth p{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+		.new_role_popup .rolenew .input-group-btn .btn.btn-default:hover, .input-group-btn .btn.btn-default:focus{
+	background-color:transparent;
+	border-color:#ccc;
+	color:#000
+
+}
+	.records_sec .com_admin_btns {
+ 
+  padding: 7px 15px;
+ 
+}
+	.records_sec .hding_span {
+ 
+  top: 0;
+}
+.role_manage .panel_outer td, .role_manage .panelinner-inner td{
+	font-size:17px;
+	
+
+}
+.role_manage .fntsyz td{
+	font-size:17px;
+	
+}
+.role_manage .table .panelinner-inner .pad_lft{
+	padding-left:45px ;
+}	
+.role_manage .table .panelinner-subinner .pad_lft{
+	padding-left:55px ;
+}
+.role_manage .table tr td {
+  background-color: #f3f3f3;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 4px 15px;
+}
+.role_manage .table .panelinner-subinner .pad_lft{
+	padding-left:55px ;
+}
+.role_manage .table .panelinner-subinner .pad_lft1{
+	padding-left:65px ;
+}
+.role_manage .table .flip td {
+  background: #fff none repeat scroll 0 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+.role_manage  .table {
+  margin-bottom: 0;
+ 
+}
+.role_manage  .table tr th{
+	font-size:16px;
+	font-weight:400;
+}
+
+.emp_acc .form-group{
+	margin-bottom:0px;
+}
+
+.mainrole{
+	
+	margin:0px;
+	padding: 0px;
+}
+
+.subrole{
+	background-color:#F3F3F3;
+	margin:0px;
+	padding:0px 0px 0px 10px;margin-top:0px;
+	
+} .mart0p5{
+	margin-top:5px;
+	padding-top:10px;
+}
+.subrole_inner {
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0 0 10px 10px;
+}
+.mainrole li, .subrole li, .subrole_inner li{
+	list-style-type:none;
+	padding:0px 0px;
+	clear:both;
+	font-size:14px;
+	line-height:26px;
+	font-weight:500
+}
+.sectrole span a{
+	float:right;
+	color:#e35b24;
+	font-size:13px;
+	font-weight:400;
+	padding-right:15px;
+	text-decoration:underline;
+}
+.assignrole_popup .modal-dialog{
+	width:930px;
+}
+.role_sec .form-group {
+  margin-right: 15px;
+  width:38%;
+}
+.role_sec .btm_btns {
+  background-color: #e35b24;
+  border: medium none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 18px;
+  padding: 9px 29px;
+  position: absolute;
+  top: 38px;
+}
+.role_sec .btm_btns:hover{    background-color: #70BC50;
+   
+}
+.topbottom_caret .fa {
+  background-color: #e35b24;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 26px;
+  padding: 4px 10px;
+  margin-bottom:10px;
+}
+.role_sec .send_msg label {
+  font-weight: 400;
+  margin-top: 0;
+  position: absolute;
+  top: -26px;
+}
+.role_sec .bootstrap-select {
+	margin-top:13px;
+}
+
+
+.cust_top{
+	margin-top:20px;
+}
+.cust_top {
+  margin-top: 16px;
+}
+.sectrole  h5{
+	font-size:16px;
+}
+.sectrole .fntset {
+	font-size:16px;
+	font-weight:400;
+}
+ .mart0p5{
+	margin-top:5px;
+	padding-top:10px;
+}
+.role_sec .form-control{
+	background-color:#fff;
+	height:44px;
+	margin-top:13px;
+}
+.new_cls .form-control{
+		margin-top:5px;
+}
+.new_cls .bootstrap-select {
+	margin-top:5px;
+}
+.res_caret{
+	display:none;
+}
+
+.lender_access .table tr td{
+	background-color:#fff;
+}
+
+.family_info textarea {
+	height:100px;
+	
+	
+}
+.hiring_decision .table tr .td-col-2{
+	width:220px;
+}
+.hiring_decision .table .width_50 {
+  text-align: center;
+  width: 50px;
+}
+
+
+
+.res_td img{
+	margin-top:-13px;
+}
+
+.adrequirement {
+  margin-top: 10%;
+  width: 460px;
+}
+.adrequirement .form-group {
+  width:100%;
+}
+.adrequirement .form-group:last-child{
+	margin-bottom:0px;
+}
+/*------Employee Management------*/
+
+
+
+.edit_menu .bootstrap-select {
+	width:100%;
+}
+.edit_menu .form-control{
+	height:44px;
+	margin-top:0px;
+}
+.edit_menu .table tr th{
+	padding-left:17px;
+}
+.edit_menu .table tr .wide{
+	width:360px;
+}
+
+.employe_img{
+	width:130px;
+}
+
+
+.employe_link  .btn.dropdown-toggle.btn-default:hover, .send_msg .btn.dropdown-toggle.btn-default:focus, .send_msg .btn.dropdown-toggle.btn-default:active {
+
+  height: 35px;
+ 
+}
+.employe_link   .btn.dropdown-toggle.btn-default {
+  
+  height: 35px;
+}
+ .head_title { 
+float: left;
+    margin-top: 13px;
+}
+.roles_asigns .search_dv .input-group-btn .btn.btn-default:active {
+  background-color: transparent !important;
+  border-color: #d6d5d5;
+  color: #fff;
+}
+#send_msg_icn{
+	clear:both;
+	margin-top:10px;
+	}
+
+/*-------------------compny_admin-------------------------*/
+.logout_Setting .control-label {
+  padding: 8px 0 5px;
+  width: 235px;
+}
+.logout_Setting span {
+  font-size: 14px;
+  font-weight: 300;
+  position: absolute;
+  right: -65px;
+  top: 7px;
+}
+.logout_Setting .icheckbox_square-orange {
+margin-right:10px;
+}
+.upload_table .form-group label {padding-top: 18px;
+    width: 230px;
+	padding-right:10px;
+}
+.upload_table{
+	margin-bottom:10px;
+}
+.social_sites_table .checkbox{
+	text-align:left;
+	padding-left:15px;
+	width:50px;
+}
+.social_sites_table .chcktd{
+	width:50px;
+}
+
+
+
+.NMLSinputfield label  {
+ 
+  font-size:14px;
+  font-weight:300;
+}
+.hiring_decision .fileupicon{
+  background-color: #fff;
+ padding:0px;
+ width:50px;
+ 
+}
+.hiring_decision .fileUpload {
+   
+    margin-top: 5px;}
+
+.smll_txt1{
+	margin-bottom:20px;
+	text-align:left;
+}
+
+.stats-reports .table tr td {
+   
+    padding: 8px 18px !important;
+}
+.view_rec .table tr.rw_back th{
+text-align:center;
+}
+
+
+.view_rec .recrds_view  tr.rec_cls td:first-child{
+padding-left:15px;
+
+}
+.upload_date .view_rec{
+	padding-left:15px;
+}
+.lndr_contact_sec .form-group:last-child{
+	margin-bottom:0px;
+}
+
+
+
+
+
+
+
+
+
+
+.ryt_maindv {
+  background-color: #edeef2;
+ overflow:visible;
+  padding: 100px 20px 20px 68px;
+  top: 107px;
+  width: 100%;
+  z-index: -1;
+}
+.left_sidebar .icons_dv {
+  background-color: #191c23;
+  height: 100%;
+  width: 48px;
+}
+.left_sidebar .icons_dv ul{
+	margin:0px;
+	padding:0px;
+	
+	
+}
+.left_sidebar .icons_dv ul li {
+  list-style-type: none;
+  float: left;
+  width: 100%;
+}
+.left_sidebar .icons_dv ul li a {
+	list-style-type:none;
+	padding:0px 0px; 
+	color:#fff;
+	float:left;
+	margin-bottom:0px;
+	width:100%;
+	background-color:#191c23;
+	position:relative
+	
+}
+.left_sidebar .icons_dv ul li a:hover{
+		background-color:#414653;
+}
+.left_sidebar .icons_dv .fa {
+  padding: 10px;
+float:right;
+  height: 40px;
+  width: 47px;
+}
+.angle_icon{
+	float: right;
+	width: 100%;
+ 
+  text-align: center;
+}
+.icon_spc {
+  float: left;
+  width: 47px;
+
+  text-align: center;
+}
+.menu_name {
+  background-color: #191c23;
+ 
+  left: 40px;
+  padding: 8.8px 5px;
+  position: absolute;
+  top: 0;
+  width: 163px;
+}
+.left_imgs{
+	height:38px;
+	
+}
+.left_imgs img {
+  margin-top: 11px;
+  width: 16px;
+  height: 16px;
+}
+.send_msg_icon{
+	margin-top:10px;
+}
+.left_sidebar .icons_dv ul li a:hover .menu_name {
+	display:block;}
+
+.left_sidebar .fa {
+	font-size: 18px;
+	margin-right: 0px;
+}
+.icons_dv a:hover .menu_name {
+	background-color:#414653;
+	color:#fff;
+}
+
+.left_sidebar {
+  float: left;
+  height: 100%;
+  position: fixed;
+  top: 80px;
+  width: 232px;
+  z-index: 999;
+}
+
+.icons_dv_open{
+	width:100%;
+	transition: all 3s ease-in-out 0.5s;
+	}
+.icons_dv_close{
+	width:48px;
+	transition: all 3s ease-in-out 0.5s;
+	}
+.icon_right{
+	float:right;
+	text-align:center;
+}
+
+
+
+
+.icon_spc img{
+	
+    margin-top: 11px;
+    width: 18px;
+}
+.send_icon_hyt{
+	height:38px;
+}
+.send_msg_icon .snd_msg {
+  background-color: #e85e24;
+  border-radius: 3px;
+  color: #fff;
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px 10px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+}
+.send_msg_icon .snd_msg img {
+  margin-right: 3px;
+  width:16px;
+}
+
+.flt_lft{
+	float:left;
+}
+.dropdwn-icon {
+  position: absolute;
+  right: 19px;
+  top: 14px;
+}
+
+
+
+ .icons_dv .admin_drpdown .dropdown-menu > li > a {
+  color: #fff;
+  font-size: 13px;
+  padding: 6px 48px;
+}
+ .icons_dv .admin_drpdown .dropdown-menu{
+	 position:relative;
+ }
+
+
+
+
+
+
+
+
+.res_toggle {
+  background-color: #e85e24;
+  color: #fff;
+  display: none;
+  margin: auto;
+  padding: 6px 11px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 13px;
+  width: 45px;
+}
+.res_toggle .fa {
+  font-size: 17px;
+}
+
+
+.softInp h3 {
+  margin-top: 15px !important;
+}
+
+.employe_link .selct_new .bootstrap-select  {
+	
+	height:35px;
+	width:100% !important;
+
+}
+.trsh img{
+	position:absolute;
+	top:55px;
+}
+.trsh a{
+	position:relative
+}
+.homeadres_btn{position: absolute;
+    right: 98px
+}
+.social_sites_table {
+  overflow: visible;
+  width: 950px;
+}
+.human_notes .width{
+	width:500px;
+}
+.terminate_policy{
+	width:600px;
+}
+.onbord_tabl .td-col-2 .checkbox{
+margin-right:0px;
+}
+.soft_license_table .first_td{
+	width:200px;
+	
+}
+.soft_license_table .nthtd{
+	width:100px;
+}
+.create_new_Profile{
+	width:600px;
+}
+.lookup1 .form-control {
+	 padding-right: 44px;
+}
+.lender_tabble .wdth_cls{
+	width:100px;
+}
+.lender_tabble .table tr td {
+  text-align:left;
+}
+	.contact_popup{
+		width:900px;
+	}
+	.marg_bot1{
+		margin-bottom:16px;
+	}
+.modal .trend_data {
+  width: 1000px;
+}
+.trend_data .graphsec1 .highcharts-container{
+	width:99% !important;
+}
+
+.graphsec1{ height:250px;
+border:1px solid #ddd;
+}
+.trend_data label {
+  padding-top: 8px;
+}
+
+
+.profileview {
+  background-color: #f6f6f6;
+  border: 2px solid #999;
+  border-radius: 4px;
+  display: none;
+  height: auto;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 20px;
+  width: 400px;
+  z-index: 9;
+}
+.viewpro-dv {
+	overflow:visible;
+}
+.profileview img {
+	width:150px;
+	float:left;
+
+}
+.profileview ul {
+  margin: 0;
+  padding: 0 0 0 165px;
+}
+.profileview ul li {
+  list-style-type: none;
+  line-height: 25px;
+  color: #626262;
+ 
+}
+.cus_pro_td a:hover .profileview {
+	display:block;
+}
+.profileview .snd_msg {
+ 
+  border: medium none;
+ 
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px 15px;
+  
+  width:100%;
+}
+.shw{
+	display:block;
+}
+.hde{
+	display:none;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+.date_check_list ul{
+	margin:0px;
+	padding:0px;
+}
+.date_check_list ul li{
+	list-style-type:none;
+}
+.res_td{
+	width:120px;
+	text-align:center;
+}
+.res_td td{
+	text-align:center;
+}
+.hiring_decision .table tr td.oficial_decision {
+	width:100%;
+}
+.mayproced .icheckbox_square-orange{
+	margin-right:10px;
+}
+.statetable{
+	overflow:visible;
+}
+.stateview {
+  top: 39px;
+  width: 551px;
+}
+ .stateview img{
+	    margin-right: 15px;
+    width: 100px;
+ }
+.stateview ul {
+  float: left;
+  padding-left: 0;
+  width: 230px;
+
+}
+.stateview ul li {
+  list-style-type: none;
+  line-height: 25px;
+  color: #646464;
+  padding:5px 0px;
+ 
+}
+.stateview ul li:first-child{
+	padding-top:0px;
+}
+.stateview .snd_msg {
+ 
+  margin-top: 10px;
+  width: 100%;
+  float: right;
+}
+
+.cus_pro_td .stateview h3 {
+  border-bottom: 1px solid #626262;
+ 
+  margin-top: 10px ;
+  padding-bottom: 10px;
+}
+.cus_pro_td .new_ul {
+  float: right;
+  width: 162px;
+}
+.new_ul span {
+	float:right;
+}
+.cus_pro_td .new_ul li {
+	padding:0px ;
+}
+.cus_pro_td .new_ul li:first-child{
+	padding-top:0px;
+}
+.bs-searchbox .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+
+  color: #fff !important;
+
+ 
+}
+.inner .selected.active a{
+	background-color:#ccc !important
+}
+.inner .active a{
+	background-color:#ccc !important
+}
+
+.trend_data .modal-body{
+	min-height:300px;
+}
+#tips .message p{
+	margin-bottom:0px;
+}
+.new_lender .updocuments   {
+	width:50%;
+}
+.new_lender .doc_check{
+	width:50%;
+	margin-top:27px;
+}
+
+.new_lender .doc_check .checkbox {
+  
+  float: left;
+  width: 50%;
+  margin-top: 0px;
+}
+.new_lender .doc_check .icheckbox_square-orange {margin-right:10px;
+
+}
+.modal .daytrend{
+	width: 700px;
+}
+.popbox {
+  float: left;
+  padding-left: 124px;
+  margin-bottom: 21px;
+  width:100%;
+  padding-right:0px;
+}
+.popbox span img {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 95px;
+  z-index: 1;
+}
+
+
+.popbox p {
+  background-color: #ccccf0;
+  border: 2px solid #7474b5;
+  min-height: 82px;
+  padding: 29px 20px;
+  border-radius:10px;
+}
+.point_arw{
+	   left: 78px;
+    position: absolute;
+    right: 0;
+    top: 34px;
+}
+
+
+.modal .view_note_popup{
+	width:500px;
+}
+.view_note_popup h4{
+	font-weight:300;
+	font-size:16px;
+}
+
+.view_note_popup h5 , .view_note_popup h6{
+	font-weight:300;
+	font-size:14px;
+}
+.oficial_decision .iradio_square-orange {
+ 
+  margin-right: 10px;
+}
+.chk_tooltip{  
+display:none;
+	}
+.checkbox:hover .chk_tooltip {
+		  background-color: #eee;
+    left: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+	display:block;
+	width:600px;
+	z-index:9;
+ 
+}
+.chk_tip .control-label{
+	width:130px;
+}
+
+
+@media(min-width:1921px) {
+.hiring_decision .com_admin_btns {
+  width: 211px;
+  float: left;
+}
+	.fixed_rate .wdth{
+	width:100px;
+	text-align:left;
+}
+	.edit_menu .edit_table{
+	width:1000px;
+}
+	.setfeedefaults_table{
+		width:1300px;
+	}
+	.emp_sec .form-group label{
+		width:150px;
+	}
+	
+
+.excption_chk .com_admin_btns {
+ 
+  font-size: 14px;
+}
+	
+	
+	.states_checkbox .icheckbox_square-orange {
+
+  margin-right: 20px;
+}
+		.ad_cntcts .form_fields  label{
+		width:100px
+	}
+		.mortgagee .form_fields  label{
+		width:104px
+	}
+	.createnotice .form_fields  label{
+		width:100px
+	}
+	
+	.new_btn .com_admin_btns {
+  font-size: 14px;
+  
+}
+.feedv .general_dv label {
+  
+  width: 212px;
+}
+	.hdr{
+		width:1900px
+	}
+	 .Middle_website{  margin: auto;
+    width: 1900px;}
+	
+	.show_filter label{
+		width:170px;
+	}
+	.sep_div .checkbox{
+		text-align:left;
+	}
+	.new_profile td:first-child {
+ 
+  width: 290px;
+}
+/*	.manage_licsn_tabl .table tbody td:first-child {
+ 
+  width: 290px;
+}*/
+/*.lender .table tbody td:first-child {
+ 
+  width: 290px;
+}*/
+
+.create_license .form-group label:first-child {
+  width: 160px;
+}
+.state_dv label:first-child {
+
+  width: 170px;
+}
+.reports_stats label:first-child {
+  width: 114px;
+}
+.high_res .table tbody td:first-child {
+ 
+  width: 200px;
+}
+
+.high_res .form-group label:first-child {
+ 
+  width:300px;
+}
+.soft_feature td:first-child {
+ 
+  width: 450px ;
+} 
+.license_user .table tbody td:first-child {
+
+  width:calc();
+}
+ .up_res .form-group label:first-child  {
+ 
+  width: 270px;
+}
+	.new_profile .table tbody td:first-child {
+ 
+  width: 290px;
+}
+.role_manage .table tr td:first-child{
+	width:320px;
+}
+.addoc .form_fields  label{
+		width:100%
+	}
+	.statlicensedv .table tr td:first-child{
+		width:200px;
+
+	}
+		.statlicensedv .form_fields label {
+  width: 200px;
+}
+.branch_dv .form_fields label{
+	width:150px;
+
+}
+.hiring_decision .table tr .td-col-2 {
+  width: 350px;
+}
+	.cntactdetail_sec .form-group label {
+  width: 200px;
+}
+ .contct-information  .form-group label {
+  width: 130px;
+}
+.hiring_decision .table tr .res_td{
+	width:200px;
+}
+.edit_menu .table{
+		width:1300px;
+	}
+
+
+.roles_asigns .form-group label{
+	width:200px;
+}
+
+	.softinputs .form-group label {
+	text-align:left;
+	width:300px;
+}
+.residual_income .form-group label {
+	text-align:center;
+}
+.ediregions .table tbody td:first-child {
+	text-align:left;
+	width:150px;
+}
+.social_sites_table .table tbody td:first-child {
+	
+	text-align:left;
+}
+	.adres_tab .table tbody td:first-child {
+  width: 140px;
+}
+.adres_tab .mailing_address label{
+	  width: 140px;
+}
+.agg_log0 {
+	width:150px;
+}
+.width_res_reso{
+	width:1000px;
+}
+.edit_menu .edit_table .table tbody tr th.w-200 {
+	width:200px;
+}    
+	.social_sites_table .table tbody td:first-child {
+  text-align: left;
+  width:136px;
+}
+.hiring_decision .td-col-2 .dtepick {
+ 
+  width: 288px;
+}
+.employeeuser-license .checkbox{
+	text-align:center;
+}
+.ryt_maindv {
+ 
+  overflow: visible;
+ 
+}	
+.monthlycap1{
+	max-width:1100px;
+ }
+ .check_cls{
+		text-align:left;
+	}
+	.loan_edit .table th:nth-child(8), th:nth-child(9) {
+  text-align: left;
+}
+}
+
+@media (min-width:1400px) and (max-width:1920px) {
+	.state_dv label:first-child {
+
+  width: 170px;
+}
+.hiring_decision .com_admin_btns {
+  width: 211px;
+  float: left;
+}
+	.check_cls{
+		text-align:center;
+	}
+.monthlycap1{
+	max-width:1100px;
+ }
+	.ryt_maindv {
+ 
+  overflow: visible;
+ 
+}	
+	.hiring_decision .td-col-2 .dtepick {
+ 
+  width: 288px;
+}
+	.social_sites_table .table tbody td:first-child {
+  text-align: left;
+  width: 136x;
+}
+
+.setfeedefaults_table{
+		width:1300px;
+	}
+.width_res_reso{
+	width:1000px;
+}
+	.retirement_solutions .loan_edit .bak_clr {
+  width: 200px;
+}
+.retirement_solutions .loan_edit .outerr {
+  width: 100%;
+}
+
+		.emp_sec .form-group label{
+		width:100px;
+	}
+	
+		
+	.updte_license .form_fields label {
+  width:auto;
+}
+		.statlicensedv .form_fields label {
+  width: 200px;
+}
+	
+	.addfee_popup .form_fields label {
+  width: auto;
+}
+	.mailing_address .control-label {
+width:140px;
+}
+	.adres_tab .table tbody td:first-child {
+  width: 140px;
+}
+	.feedv .general_dv label {
+  
+  width: 212px;
+}
+	.ad_cntcts .form_fields  label{
+		width:100px
+	}
+		.mortgagee .form_fields  label{
+		width:134px
+	}
+	.createnotice .form_fields  label{
+		width:100px
+	}
+	.addoc .form_fields  label{
+		width:100%;
+	}
+	.new_btn .com_admin_btns {
+  font-size: 14px;
+  
+}
+	
+
+.edit_license .form_fields label{
+	width:unset
+}
+/*
+.form_fields label {
+  width: 311px;
+} */
+/*.res_fields label {
+  width:160px;
+}*/
+.res_menu .table td:first-child{
+	width:250px;
+
+}
+.res_inputs .table td:first-child{
+	width:250px;
+}
+/*.high_res .table tbody td:first-child {
+ 
+  width: 350px;
+}*/
+.loan_edit .width_td {
+  width:100px;
+}
+.loan_edit .bak_clr {
+  background-color: #efefef;
+  border-right: 5px solid #fff;
+  text-align: center;
+  width: 100px;
+}
+	.loan_edit .outerr {
+ 
+  width: 100px;
+}
+.monthlycap1 .bak_clr {
+  
+  width: 100px;
+}
+	.monthlycap1 .outerr {
+ 
+  width: 100px;
+}
+ .fixedrate1 .bak_clr {
+  
+  width: 70px;
+}
+ .fixedrate1 .outerr {
+ 
+  width: 100%;
+}
+.fixed_rate{
+	width:800px;
+}
+	.NMLSinputfield .form-group  label {
+  width: auto;
+}
+	.NMLSinputfield .checkbox  label {
+  width: auto;
+}
+.annualcapedit .form_fields label {
+	width:auto;
+  
+}
+.mag20 .form-group  label  {
+  width: 150px;
+}
+.loan-fees .checkbox label {
+  width: auto;
+}
+.loan-fees .table .wid400 {
+  padding-left: 15px;
+  width: auto;
+}
+.loan-fees .table .padng_ryt{
+	padding-right:0px;
+	text-align:center
+}
+.new_width label {
+  width: unset;
+}
+.records_sec .form-group li p a {
+ 
+  font-size: 12px;
+ 
+}
+.records_sec .form-group label{
+	width:unset;
+}
+	.rolenew .new_width{
+		width:100%
+	}
+	.rolenew .res_nw_wdth{
+		width:100%;
+	}
+	
+.res_nw_wdth .checkbox label{
+	width:unset
+}
+	.hiring_decision .table tr .check_mar .checkbox label  {
+		width:auto;
+  
+}.hiring_decision .table tr .checkbox label{
+	width:auto;
+}
+.hiring_decision .table .inner_th th:last-child {
+  padding-left: 0;
+}
+.excption_chk {
+  width: auto;
+}
+
+.hiring_decision .td-col-2 .dtepick {
+  width: 254px;
+}
+.hiring_decision .table tr .td-col-2 {
+  width: 350px;
+}
+	.cntactdetail_sec .form-group label {
+  width: 200px;
+}
+ .contct-information  .form-group label {
+  width: 130px;
+}
+.hiring_decision .table tr .res_td{
+	width:200px;
+}
+
+.hiring_decision .table .inner_th th:last-child {
+  padding-left: 0;
+}
+.hiring_decision .table tr td.oficial_decision {
+	width:100%;
+}
+
+	.softinputs .form-group label {
+	text-align:left;
+	width:300px;
+}
+.ediregions .table tbody td:first-child {
+  text-align: left;
+  width: 150px;
+}
+.social_sites_table .table tbody td:first-child {
+	
+	text-align:left;
+}
+.agg_log0 {
+	width:150px;
+}
+		.edit_menu .edit_table{
+	width:1000px;
+} 
+.edit_menu .edit_table .table tbody tr th.w-200 {
+	width:200px;
+} 
+
+
+/*.loan-fees .table tr td:nth-child(2){
+	text-align:center;
+}*/
+}
+@media (max-width:1700px) {
+.form_fields  .setfeedefaults_table{
+	width:100%;
+}
+}
+@media(max-width:1700px) {
+	.hiring_decision .com_admin_btns {
+ 
+  width: 200px;
+}
+.onbord_tabl .com_admin_btns {
+ 
+  width: 100%;
+}
+}
+@media (min-width:1200px) and (max-width:1370px) {
+	.small_box h6 {
+  font-size: 12px;
+ 
+}
+}
+@media(max-width:1350px) {
+.hiring_decision .com_admin_btns {
+  
+  width: 200px;
+}
+.onbord_tabl .com_admin_btns {
+  
+  width: 150px;
+}
+.onbord_tabl .wdth_110{
+	text-align:left;
+}
+
+	.loan_edit .outerr {
+ 
+  width: 150px;
+}
+	
+.graph_sec h4 {
+	font-size: 14px;
+}
+}
+
+@media(max-width:1250px) {
+	
+	.aag-new_price .table tr th img {
+  margin-top: 30px;
+
+  width: 107px;
+}
+	
+	.residual_income label {
+  
+  font-size: 13px;
+ 
+}
+	.residual_income .cus_wid {
+ 
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 19.8%;
+}
+
+
+	.reports_stats label{
+	padding-left:5px;
+	padding-right:5px;
+	font-size:14px;
+}
+	.form_fields .btns {
+	font-size: 16px;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+}
+.btns_back {
+  margin-left: 0;
+}
+.graph_sec h4 {
+	font-size: 13px;
+}
+.small_box span {
+ 
+  margin-bottom: 10px;
+
+  width: 100%;
+}
+.residual_income .form-group {
+ 
+min-height:auto;
+margin-bottom:15px;
+
+}
+.hiringtdwidth .table tr td{
+width:100%;
+}
+.hiring_decision .td-col-2 .dtepick {
+  float: left;
+  width: 160px;
+}
+.hiring_decision .td-col-2  .form-group {
+ 
+  width: 163px;
+}
+	
+}
+
+@media (min-width:991px) and (max-width:1200px) {
+
+
+	.new_lender .form-group {
+		margin-bottom:15px;
+	}
+
+.new_lender .general_dv  .form-group {
+	width:100%;
+	margin-bottom:10px;
+}
+	.res_fields .form-group {
+	min-height:60px;
+	}
+.reports_stats label {
+  font-size: 12px;
+
+}	
+.form_fields .form-group {
+	float: left;
+	margin-bottom: 0;
+
+	padding: 0 13px;
+	width: 50%;
+}
+.show_filter .form-group{
+	width:100% ;
+	}
+	.show_filter label{
+	width:100% ;
+	}
+	.show_filter .bootstrap-select{
+	width:100% ;
+	}
+		.residual_income .form-group{
+	width:100%;
+	
+}
+.residual_income .form-group {
+ 
+min-height:auto;
+margin-bottom:10px;
+
+}
+
+}
+@media (max-width:1099px){
+	.trend_data .bootstrap-select{
+		width:100%;
+	}
+	.trend_data label {
+ 
+  width: 100%;
+}
+	.trend_data .send_msg .form-control {
+  margin-top: 0;
+}
+	.graphsec1 {
+
+  overflow: hidden;
+}
+	.modal .trend_data {
+  width: 100%;
+}
+	th.td-col-2 .checkbox label{
+		padding-top:0px;
+	}
+
+	.emp_sec , .childrn_sec { margin-top:30px;
+	padding-left:0px;
+	padding-right:0px;
+
+}
+.emp_sec .form-group label { 
+ 
+  text-align: left;
+
+}
+.employe_link .form-group {
+
+  padding: 0;
+  margin-bottom:10px;
+
+}
+
+}
+@media(max-width:1200px) {
+	.hiring_decision .table .trbrdr > th {
+  padding: 50px 0 8px;
+  font-size: 15px;
+}
+
+	.log_details .anchr a {
+ 
+  float: left;
+  font-size: 14px;
+  
+  margin-top: 10px;
+  padding: 7px;
+  
+}
+.using4 a {
+ 
+  right: -126px;
+
+}
+	.role_sec .btm_btns {
+ 
+  position: relative;
+  top: 15px;
+}
+	.role_sec .form-group{
+		width:100%;
+		padding-left:0px;
+	}
+	
+	
+
+.hiring_decision .table tr .td-col-2{
+	width:200px;
+}
+.excption_chk .checkbox label {
+  width: unset;
+}
+	
+
+	.childrn_sec  label{
+	margin-bottom:8px;
+
+}
+	.childrn_sec img {
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+	
+	
+
+	.outer_padding .res_btn {
+  padding-top: 25px;
+}
+
+
+	.res_btn{
+		margin-top:30px;
+	}
+	.dash_table .licsnc_btn {
+  
+  top: 4px;
+ 
+}
+	.width19:first-child {
+  padding-left: 6px;
+}
+.width19:last-child {
+  padding-right: 6px;
+}
+
+
+.graph_sec h4 {
+	font-size: 16px;
+}
+.login_frm img {
+	width: 215px;
+}
+.signupfrm img {
+	left: -10px;
+	width: 280px;
+}
+.width19 {
+	width: 50% ;
+}
+.graph_sec {
+	margin-bottom: 12px;
+}
+.login-dv {
+	padding: 45px 34px 90px;
+}
+	.branch_dv .modal-dialog {
+  width: 100%;
+  padding:15px;
+}
+.statelicensedv .form_fields .form-group {
+  
+  min-height: 46px;
+ 
+}
+	.hiring_popups .form-group {
+  width: 100%;
+  margin-bottom:10px;
+}
+	.fixed_pro_rate .form-group{
+		width:100%;
+		margin-bottom:15px;
+	}
+	.mag20 .form-group{
+		margin-bottom:15px;
+		
+	}
+	.rate_sheet {
+  float: left;
+  text-align: center;
+  width: 244px;
+  padding-left: 20px;
+}
+.cust_top {
+  margin-top: 52px;
+}
+.employee_roles{
+		width:100%;
+	}
+	.employee_roles label{
+		width:150px;
+	}
+	.rolenew .new_width{
+		width:100%
+	}
+	.rolenew .res_nw_wdth{
+		width:100%;
+	}
+	.records_sec .form-group li p {
+ 
+ 
+  width: 90px;
+  font-size: 11px;
+}
+.res_nw_wdth .checkbox label{
+	width:unset
+}
+.NMLSinputfield .checkbox{
+	padding-left:15px;
+}
+.NMLSinputfield .form-group {
+
+  padding: 0;
+
+
+}
+
+.log_details label {
+  width: 100%;
+  
+} 
+		.hiring_decision .td-col-2 .dtepick {
+  float: left;
+  width: 160px;
+}
+.hiring_decision .td-col-2  .form-group {
+ 
+  width: 163px;
+} 
+.hiring_decision .table tr .td-col-2 {
+  display: inline-block;
+}
+.onbord_tabl tr .td-col-2 {
+  width: 300px !important;
+}
+.excption_chk {
+  width:auto;
+  display: inline-block;
+}
+.hiring_decision .com_admin_btns {
+  font-size: 14px;
+}
+.trbrdr .checkbox .icheckbox_square-orange {
+	margin-top:0px;
+}
+
+}
+@media(max-width:991px) {
+
+	.hiring_decision .fileUpload {
+  margin-top: 5px;
+  width: 126px;
+}
+	.mayproced label{
+		width:120px;
+	}
+	.hiring_decision .table tbody td {
+ 
+  font-size: 13px;
+}
+	.hiring_decision .table .trbrdr > th {
+  font-size: 13px; 
+}
+	.hiring_decision .table .inner_th th {
+  font-size: 13px;
+ 
+}
+.hiring_decision .td-col-2 .dtepick {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+	.lender_access{
+	overflow-x:visible;
+}
+	.ad-branch11 .bootstrap-select{
+	width:100%;
+}
+.ad-branch11 .send_msg .btn.dropdown-toggle.btn-default {
+ 
+  margin-top: 0;
+}
+	.social_sites_table {
+  overflow-x: auto;
+  width: 100%;
+}
+	.hiring_decision {
+  overflow-x: auto;
+}
+	
+	.excption_chk .com_admin_btns {
+  margin-top: -7px;
+  padding: 8px 15px;
+  width: 180px;
+}
+.hiring_decision .table tr .td-col-2 .icheckbox_square-orange {
+  margin-top: 0px;
+}
+.hiring_decision .icheckbox_square-orange {
+  margin-top: -14px;
+}
+
+	.log_details p{
+		text-align:left;
+	}
+.log_details .anchr a {
+  float: left;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 7px 19px;
+  text-align: center;
+  width: 50%;
+}
+	
+	.using4 a {
+ 
+ 
+  right: 37px;
+  
+  top: 44px;
+}
+	
+	.role_sec .form-control {
+  
+  margin-top:0px;
+}
+	.role_sec .bootstrap-select {
+ margin-top:0px;
+  width: 100%;
+}
+	.cust_spcleft{
+		padding-left:0px;
+	}
+	.cust_spcryt{
+		padding-right:0px;
+	}
+	.topbottom_caret {
+margin-top:25px;
+	}
+	.send_msg .btn.dropdown-toggle.btn-default {
+ 
+  margin-top: 18px;
+}
+.role_sec .send_msg label {
+  font-size: 15px;
+  top: -29px;
+}
+	.topbottom_caret .fa {
+ 
+  font-size: 18px;
+  padding: 3px 7px;
+}
+	
+	.assignrole_popup .modal-dialog{
+	width:100%;
+}
+	
+		
+	.hiring_popups .modal-dialog {
+  width: 100%;
+  padding: 15px;
+}
+.hiring_popups .modal-body {
+
+  padding:0px 20px;
+}
+	
+	.hiring_popups .modal-header {
+  padding: 20px;
+}
+
+
+	
+
+	.region_dv .bootstrap-select{
+		width:100%;
+	}
+	.edit_license .form_fields .form-group {
+min-height: auto;
+
+}
+	.brdr0 {
+  border: medium none !important;
+  margin: 15px 0 9px 0!important;
+}
+	.modal-header {
+
+  padding: 15px 15px 0;
+}
+	.pass_fields .form-group {
+  width: 100%  !important;
+}
+	.edit_license label{
+		width:150px;
+	}
+	.pdng_lft0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.pdng_ryt0 {
+  padding-right: 0;
+    padding-left: 0;
+}
+	.upload_date {
+  font-size: 13px;
+  
+}
+	.res_fields .control-label{
+		padding-left:0px;
+		padding-right:0px;font-size:13px;
+	}
+
+	
+	
+	.new_lender .general_dv {
+  padding: 15px;
+}
+	.new_lender .panel-group {
+		padding:15px;
+	}
+		.new_lender .panel-default > .panel-heading {
+  background-color: #e35b24;
+  border-color: #e35b24;
+  color: #fff;
+}
+		.new_lender .modal-dialog {
+ 
+  width: 100%;
+  padding:20px;
+}
+
+	.new_lender .nav-tabs > li {
+	width:auto;
+  
+}
+	
+	.outer_padding .res_btn	{
+	padding:10px;
+}
+	
+	.tooltp_cls .btn-group {
+ width:400px;
+}
+	.res_spc1{
+	padding-left:0px;
+	padding-right:0px;
+}
+	.new_spn_cls span {
+ display:none;
+}
+	.marryt0{
+		margin-right:10px;
+	}
+	.small_box span {
+  margin-bottom: 0;
+  width: 64px;
+}
+.div_mar .col-md-2 {
+  width: 50%;
+}
+	.dash_table .table tr td {
+ 
+  padding: 10px;
+ 
+}
+	.tabl_mar{
+	 margin: 0 27px;
+}
+	.reports_stats .bootstrap-select{
+		width:100%;
+	}
+	.res_mar{
+		margin: 10px 0px;
+	}
+	.dtepick .res_mar {
+  margin: 0;
+}
+.form_fields .form-group {
+	min-height: 40px;
+	margin-bottom:10px;
+}
+.edit_license .modal-dialog {
+	padding: 15px;
+	width: 100%;
+}
+.passwd_strg {
+	display: none;
+}
+.send_msg .btn.dropdown-toggle.btn-default {
+	margin: 10px 0px;
+}
+.send_msg .form-control {
+	margin-top: 15px;
+}
+.adrs_mail .send_msg .form-control {
+  margin-top: 0;
+}
+.res_cls1 {
+	overflow: hidden;
+}
+.send_msg .modal-content {
+	float: none;
+}
+.send_msg .modal-dialog {
+	padding: 20px;
+	width: 100%;
+}
+.manage_licsn_tabl .form-control {
+	width: 200px;
+}
+.manage_licsn_tabl .textarea{
+	width: 200px;
+}
+.edit_menu .padd_lft {
+  padding-left: 15px!important;
+}
+.nav-tabs > li {
+	width: 100%;
+}
+.form_tab .nav-tabs > li a {
+	padding: 22px 38px;
+	width: 100%;
+}
+.btns_back {
+	margin-left: 0px;
+}
+.form_fields .btns {
+	font-size: 16px;
+	padding: 10px;
+	text-align: center;
+	width: 50%;
+}
+.form_tab .nav-tabs > li a {
+	padding: 22px 38px;
+	box-shadow:0px -1px 2px #ccc inset;
+}
+.form_tab .close_tab i {
+	bottom: auto;
+	padding-top: 3px;
+	right: 5px;
+	top: 0;
+	bottom: 0;
+}
+.form_fields .form-group {
+	width: 100%;
+}
+.logo_new img {
+	margin-top: 23px;
+	width: 325px;
+}
+.logo_dv img {
+	margin-top: 22px;
+	padding-left: 22px;
+	width: 288px;
+}
+.signupfrm h3 {
+	font-size: 23px;
+}
+.signupfrm small {
+	width: 100%;
+	float: left;
+	margin-top: 15px;
+}
+.login_frm img {
+	left: 5px;
+	top: 82px;
+	width: 270px;
+}
+.graph_sec h4 {
+	font-size: 16px;
+}
+		.send_msg .btn.dropdown-toggle.btn-default {
+margin-top:15px;
+margin-bottom:0px;
+}
+.new_lender .send_msg .btn.dropdown-toggle.btn-default {
+ 
+  margin-top: 0;
+}
+.new_lender .general_dv {
+  padding: 15px 0px;
+}
+.new_lender .nav > li > a{
+  font-size: 13px;
+  margin-right: 1px;
+  padding: 11px 14px;
+  box-shadow:0 -1px 2px #ccc inset;
+}
+	.notice_dv .popup_inner{
+		padding:20px 30px 0px;
+	}
+.new_lender .table-responsive {
+
+  margin-bottom: 15px;
+}
+
+
+.res_datepick .form-control{
+		margin-top:0px;
+	}
+	.employe_img img {
+  margin: auto;
+  width: 100%;
+}
+	
+
+.age_span {
+ 
+  right: -45px;
+  
+}
+.send_msg .bdy_dte {
+ 
+  padding-left: 0;
+  padding-right: 0;
+}
+.yrs_small {
+  right: -84px;
+
+}
+.childrn_sec img {
+ 
+  margin-top: 0px;
+}
+.emp_sec label {
+  padding-left: 0;
+}
+
+
+
+	.annualcapedit small {
+
+  left: 33px;
+
+}
+.reso_row {
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.mag20 .form-group{
+		
+		width:50%;
+		
+	}
+	
+	.prog_cate label {
+		padding-top:26px;
+		
+	}
+	.ratecap label{
+		padding-top:10px;
+	}
+		.ratecap label {
+  padding-right: 10px;
+  padding-top: 26px;
+}
+.modal-dialog {
+ 
+  padding: 15px;
+  width: 100%;
+}
+.annualcapedit .pdng_ryt15 {
+	padding-right:0px;
+
+}
+.annualcapedit .modal-header {
+  padding: 15px 30px 0;
+}
+.fixed_pro_rate .form-group{
+	width:100%;
+}
+.anualcap {
+	margin-top:20px;
+}
+.loan_edit .form-control {
+width:150px;
+}
+.records_sec .form-group li .form-control {
+
+  width: 290px;
+}
+.output_dv .svelink {
+ 
+  width: 290px;
+}
+.role_sec .form-control {
+  margin-top: 0;
+}
+.role_sec .btn.dropdown-toggle.btn-default {
+
+  margin-top:0px;
+}
+
+
+.role_sec .btm_btns {
+  margin-bottom: 0;
+}
+.cust_top .btn.dropdown-toggle.btn-default {
+  margin-top: 32px;
+}
+.modal-body {
+  padding: 0 20px; 
+}
+
+.modal-header {
+  padding: 15px 20px 0;
+}
+.modal .modal-body {
+  padding: 20px; 
+}
+.NMLSinputfield{
+	padding-left:15px;
+}
+.NMLSinputfield .form-group {
+
+  padding: 0;
+ 
+}
+.NMLSinputfield .checkbox{
+	padding-left:0px;
+}
+
+	.sufx_dv{
+		position:relative;
+	}
+		.sufx_dv .bootstrap-select{
+			position: absolute;
+		}
+.sufx_dv .btn.dropdown-toggle.btn-default {
+ 
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width:100%
+}
+.grph_dv {
+
+  padding: 5px;
+}
+	.hiring_decision .dtepick .form-control {
+  margin-top: 0;
+}
+}
+@media(max-width:767px) {
+.modal .view_note_popup{
+	width:100%;
+}
+.new_lender .nav-tabs > li {
+  width: 33%;
+}
+	.notice_dv .nav-tabs > li {
+  width: 50%;
+}
+	.trend_data label {
+  padding-top: 0;
+}
+	.trend_data .form-control {
+  margin-top: 0;
+}
+	.trend_data .bootstrap-select {
+  width: 100%;
+}
+	.title_head .title_spn1 
+	{
+		float:none;
+	}
+	.res_width_cls{
+		width:400px;
+	}
+	.contact_popup{
+		width:100%;
+	}
+	.send_msg_icon .snd_msg {
+ 
+  margin-bottom: 10px;
+}
+
+		.left_sidebar .icons_dv {
+  background-color: #191c23;
+  height: 100%;
+  width: 100%;
+}  
+	.employe_img img {
+  margin: auto;
+  width: auto;
+}
+	
+	
+	.loan_orgin {
+  position: absolute;
+  right: 70px;
+}
+	.emp_acc .chnge {
+
+  right: 15px;
+}
+	
+	.res_caret{
+		display:block;
+	}
+	.res_caret .fa-caret-up{ position: absolute;
+    top: -30px;}
+	.main_caret{
+		display:none;
+	}
+	.trms_services .modal-dialog {
+ 
+  width:100%;
+}
+
+	.cust_top {
+  margin-top: 0;
+}
+	.role_sec .btm_btns {
+  margin-bottom: 20px;
+ 
+}
+	.cust_spcleft{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	.cust_spcryt{
+		padding-left:0px;
+		padding-right:0px; 
+	}
+		
+
+
+	.sectrole {
+	margin-top:20px;
+}
+	.topbottom_caret .fa-caret-right { position: absolute;
+    top: -31px;
+	}
+	.topbottom_caret {
+  margin-top: 47px;
+}
+	.role_sec .send_msg label {
+ 
+  top: -10px;
+}
+	.new_role_popup .modal-dialog {
+  width: 100%;
+}
+
+	.rate_sheet {
+		width:400px;
+	}
+	.prog_cate label {
+		padding-top:0px;
+		
+	}
+	.ratecap label {
+
+  padding-top: 0px;}
+	.prog_cate .btn.dropdown-toggle.btn-default {
+
+  margin-top: 0px;
+}
+.ratecap .btn.dropdown-toggle.btn-default {
+
+  margin-top: 0px;
+}
+		.mag20 .form-group{
+		
+		width:100%;
+		
+	}
+
+
+	
+	.annualcapedit .com_admin_btns {display:block;
+	}
+
+
+	.fixedrate .modal-dialog {
+  width: 100%;
+}
+	.loan_edit .btm_btns{
+		margin: 20px 0px;
+	}
+	.annualcapedit .pdng_ryt15 {
+  padding-left: 0;
+  padding-right: 0px;
+}
+	
+	.close_shape {
+  top: 16px;
+}
+	.companyadmin_outer .loan_edit h3 {
+  font-size: 15px;
+  padding-bottom: 51px;
+
+}
+.loan_edit .chk_ryt {
+  
+  left: 0;
+  position: absolute;
+  top: 21px;
+}
+	.aag-new_price .table tr th img {
+  position: relative;
+  width: 160px;
+}
+	.qualificate_sec1 .del_icon {
+		text-align:center;
+	}
+	.qualificate_sec1{
+		width:100%;
+		
+	}
+	.hiring_popups .modal-dialog {
+  width: 100%;
+  padding:15px;
+}
+	.childrn_sec img {
+  margin-top: 16px;
+}
+	.employe_link {
+		margin-top:10px;
+	}
+	.sufx_dv{
+		padding-left:0px;
+		padding-right:0px;
+		margin-top:10px;
+	}
+	.sufx_dv .bootstrap-select {
+ 
+  width:100% !important;
+}
+.employe_img img {
+  width:100%;
+
+}
+		.emp_sec .form-group label{
+	padding-left:0px;padding-right:0px;
+	}
+		.general_dv .form_fields .form-group {
+
+  padding: 0;
+}
+
+	.ad_cntcts .form-control{
+		background-color:#fff;
+	}
+	.notice_dv .tip_textarea{
+		padding-top:20px;
+	}
+.notice_dv .nav-tabs {
+  padding: 0;
+}
+	.res_datepick .form-control{
+		margin-top:0px;
+	}
+	.createnotice .form-control {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fff;
+}
+	.adres_tab  .form-control,.gnrl .form-control ,.feedv .form-control   {
+  background-color: #fff;
+	}
+	.new_lender .new_btn .com_admin_btns{
+		font-size:14px;
+		padding:7px 15px;
+	}
+	.new_lender .general_dv h4 {
+  
+  margin-top: 10px;
+ 
+}
+.com_ryt_dv .form_tab .panel-body {
+  overflow: unset;
+  padding: 48px 0;
+  padding-bottom:0px;
+}
+.new_lender {
+  padding: 20px;
+}
+	.new_lender .general_dv {
+  padding: 0;
+}
+
+
+	
+	
+	.new_lender .fields_padd{
+		padding-left:0px;
+	}
+	.statelicensedv .modal-dialog {
+  width: 100%;
+  padding: 15px;
+}
+	.branch_dv .form_fields .form-group {
+  margin-bottom: 0px;
+}
+	.show_filter .bootstrap-select{
+	width:100% ;
+	}
+.outer_padding .dash_table .licsnc_btn {
+  right: 0;
+  top: -50px;
+}
+.outer_padding .res_btn {
+  margin-top: 58px;
+}
+	
+	.reports_stats h5 {
+
+  padding-left: 0;
+  padding-bottom:0px;
+  margin-top:0px;
+}
+
+	.div_mar {
+  margin: 0;
+}
+	.div_mar .col-md-2 {
+  width: 50%;
+  float: left;
+}
+	.compny_admin_leftbar .navbar-nav{
+ height: 300px;
+    overflow-y: scroll;
+
+}
+
+	
+	.software_inputs .form-group{
+	padding:2px 0px;
+}
+	
+.form_fields .form-group {
+  
+  padding: 10px 0px 0;
+  margin-bottom: 5px;
+}
+
+.create_license .form-group{
+	padding:2px 0px;
+}
+
+	.license_user {
+  margin: 0;
+}
+	.edit_menu .tabl_mar {
+  margin: 0 0;
+  padding:10px;
+  
+}
+	.copyryt {
+		display:none;}
+		
+		.tabl_mar{
+	 margin: 0 0px;
+	 padding:10px;
+}
+	.soft_input {
+  margin: 0 0;
+  padding:0px 10px;
+}
+	.form_fields caption {
+  
+  padding-left: 10px;
+  padding-top: 15px;
+}.tabl_padd {
+  padding: 0;
+}
+	.form_fields h3 {
+  margin: 20px 2px 15px;
+}
+.form_tab .panel-default {
+	margin-bottom: 20px;
+	overflow: hidden;
+	border: none;
+}
+.form_tab .close_tab i {
+	padding-top: 2px;
+}
+.form_tab .panel-body {
+	overflow:hidden;
+	padding:20px;}
+.new_lender .panel-body {
+
+  padding:0px;
+}	
+
+.form_tab .panel-default > .panel-heading {
+	background-color: #fff;
+	border: medium none;
+	border-radius: 0;
+	box-shadow: 0 0px 2px #ccc inset;
+	color: #565353;
+	float: left;
+	margin-right: 10px;
+	overflow: hidden;
+	padding: 15px;
+	position: relative;
+	width: 100%;
+	text-transform:uppercase;
+}
+.form_tab .panel-title > a {
+	float: left;
+	width: 100%;
+}
+
+.hdr .ryt_dv .msg_drpdwn {
+	left: 0;
+}
+.hdr {
+	box-shadow: none;
+}
+.margn {
+	margin-top: 170px;
+	margin-bottom: 100px;
+}
+.login_frm img {
+	display: none;
+}
+.copyryt {
+	bottom: 0px;
+	position: relative;
+	margin-top: 15px;
+}
+.copyryt p {
+	color: #5b5a5a;
+}
+.copyryt span a {
+	color: #5b5a5a;
+}
+.left_sidebar .navbar-collapse {
+	padding-left: 15px;
+	padding-right: 15px;
+	box-shadow: 0px 0px 4px #ccc;
+	padding-bottom: 22px;
+}
+.left_sidebar .navbar-brand > img {
+	margin-top: 4px;
+}
+.left_sidebar .navbar-brand {
+	padding: 0 15px;
+}
+.left_sidebar .navbar-nav > li > a {
+	color: #5b5a5a;
+}
+.logo_dv img {
+	display: none;
+}
+.left_sidebar .navbar-brand {
+	display: block;
+}
+.logo_dv {
+	text-align: center;
+}
+.hdr .ryt_dv {
+	float: none;
+	text-align: center;
+}
+.hdr .ryt_dv ul {
+	float: none;
+}
+.hdr {
+	height: auto;
+}
+.left_sidebar {
+	background-color: #fff;
+	height: auto;
+	position: fixed;
+	top: 82px;
+	width: 100%;
+	z-index: 2;
+}
+.copyryt a {
+	color: #5b5a5a;
+}
+.left_sidebar .navbar-nav, .navbar {
+	background-color: #fff;
+	box-shadow: 0 0 4px #ccc;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.ryt_maindv {
+	padding: 100px 20px 0;
+}  
+.width19 {
+	padding-left: 6px;
+	padding-right: 6px;
+	width: 100%;
+}
+.logo_new img {
+	padding-left: 15px;
+	width: 211px;
+	margin-top: 2px;
+}
+.ryt_btns ul li a {
+	font-size: 19px;
+}
+.ryt_btns {
+	padding-right: 15px;
+}
+.res_padd {
+	height: auto;
+	padding: 15px 0px;
+}
+.ryt_btns ul {
+	margin: 0px 0 0;
+}
+.left_sidebar .navbar-brand > img {
+	margin-top: 10px;
+	width: 210px;
+}
+	.compny_admin_leftbar .navbar-collapse {
+
+  padding-bottom: 0px;
+ 
+}
+.outer_padding .grph_dv{
+	padding:0px 10px;
+}
+.outer_padding .dash_table {
+  padding: 10px;
+}
+
+.form_fields .table-responsive{
+	padding:10px;
+}
+.width19 {
+  padding-left: 0;
+  padding-right:0px;
+
+}
+.width19:first-child {
+  padding-left: 0px;
+}
+.width19:last-child {
+  padding-right: 0px;
+}
+.region_dv .modal-dialog {
+  width: 100%;
+  padding:15px;
+}
+.notice_dv .popup_inner {
+  padding: 0;
+}
+.companyadmin_outer .btm_btns {
+	margin-top:20px;
+}
+.log_details {
+ 
+  padding: 10px 15px;
+}
+.using4 a {
+right:15px;
+  top: 19px;
+}
+.adnote .btmmar, .addoc .btmmar, .newtip .btmmar, .createnotice .btmmar, .ad_cntcts .btmmar {
+  margin-bottom: 0;
+}	
+}
+
+@media(max-width:700px) {
+	.copyryt {
+		display:none;
+	}
+.left_sidebar .navbar-nav > li > a {
+	font-size: 13px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.snd_msg {
+	font-size: 17px;
+	padding: 8px;
+}
+.snd_msg img {
+	width: 25px;
+}
+.anualcap{
+	margin-top:20px;
+}
+}
+
+@media(max-width:500px) {
+	.hdr .ryt_dv .dropdown .caret .fa {
+ 
+  top: -1px;
+}
+	.fixed_width {
+ 
+  width: 100%;
+}
+	.hdr .ryt_dv ul li a {
+  font-size: 14px;
+}
+	.rolenew .res_nw_wdth .websourse {
+
+  padding-bottom: 51px;
+}
+	.res_nw_wdth .hding_span {
+  float: left;
+  left: 0;
+  top: 52px;
+}
+	.ad_licnse {
+		margin-left:0px;
+	}
+	.edit_login a {
+ 
+  font-size: 14px;
+ 
+  margin: 0;
+  
+}
+	.edit_login a:last-child{
+		margin-left:15px;
+	}
+	.edit_login{
+		 float: left;
+    width: 100%;
+	}
+	.using4 a {
+  font-size: 14px;
+  right: 0px;
+  top: 67px;
+}
+	.loan_orgin {
+  left: 61px;
+ 
+}
+	.emp_acc .chnge {
+ 
+  right: 2px;
+}
+	.log_details .anchr a {
+  
+  width: 100%;
+}
+	
+	.emp_acc label {
+ 
+  width: 100%;
+}
+
+	.companyadmin_outer .hding_span {
+
+  top: 34px;
+  left:0;
+  right:unset;
+}
+.com_ryt_dv .form_fields h3 {
+ 
+  padding-bottom: 64px; 
+}
+
+	.loan_edit .span_clr a {
+ 
+  font-size: 13px;
+
+}
+.annualcapedit .com_admin_btns {
+
+  margin-top: 29px;
+  width: 100%;
+}
+
+.mrg_btn .com_admin_btns {
+	float:right;
+	margin-top:12px;
+	width: auto;
+}
+	
+	.res_stat{
+		width:100%;
+	}
+	.new_lender .res_pdng{
+		padding-bottom:15px !important;
+	}
+
+	.employe_link ul li a {
+		border-right:0px;
+ 
+  float: left;
+  font-size: 14px;
+  padding: 6px 14px;
+}
+	.msgcls textarea{
+		margin-top:20px;
+	}
+	.notice_dv .nav-tabs li{
+		width:50%;
+	}
+	.updoc_sec .fileUpload {
+  
+  width: 34px;
+}
+	.res_states_dv{
+		width:100%;
+	}
+	.btm_btns a {
+  width: 100px;
+  font-size: 14px;
+}
+.btm_btns button[type="button"] {
+ 
+   width: 100px;
+  font-size: 14px;
+}
+.btm_btns button[type="submit"] {
+ 
+   width: 100px;
+  font-size: 14px;
+}
+	.residual_income .cus_wid {
+ 
+  width: 100%;
+}
+.ryt_maindv {
+  padding: 85px 20px 0;
+}
+		.outer_padding {
+  margin: 0;
+  padding: 0;
+}
+	.div_mar .col-md-2 {
+  float: left;
+  width: 100%;
+}
+	.spn_cls span a {
+ 
+  font-size: 17px;
+
+  width: 45px;
+  float: right;
+}
+	.login-dv .btn-default {
+  
+  margin-top: 0;
+ 
+}
+	.login-dv {
+  padding: 20px 15px !important;
+}
+	.form_fields h3 {
+ 
+  font-size: 15px;
+
+}
+	.form_fields .tabl_padd p a {
+ 
+  font-size: 13px;
+  padding: 16px 8px;
+
+}
+	.form_fields .btns {
+ 
+  width: 100%;
+}
+.trms_services .modal-title {
+	font-size: 18px;
+}
+.grph_dv {
+	margin-top: 0px;
+}
+.res_padd {
+	padding: 0;
+}
+.ryt_btns ul {
+	float: none;
+	margin: 20px 0;
+}
+.ryt_btns {
+	float: none;
+	padding-right: 0px;
+	text-align: center;
+	width: 100%;
+}
+.logo_new {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.logo_new img {
+	margin: 0px auto auto;
+	padding-left: 0;
+}
+.login-dv .radio label, .checkbox label {
+	font-size: 14px;
+}
+.login-dv .checkbox span a {
+	font-size: 14px;
+}
+.login-dv {
+	padding: 60px 15px;
+}
+.hdr .act_cls {
+	padding: 0;
+}
+.notify {
+	right: 12px;
+}
+.hdr .dropdown-menu.act_sbmenu {
+	height: auto;
+	padding-top: 0;
+	margin-top: 99px;
+	top: -70px;
+	z-index: -1;
+}
+.hdr .dropdown-menu.act_sbmenu {
+  top: -61px;
+  z-index: 99999999;
+}
+.left_sidebar {
+	top: 60px;
+}
+.pro_img {
+  height: 40px;
+  width: 40px;
+  margin-right:2px;
+}
+.hdr .ryt_dv ul li {
+	margin-right: 5px;
+}
+.new_lender .com_admin_btns {
+ display:block;
+ float:left;
+}
+.new_lender .popup_inner h4{
+	 padding-bottom: 15px !important;
+}
+.new_lender .general_dv h4 {
+  font-size: 18px;
+  padding-bottom: 55px;
+}
+
+.new_lender .new_btn {
+  left: 0;
+  position: absolute;
+  top: 32px;
+
+}
+.com_admin_btns{
+		display:block;
+	}
+	.statelicensedv .com_admin_btns{
+		display:block
+	}
+	.ad_cntcts .nav-tabs li{
+	width:100%;
+	}
+	.employe_img{
+		width:auto
+	}
+		
+	.records_sec .form-group li p {
+
+  text-align: left;
+  width: 100%;
+}
+	.records_sec .form-group li .form-control {
+ 
+  width: 100%;
+}
+	.records_sec .form-group li {
+  
+  width: 100%;
+  margin-left:0px;
+}
+.employe_link .employe_li li {
+  float: left;
+ width:100%;
+ border-right:0px;
+}
+.employe_link .employe_li li a{
+  float: left;
+ width:100%;
+ border-right:0px;
+}
+
+
+}
+
+@media(max-width:400px) {
+	
+	.new_lender .modal-title {
+ 
+  font-size: 15px;
+  padding-bottom: 11px;
+}
+	.com_admin_btns{
+		display:block;
+	}
+.hdr .ryt_dv .msg_drpdwn {
+  left: -70px;
+  top: 20px;
+}
+.msg_drpdwn {
+	left: -25px;
+	top: 19px;
+}
+.signupfrm span {
+	float: left;
+	margin-left: 34px;
+	margin-top: 8px;
+}
+.signupfrm .checkbox span a {
+	padding-left: 0px;
+}
+}
+
+
