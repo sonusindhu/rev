@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/reverse'),
+    'url' => env('APP_URL', 'http://localhost/rev'),
 
     /*
     |--------------------------------------------------------------------------
