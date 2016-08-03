@@ -430,6 +430,10 @@ a:focus, a:hover {
 	background: url(../images/envelop.png) no-repeat scroll;
 	background-position: 0px;
 }
+.login-dv input[type="email"] {
+	background: url(../images/envelop.png) no-repeat scroll;
+	background-position: 0px;
+}
 .usr_img input[type="text"] {
 	background: url(../images/user.png) no-repeat scroll;
 	background-position: 0px;

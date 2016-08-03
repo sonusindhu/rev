@@ -1,82 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>ReverseAdvisor</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <title>Laravel</title>
+        <!-- Bootstrap -->
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
+        <link href="{!! asset('/css/bootstrap.css') !!}" media="all" rel="stylesheet" type="text/css" />
+        <link href="{!! asset('/css/style.css') !!}" media="all" rel="stylesheet" type="text/css" />
+        <link href="{!! asset('/css/font-awesome.css') !!}" media="all" rel="stylesheet" type="text/css" />
+        <link href="{!! asset('/css/square/_all.css') !!}" media="all" rel="stylesheet" type="text/css" />
+        <link href="{!! asset('/css/sweetalert.css') !!}" media="all" rel="stylesheet" type="text/css" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="wrapper">
+            <section class="hdr res_padd">
+                <div class="container_fluid">
+                    <div class="">
+                        <div class="col-md-12 ">
+                            <div class="col-md-4 col-sm-4  col-xs-6 logo_new  spc">
+                                <a href="">
 
-    <style>
-        body {
-            font-family: 'Lato';
-        }
+                                    <img src="{!! asset('/images/logo_1.png') !!}" alt="Logo" />
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 ryt_btns spc">
+                                <ul>
+                                    <li><a href="/login">Login</a> </li>
+                                    <li><a href="/signup">Sign Up</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="login_frm">
 
-        .fa-btn {
-            margin-right: 6px;
-        }
-    </style>
-</head>
-<body id="app-layout">
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
 
-                <!-- Collapsed Hamburger -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                @yield('content')
+                
+                
+            </section>
 
-                <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Laravel
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Home</a></li>
-                </ul>
-
-                <!-- Right Side Of Navbar -->
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Authentication Links -->
-                    @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
-                    @else
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                            </ul>
-                        </li>
-                    @endif
-                </ul>
-            </div>
         </div>
-    </nav>
 
-    @yield('content')
+        <section class=" ftr footer">
+            <p>Copyright ReverseAdvisor.com</p>
+        </section>
 
-    <!-- JavaScripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
-</body>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <?php //echo $this->element('front_validate'); ?>
+
+        <script src="{!! asset('/js/bootstrap.js') !!}"></script>
+        <script src="{!! asset('/js/icheck.js') !!}"></script>
+        <script src="{!! asset('/js/sweetalert.min.js') !!}"></script>
+        <script src="{!! asset('/js/basic.js') !!}"></script>
+
+        <script>
+                    function setCookie(cname, cvalue) {
+                        var exdays = 30;
+                        var d = new Date();
+                        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                        var expires = "expires=" + d.toUTCString();
+                        document.cookie = cname + "=" + cvalue + "; " + expires;
+                    }
+            $(document).ready(function () {
+
+                // cookie create and get
+                $('.terms').on('click', function () {
+                    alert("1");
+                    var check = $(this).is(':checked');
+                    if (check == true) {
+                        $(this).val(1);
+                    } else {
+                        $(this).val(0);
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('input').iCheck({
+                    checkboxClass: 'icheckbox_square-orange',
+                    radioClass: 'iradio_square-orange',
+                    increaseArea: '20%' // optional
+                });
+
+                // 
+                $("body").on('click', '#email', function () {
+                    var a = $(this).next().children();
+                    $(a).addClass('addone');
+                });
+                $("body").on('click', '#password', function () {
+                    var a = $(this).next().children();
+                    $(a).addClass('addone');
+                });
+
+
+                /*$( ".login-dv" ).mouseout(function() {
+                 alert('a');
+                 });*/
+                // Document Ready closed
+            });
+        </script>
+
+    </body>
 </html>

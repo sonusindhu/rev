@@ -2,46 +2,62 @@
 
 <!-- Main Content -->
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Reset Password</div>
-                <div class="panel-body">
+
+
+
+<section class="login_frm">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 margn ">
+
+                <img src="/images/login_img.png" alt="" class="img-responsive"/>
+                <div class="login-dv col-md-7 col-md-offset-3 col-sm-8 col-sm-offset-4">
+                    <div class="errorMessages"></div>  
+                    <h3>Forgot Password</h3>
+
+
+
                     @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
+                    <div class="alert alert-success">
+                        <% session('status') %>
+                    </div>
                     @endif
 
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/password/email') }}">
-                        {{ csrf_field() }}
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
-
+                    <form class="form-horizontal" role="form" method="POST" action="<% url('/password/email') %>">
+                        <% csrf_field() %>
+                        <div class="form-group<% $errors->has('email') ? ' has-error' : '' %>">
+                            <div class="input text">
+                                <input id="email" type="email" class="form-control" name="email" value="<% old('email') %>">
                                 @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
+                                <span class="help-block">
+                                    <strong><% $errors->first('email') %></strong>
+                                </span>
                                 @endif
                             </div>
+                            <span class="star">*</span>
                         </div>
+                        <button class="btn btn-default login_btn1" type="submit">SEND REQUEST</button>
 
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-btn fa-envelope"></i> Send Password Reset Link
-                                </button>
-                            </div>
-                        </div>
+
                     </form>
+
+
+
+                    <div class="clearfix"></div>
+
+
                 </div>
+                <p>   Already have an account ?<a href="<% url('/login') %>"> Login</a></p>
+
+
             </div>
+
         </div>
     </div>
-</div>
+</section>
+<div class="push"></div>
+</div> 
+
+
 @endsection
