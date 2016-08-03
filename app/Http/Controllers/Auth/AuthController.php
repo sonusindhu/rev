@@ -29,7 +29,8 @@ use AuthenticatesAndRegistersUsers,
      * @var string
      */
     protected $redirectTo = '/';
-    protected $redirectAfterLogout = '/login';
+    
+    protected $redirectAfterLogout = '/login    ';
     protected $loginPath = '/login';
 
     /**
