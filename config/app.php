@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/rev'),
+    'url' => env('APP_URL', 'http://localhost/revad/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -207,3 +207,4 @@ return [
     ],
 
 ];
+define('BASE_URL','res');
