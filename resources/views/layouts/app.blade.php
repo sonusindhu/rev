@@ -37,8 +37,8 @@
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-6 ryt_btns spc">
                                 <ul>
-                                    <li><a href="/login">Login</a> </li>
-                                    <li><a href="/signup">Sign Up</a></li>
+                                    <li><a href="<% url('/login') %>">Login</a> </li>
+                                    <li><a href="<% url('/register') %>">Sign Up</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -79,19 +79,7 @@
                         var expires = "expires=" + d.toUTCString();
                         document.cookie = cname + "=" + cvalue + "; " + expires;
                     }
-            $(document).ready(function () {
-
-                // cookie create and get
-                $('.terms').on('click', function () {
-                    alert("1");
-                    var check = $(this).is(':checked');
-                    if (check == true) {
-                        $(this).val(1);
-                    } else {
-                        $(this).val(0);
-                    }
-                });
-            });
+            
         </script>
         <script>
             $(document).ready(function () {
