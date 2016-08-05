@@ -6,7 +6,7 @@
         <form>
 
             <div class="col-md-12 spc sep_div ">
-                <h3>Usage  <span><a class="com_admin_btns hding_span"  ng-click="openPopUp('get', 'employee/add_user_license/software_license', 'new_role_popup')"  href="javascript:void(0);">Add License</a></span></h3>
+                <h3>Usage  <span><a class="com_admin_btns hding_span"  ng-click="openPopUp('get', 'company/employee/add_user_license/software_license', 'new_role_popup')"  href="javascript:void(0);">Add License</a></span></h3>
                 <div class="table-responsive manage_licsn_tabl soft_license_table">
                     <table class="table ">
                         <tr>
