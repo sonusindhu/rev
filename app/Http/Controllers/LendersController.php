@@ -32,7 +32,7 @@ class LendersController extends Controller {
                 ->where('user_id', Auth::User()->id)
                 ->orderBy('id', 'DESC')
                 ->get();
-        return view('Lenders.index',['lenders'=>$lenders]);
+        return view('Lenders.company_index',['lenders'=>$lenders]);
     }
 
     public function json() {
