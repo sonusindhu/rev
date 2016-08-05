@@ -2,6 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Lender;
+use App\Model\State;
+use App\Model\LenderContact;
+use App\Model\LenderTip;
+use App\Model\LenderDocument;
+use App\Model\LenderNote;
+use App\Model\LenderNotice;
+use App\Model\LenderMortgageContact;
+
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use Auth;
@@ -24,89 +33,69 @@ class LendersController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        $this->layout = "ajax";        
-        $lenders = DB::table('lenders')
-                ->where('user_id', Auth::User()->id)
-                ->orderBy('id', 'DESC')
-                ->get();
+        $this->layout = "ajax";
+        $lenders = Lender::where('user_id', Auth::User()->id)->get();
         return view('Lenders.company_index',['lenders'=>$lenders]);
     }
     
     
     public function edit($id) {
         $this->layout = 'ajax';
-        $lender = $this->Lender->findById($id);
+        $lender = Lender::find($id);
         
-        
-        if (isset($this->request->data) && !empty($this->request->data)) {
-            if (isset($this->request->data['Lender']['logo']['name']) && !empty($this->request->data['Lender']['logo']['name'])) {
-                $logo = time() . "_" . $this->request->data['Lender']['logo']['name'];
-                move_uploaded_file($this->request->data['Lender']['logo']['tmp_name'], "upload/Lenders/" . $logo);
-                
-                $data = array(
-                    'file'=>"upload/Lenders/".$logo,
-                    'width'=>200,
-                    'height'=>120,
-                    'output'=>"upload/Lenders/thumbs/",
-                );
-                $this->Qimage->resize($data);
-                
-                $this->request->data['Lender']['logo'] = $logo;
-                $this->Lender->save($this->request->data);
-                $response = array('status' => true);
-                echo json_encode($response);
-                exit;
-            } else {
+//        
+//        if (isset($this->request->data) && !empty($this->request->data)) {
+//            if (isset($this->request->data['Lender']['logo']['name']) && !empty($this->request->data['Lender']['logo']['name'])) {
+//                $logo = time() . "_" . $this->request->data['Lender']['logo']['name'];
+//                move_uploaded_file($this->request->data['Lender']['logo']['tmp_name'], "upload/Lenders/" . $logo);
+//                
+//                $data = array(
+//                    'file'=>"upload/Lenders/".$logo,
+//                    'width'=>200,
+//                    'height'=>120,
+//                    'output'=>"upload/Lenders/thumbs/",
+//                );
+//                $this->Qimage->resize($data);
+//                
+//                $this->request->data['Lender']['logo'] = $logo;
+//                $this->Lender->save($this->request->data);
+//                $response = array('status' => true);
+//                echo json_encode($response);
+//                exit;
+//            } else {
+//
+//                $this->Lender->save($this->request->data);
+//                $response = array('status' => true);
+//                echo json_encode($response);
+//                exit;
+//            }
+//        }
+//        
+        // get all states
+        $states = State::all();
 
-                $this->Lender->save($this->request->data);
-                $response = array('status' => true);
-                echo json_encode($response);
-                exit;
-            }
-        }
-        
-        $this->loadModel('State');
-        $states = $this->State->find('all');
-        $this->set('states', $states);
-//        pr($lender);
 
         // get all contacts
-        $this->loadModel('LenderContact');
-        $contacts = $this->LenderContact->find('all', array('conditions' => array('LenderContact.lender_id' => $id)));
-        $this->set('contacts', $contacts);
+        $contacts = LenderContact::where('lender_id', $id)->get();
 
 
         // get all contact mortgagee
-        $this->loadModel('LenderMortgageContacts');
-        $mortgagecontacts = $this->LenderMortgageContacts->find('all', array('conditions' => array('LenderMortgageContacts.lender_id' => $id)));
-        $this->set('mortgagecontacts', $mortgagecontacts);
-
-
+        $mortgagecontacts = LenderMortgageContact::where('lender_id', $id)->get();
+        
         // get all notices
-        $this->loadModel('LenderNotice');
-        $notices = $this->LenderNotice->find('all', array('conditions' => array('LenderNotice.lender_id' => $id)));
-        $this->set('notices', $notices);
-
+        $notices = LenderNotice::where('lender_id', $id)->get();
 
         // get all tips
-        $this->loadModel('LenderTip');
-        $tips = $this->LenderTip->find('all', array('conditions' => array('LenderTip.lender_id' => $id)));
-        $this->set('tips', $tips);
-
+        $tips = LenderTip::where('lender_id', $id)->get();
 
         // get all Notes
-        $this->loadModel('LenderNote');
-        $notes = $this->LenderNote->find('all', array('conditions' => array('LenderNote.lender_id' => $id)));
-        $this->set('notes', $notes);
-
+        $notes = LenderNote::where('lender_id', $id)->get();
 
         // get all Documents
-        $this->loadModel('LenderDocument');
-        $documents = $this->LenderDocument->find('all', array('conditions' => array('LenderDocument.lender_id' => $id)));
-        $this->set('documents', $documents);
+        $documents = LenderDocument::where('lender_id', $id)->get();
+        
+        return view('Lenders.company_edit',['lender'=> $lender , 'documents'=> $documents,'notes'=> $notes,'tips'=> $tips,'notices'=> $notices,'mortgagecontacts'=> $mortgagecontacts,'contacts'=> $contacts,'states'=> $states]);
 
-
-        $this->set('lender', $lender);
     }
 
   
