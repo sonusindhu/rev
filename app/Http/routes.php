@@ -18,8 +18,11 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 /* Company Admin section */
 Route::group(['prefix' => 'company'], function () {
-    Route::get('software_licensing/index', function() {
-        
-    });
+//    Route::get('software_licensing/index', function() {
+//        
+//    });
     Route::get('software_licensing/json', 'SoftwareLicensingController@json');
+    
+    // lenders routes
+    Route::get('lenders', 'LendersController@index');
 });

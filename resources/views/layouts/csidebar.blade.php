@@ -17,38 +17,38 @@
             </li>
 
 
-            <li ng-class="{active:isActiveClass('software_licensing')}" ng-click="page.addTab('Software Licenses', '/company/software_licensing/json', 'software_licensing');
+            <li ng-class="{active:isActiveClass('software_licensing')}" ng-click="page.addTab('Software Licenses', 'company/software_licensing/json', 'software_licensing');
                 activeStateCheck('software_licensing')"><a href="javascript:"><span class="icon_spc left_imgs"><img alt="" src="./images/software.png"/></span><span class="menu_name hide"> Software Licenses</span></a></li>
 
-            <li ng-class="{active:isActiveClass('User_management_user')}" ng-click="page.addTab('Employee Management', '/company/employee/index', 'User_management_user');
+            <li ng-class="{active:isActiveClass('User_management_user')}" ng-click="page.addTab('Employee Management', 'company/employee/index', 'User_management_user');
                 activeStateCheck('User_management_user')"><a href="javascript:"><span class="icon_spc left_imgs"><img alt="" src="./images/user_management.png"/></span><span class="menu_name hide">Employee Management</span></a></li>
 
 <!--            <li><a href="javascript:"><span class="icon_spc left_imgs"><img alt="" src="../images/sourcedata.png"/></span><span class="menu_name hide"> Source Data</span></a></li>-->
-            <li ng-class="{active:isActiveClass('manage_roles')}" ng-click="page.addTab('Manage Roles', '/company/role/index', 'manage_roles');
+            <li ng-class="{active:isActiveClass('manage_roles')}" ng-click="page.addTab('Manage Roles', 'company/role/index', 'manage_roles');
                 activeStateCheck('manage_roles')"><a href="javascript:"><span class="icon_spc left_imgs">
                         <img alt="" src="./images/share.png"/></span><span class="menu_name hide"> Manage Roles</span></a>
             </li>
-            <li ng-class="{active:isActiveClass('manage_profiles')}" ng-click="page.addTab('Manage Profile', '/company/profiles', 'manage_profiles');
+            <li ng-class="{active:isActiveClass('manage_profiles')}" ng-click="page.addTab('Manage Profile', 'company/profiles', 'manage_profiles');
                 activeStateCheck('manage_profiles')">
                 <a href="javascript:"><span class="icon_spc left_imgs"><img alt="" src="./images/manage_profiles.png"/></span><span class="menu_name hide">Manage Profiles</span></a>
             </li>  
-            <li ng-class="{active:isActiveClass('state_licensing')}" ng-click="page.addTab('State Licenses', '/company/software_licensing/state_licensing', 'state_licensing');
+            <li ng-class="{active:isActiveClass('state_licensing')}" ng-click="page.addTab('State Licenses', 'company/software_licensing/state_licensing', 'state_licensing');
                 activeStateCheck('state_licensing')">
                 <a href="javascript:"><span class="icon_spc left_imgs"><img alt="" src="./images/state_licencing.png"/></span><span class="menu_name hide">State Licensing</span></a>
             </li>  
-            <li ng-class="{active:isActiveClass('manage_lenders')}" ng-click="page.addTab('Manage Lenders', '/company/lenders', 'manage_lenders');
+            <li ng-class="{active:isActiveClass('manage_lenders')}" ng-click="page.addTab('Manage Lenders', 'company/lenders', 'manage_lenders');
                 activeStateCheck('manage_lenders')">
                 <a href="javascript:"><span class="icon_spc left_imgs"><img alt="" src="./images/manage_lenders.png"/></span><span class="menu_name hide">Manage Lenders</span></a>
             </li>  
-            <li ng-class="{active:isActiveClass('loan_programs')}" ng-click="page.addTab('Programs & Pricing', '/company/loans', 'loan_programs');
+            <li ng-class="{active:isActiveClass('loan_programs')}" ng-click="page.addTab('Programs & Pricing', 'company/loans', 'loan_programs');
                 activeStateCheck('loan_programs')">
                 <a href="javascript:"><span class="icon_spc left_imgs"><img alt="" src="./images/loan_programs.png"/></span><span class="menu_name hide">Loan Programs</span></a>
             </li>  
-            <li ng-class="{active:isActiveClass('loan_fees')}" ng-click="page.addTab('Loan Fees', '/company/loanfees', 'loan_fees');
+            <li ng-class="{active:isActiveClass('loan_fees')}" ng-click="page.addTab('Loan Fees', 'company/loanfees', 'loan_fees');
                 activeStateCheck('loan_fees')">
                 <a href="javascript:"><span class="icon_spc left_imgs"><img alt="" src="./images/loan_fees.png"/></span><span class="menu_name hide">Loan Fees</span></a>
             </li>  
-            <li ng-class="{active:isActiveClass('settings')}" ng-click="page.addTab('Settings', '/company/employee/setting', 'settings');
+            <li ng-class="{active:isActiveClass('settings')}" ng-click="page.addTab('Settings', 'company/employee/setting', 'settings');
                 activeStateCheck('settings')">
                 <a href="javascript:"><span class="icon_spc left_imgs"><img alt="" src="./images/settings.png"/></span><span class="menu_name hide">Settings</span></a>
             </li>  

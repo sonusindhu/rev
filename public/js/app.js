@@ -1,6 +1,6 @@
 $('.portfolioloader').show();
 var myApp = angular.module('myApp', ['ui.bootstrap', 'ngSanitize', 'angularFileUpload']);
-var BASE_URL = "http://localhost/revad/public/";
+var BASE_URL = "http://localhost/rev/public/";
 var secondsToWaitBeforeSave = 1;
 
 myApp.controller('dataCtrl', ['$scope', '$http', '$sce', '$compile', 'FileUploader', '$timeout', '$window', function ($scope, $http, $sce, $compile, FileUploader, $timeout, $window) {
@@ -28,10 +28,9 @@ myApp.controller('dataCtrl', ['$scope', '$http', '$sce', '$compile', 'FileUpload
             addTab: function (title, url, name) {
                 $this = this;
                 if ($scope.page.tabsExists.indexOf(name) === -1) {
-                    console.log(name);
                     $http({
                         method: 'GET',
-                        url: url,
+                        url: BASE_URL +url,
                         data: {rand: Math.random()}
                     }).then(function successCallback(response) {
                         tempData = $sce.trustAsHtml(response.data);
@@ -162,7 +161,7 @@ myApp.controller('dataCtrl', ['$scope', '$http', '$sce', '$compile', 'FileUpload
 
             });
         }//
-        $scope.page.addTab('Software Licenses ', BASE_URL + 'company/software_licensing/json', 'software_licensing');
+        $scope.page.addTab('Software Licenses ', 'company/software_licensing/json', 'software_licensing');
 
 
 
