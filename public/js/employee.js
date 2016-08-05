@@ -1,3 +1,4 @@
+var BASE_URL = "http://localhost/revad/public/";
 myApp.controller('empCtrl', ['$scope', '$http', '$sce', '$compile', function ($scope, $http, $sce, $compile) {
         $scope.employee_id = 0; //
         $scope.emp_clicked = 0; //
@@ -6,18 +7,16 @@ myApp.controller('empCtrl', ['$scope', '$http', '$sce', '$compile', function ($s
         $scope.addSpouseData = ''; //
         $scope.messageNotifications = ''; //
         $scope.updateNmlsId = function (id) {
-            var nmls=$('.nmlsid').val();
+            var nmls = $('.nmlsid').val();
             $http({
                 method: "post",
-                url: 'software_licensing/updateNmlsId/' + id,
+                url: BASE_URL + 'software_licensing/updateNmlsId/' + id,
                 dataType: 'json',
                 data: $.param({
                     nmls: nmls,
                 }),
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-            }).then(function (response) {
-
-            });
+            }).then(function (response) {});
         }//
         $scope.spouseOuter = function () {
             $scope.addSpouseData = '';
@@ -46,7 +45,7 @@ myApp.controller('empCtrl', ['$scope', '$http', '$sce', '$compile', function ($s
             var price = $(event.currentTarget).val();
             $http({
                 method: "post",
-                url: 'employee/addLicensePrice/',
+                url: BASE_URL + 'company/employee/addLicensePrice',
                 dataType: 'json',
                 data: $.param({
                     price: price,
@@ -1400,8 +1399,13 @@ myApp.controller('empCtrl', ['$scope', '$http', '$sce', '$compile', function ($s
         }//
         $scope.addUserLicense = function (id) {
             $('.error-message').remove();
+            if (id == '') {
+                url = BASE_URL + 'company/employee/add_user_license';
+            } else {
+                url = BASE_URL + 'company/employee/add_user_license/' + id;
+            }
             var options = {
-                url: 'employee/add_user_license/' + id,
+                url: url,
                 dataType: 'json',
                 type: 'POST',
                 success: function (response) {
