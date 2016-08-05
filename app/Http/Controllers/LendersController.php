@@ -24,7 +24,15 @@ class LendersController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        die('hey');
+        $this->layout = "ajax";
+//        $lenders = $this->Lender->find('all', array('conditions' => array('user_id' => $_SESSION['Auth']['User']['id'])));
+//        $this->set('lenders', $lenders);
+        
+        $lenders = DB::table('lenders')
+                ->where('user_id', Auth::User()->id)
+                ->orderBy('id', 'DESC')
+                ->get();
+        return view('Lenders.index',['lenders'=>$lenders]);
     }
 
     public function json() {
