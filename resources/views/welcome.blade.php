@@ -53,7 +53,6 @@
     </head>
     <body ng-controller="dataCtrl" nv-file-drop="" uploader="uploader">
         <div class="Middle_website" ng-controller="empCtrl" >
-            <?php //echo $this->element('company_header'); ?>
             
             @include('layouts/cheader'); <!-- app/views/angular-stuff.php -->
             @include('layouts/csidebar'); <!-- app/views/angular-stuff.php -->
