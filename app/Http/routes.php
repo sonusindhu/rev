@@ -18,11 +18,10 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 /* Company Admin section */
 Route::group(['prefix' => 'company'], function () {
-//    Route::get('software_licensing/index', function() {
-//        
-//    });
     Route::get('software_licensing/json', 'SoftwareLicensingController@json');
-    
-    // lenders routes
+    Route::get('employee/add_user_license/software_license', 'EmployeeController@company_add_user_license');
+    Route::get('employee/add_user_license/', 'EmployeeController@company_add_user_license');
+    Route::post('employee/add_user_license/{id}', 'EmployeeController@company_add_user_license');
+    Route::post('employee/addLicensePrice', 'EmployeeController@company_addLicensePrice');
     Route::get('lenders', 'LendersController@index');
 });
