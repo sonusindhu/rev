@@ -5,7 +5,7 @@
         <div class="col-md-12 spc paddbtm30 sep_div">
             <h3>
                 Lenders<span>
-                    <a ng-click="openPopUp('get', '/developer/company/lenders/add', ' new_licensee trms_services')" class="com_admin_btns hding_span" href="#">Create New Lender</a>
+                    <a ng-click="openPopUp('get', 'company/lenders/add', ' new_licensee trms_services')" class="com_admin_btns hding_span" href="#">Create New Lender</a>
 
                 </span> 
             </h3>
