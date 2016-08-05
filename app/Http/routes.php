@@ -23,5 +23,8 @@ Route::group(['prefix' => 'company'], function () {
     Route::get('employee/add_user_license/', 'EmployeeController@company_add_user_license');
     Route::post('employee/add_user_license/{id}', 'EmployeeController@company_add_user_license');
     Route::post('employee/addLicensePrice', 'EmployeeController@company_addLicensePrice');
+    
+    // Lenders routes
     Route::get('lenders', 'LendersController@index');
+    Route::get('lenders/edit/{id}', 'LendersController@edit');
 });
