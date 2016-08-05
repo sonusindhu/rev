@@ -15,7 +15,7 @@ class LendersController extends Controller {
      * @return void
      */
     public function __construct() {
-        //  $this->middleware('auth');
+          $this->middleware('auth');
     }
 
     /**
@@ -24,52 +24,90 @@ class LendersController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        $this->layout = "ajax";
-//        $lenders = $this->Lender->find('all', array('conditions' => array('user_id' => $_SESSION['Auth']['User']['id'])));
-//        $this->set('lenders', $lenders);
-        
+        $this->layout = "ajax";        
         $lenders = DB::table('lenders')
                 ->where('user_id', Auth::User()->id)
                 ->orderBy('id', 'DESC')
                 ->get();
         return view('Lenders.company_index',['lenders'=>$lenders]);
     }
+    
+    
+    public function edit($id) {
+        $this->layout = 'ajax';
+        $lender = $this->Lender->findById($id);
+        
+        
+        if (isset($this->request->data) && !empty($this->request->data)) {
+            if (isset($this->request->data['Lender']['logo']['name']) && !empty($this->request->data['Lender']['logo']['name'])) {
+                $logo = time() . "_" . $this->request->data['Lender']['logo']['name'];
+                move_uploaded_file($this->request->data['Lender']['logo']['tmp_name'], "upload/Lenders/" . $logo);
+                
+                $data = array(
+                    'file'=>"upload/Lenders/".$logo,
+                    'width'=>200,
+                    'height'=>120,
+                    'output'=>"upload/Lenders/thumbs/",
+                );
+                $this->Qimage->resize($data);
+                
+                $this->request->data['Lender']['logo'] = $logo;
+                $this->Lender->save($this->request->data);
+                $response = array('status' => true);
+                echo json_encode($response);
+                exit;
+            } else {
 
-    public function json() {
-        $this->layout = "ajax";
-        $loginEmployee = Auth::user();
-        $license = DB::table('users')->where('id', $loginEmployee->id)->first();
-        $getAllActiveEmployee = DB::table('employee_details')
-                ->select('id')
-                ->where('comp_id', $loginEmployee->id)
-                ->where('paid_status', 1)
-                ->get();
-        $getTotalLicense = DB::table('employee_details')
-                ->select('*', DB::raw('SUM(number_of_licenses) as total_sum'))
-                ->where('comp_id', $loginEmployee->id)
-                ->get();
-        $getTotalLicenseByComp = DB::table('employee_license_seats')
-                ->select('number_of_licenses')
-                ->where('comp_id', $loginEmployee->id)
-                ->get();
-        $allCount = 0;
-        $allCountByComp = 0;
-        if (!empty($getTotalLicenseByComp)) {
-            $allCountByComp = $getTotalLicenseByComp[0]->number_of_licenses;
+                $this->Lender->save($this->request->data);
+                $response = array('status' => true);
+                echo json_encode($response);
+                exit;
+            }
         }
-        if (isset($getTotalLicense[0]->total_sum)) {
-            $allCount = $getTotalLicense[0]->total_sum + $allCountByComp;
-        }
-        $allEmployeeCount = count($getAllActiveEmployee);
-        /* get the software licenses fees set by superadmin */
-        $comp_license_id = $license->license_id;
-        $getThefeesAre=array();
-        $getThefeesAre = DB::table('license_applicable_fees')
-                ->where('license_id', $comp_license_id)
-                ->whereIn('default_fee_id', array(2, 3, 4, 7, 9, 10))
-                ->orderBy('default_fee_id', 'ASC')
-                ->get();
-        return view('SoftwareLicensing.company_index',['getAllFees'=>$getThefeesAre,'license'=>$license,'allCount'=>$allCount,'allEmployeeCount'=>$allEmployeeCount]);
+        
+        $this->loadModel('State');
+        $states = $this->State->find('all');
+        $this->set('states', $states);
+//        pr($lender);
+
+        // get all contacts
+        $this->loadModel('LenderContact');
+        $contacts = $this->LenderContact->find('all', array('conditions' => array('LenderContact.lender_id' => $id)));
+        $this->set('contacts', $contacts);
+
+
+        // get all contact mortgagee
+        $this->loadModel('LenderMortgageContacts');
+        $mortgagecontacts = $this->LenderMortgageContacts->find('all', array('conditions' => array('LenderMortgageContacts.lender_id' => $id)));
+        $this->set('mortgagecontacts', $mortgagecontacts);
+
+
+        // get all notices
+        $this->loadModel('LenderNotice');
+        $notices = $this->LenderNotice->find('all', array('conditions' => array('LenderNotice.lender_id' => $id)));
+        $this->set('notices', $notices);
+
+
+        // get all tips
+        $this->loadModel('LenderTip');
+        $tips = $this->LenderTip->find('all', array('conditions' => array('LenderTip.lender_id' => $id)));
+        $this->set('tips', $tips);
+
+
+        // get all Notes
+        $this->loadModel('LenderNote');
+        $notes = $this->LenderNote->find('all', array('conditions' => array('LenderNote.lender_id' => $id)));
+        $this->set('notes', $notes);
+
+
+        // get all Documents
+        $this->loadModel('LenderDocument');
+        $documents = $this->LenderDocument->find('all', array('conditions' => array('LenderDocument.lender_id' => $id)));
+        $this->set('documents', $documents);
+
+
+        $this->set('lender', $lender);
     }
 
+  
 }
