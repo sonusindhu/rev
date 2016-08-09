@@ -1,7 +1,14 @@
 <?php
+
 namespace App\Http\Controllers;
-use App\Http\Requests;
+
 use App\Model\StateLicense;
+use App\Model\EmployeeLicense;
+use App\Model\EmployeeDetail;
+use App\Model\State;
+use App\Model\LicenseDetail;
+use App\Model\Branch;
+use App\Http\Requests;
 use Illuminate\Http\Request;
 use Auth;
 use DB;
@@ -70,20 +77,14 @@ class SoftwareLicensingController extends Controller {
                 ->select('nmls')
                 ->where('id', $loginEmployee->license_id)
                 ->get();
-        $stateLicense = DB::table('state_licenses')
+        $stateLicense = StateLicense::with('states')
                 ->where('comp_id', $loginEmployee->id)
                 ->where('license', '<>', '')
                 ->where('active_status', '<>', 0)
                 ->get();
         if (!empty($stateLicense)) {
             foreach ($stateLicense as $key => $value) {
-                $EmployeeLicense = DB::table('employee_licenses')
-                        ->select('id')
-                        ->where('comp_id', $loginEmployee->id)
-                        ->where('state', $loginEmployee->state_id)
-                        ->where('license_status', 'Active')
-                        ->groupBy('emp_id')
-                        ->get();
+                $EmployeeLicense = EmployeeLicense::where('state', $value->state_id)->where('license_status', 'active')->where('comp_id', $loginEmployee->id)->select('id')->groupBy('emp_id')->get();
                 $stateLicense[$key]->count = count($EmployeeLicense);
             }
         }
@@ -105,32 +106,56 @@ class SoftwareLicensingController extends Controller {
             'branch' => $branches,
             'stateLicense' => $stateLicense,
             'nmls' => $nmls,
+            'loginUser'=>$loginEmployee
         ]);
     }
-    
-    
+
     /* All active states */
+
     public function company_getAllActiveState() {
         $this->layout = 'ajax';
-        $stateLicense = StateLicense::all();
+        $loginEmployee = Auth::user();
+        $stateLicense = StateLicense::with('states')
+                ->where('comp_id', $loginEmployee->id)
+                ->where('license', '<>', '')
+                ->where('active_status', '<>', 0)
+                ->get();
         if (!empty($stateLicense)) {
-            echo "<pre>";
-            print_r($stateLicense);
-            die;
             foreach ($stateLicense as $key => $value) {
-                $EmployeeLicense = $this->EmployeeLicense->find('all', array(
-                    'fields' => array('EmployeeLicense.id'),
-                    'group' => array('EmployeeLicense.emp_id'),
-                    'conditions' => array(
-                        'EmployeeLicense.state' => $value['StateLicense']['state_id'],
-                        'EmployeeLicense.license_status' => 'Active',
-                        'EmployeeLicense.comp_id' => $this->Auth->user('id')
-                    )
-                ));
-                $stateLicense[$key]['StateLicense']['count'] = count($EmployeeLicense);
+                $EmployeeLicense = EmployeeLicense::where('state', $value->state_id)->where('license_status', 'active')->where('comp_id', $loginEmployee->id)->select('id')->groupBy('emp_id')->get();
+                $stateLicense[$key]->count = count($EmployeeLicense);
             }
         }
-      //  $this->set('stateLicense', $stateLicense);
+        return view('SoftwareLicensing.company_get_all_active_state', ['stateLicense' => $stateLicense]);
+    }
+
+    public function company_getAllBranches() {
+        $this->layout = 'ajax';
+        $loginEmployee = Auth::user();
+        $nmls = LicenseDetail::where('id', $loginEmployee->license_id)->select('nmls')->get();
+        $branches = Branch::with('states')->where('comp_id', $loginEmployee->id)->orderBy('id', 'desc')->get();
+        if (!empty($branches)) {
+            foreach ($branches as $key => $value) {
+                $emp = EmployeeDetail::where('id', $value->manager)->select('emp_first_name', 'emp_last_name', 'emp_image')->get();
+                $branches[$key]->user_name = $emp[0]->emp_first_name . ' ' . $emp[0]->emp_last_name;
+                $branches[$key]->emp_image = $emp[0]->emp_image;
+            }
+        }
+        return view('SoftwareLicensing.company_get_all_branches', ['branch' => $branches, 'nmls' => $nmls]);
+    }
+
+    public function company_updateNmlsId($id = Null) {
+        $this->autoRender = FALSE;
+        
+        
+        
+        
+        $this->loadModel('User');
+        if (!empty($_POST['nmls'])) {
+            $this->request->data['User']['nmls_id'] = $_POST['nmls'];
+            $this->User->id = $id;
+            $this->User->save($this->request->data);
+        }
     }
 
 }

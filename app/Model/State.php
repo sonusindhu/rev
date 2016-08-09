@@ -6,7 +6,6 @@ namespace App\Model;
 use Illuminate\Database\Eloquent\Model;
 
 class State extends Model {
-
     /**
      * The attributes that are mass assignable.
      *
@@ -16,6 +15,10 @@ class State extends Model {
 
     public function lender() {
         return $this->hasOne('Lender'); // links this->id to lender.state_id
+    }
+    
+    public function state_license() {
+        return $this->hasOne('StateLicense','state_id'); // links this->id to lender.state_id
     }
 
     /**

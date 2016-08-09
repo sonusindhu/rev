@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Model;
-
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,8 +12,8 @@ class StateLicense extends Model {
      */
     protected $table = 'state_licenses';
 
-    public function state() {
-        return $this->belongsTo('State'); // links this->state_id to state.id
+    public function states() {
+        return $this->belongsTo('App\Model\State','state_id'); // links this->state_id to state.id
     }
 
     /**

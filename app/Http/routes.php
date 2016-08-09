@@ -21,6 +21,9 @@ Route::group(['prefix' => 'company'], function () {
     Route::get('software_licensing/json', 'SoftwareLicensingController@json');
     Route::get('software_licensing/state_licensing', 'SoftwareLicensingController@company_state_licensing');
     Route::post('software_licensing/getAllActiveState', 'SoftwareLicensingController@company_getAllActiveState');
+    Route::post('software_licensing/getAllBranches', 'SoftwareLicensingController@company_getAllBranches');
+    Route::post('software_licensing/updateNmlsId/','SoftwareLicensingController@company_updateNmlsId');
+    Route::post('software_licensing/updateNmlsId/{id}', 'SoftwareLicensingController@company_updateNmlsId');
     Route::get('employee/add_user_license/software_license', 'EmployeeController@company_add_user_license');
     Route::get('employee/add_user_license/', 'EmployeeController@company_add_user_license');
     Route::post('employee/add_user_license/{id}', 'EmployeeController@company_add_user_license');
