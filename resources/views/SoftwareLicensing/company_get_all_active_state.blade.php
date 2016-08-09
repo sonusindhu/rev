@@ -7,15 +7,14 @@
                         <tbody>
                             <?php
                             if (!empty($stateLicense)) {
-                                  foreach ($stateLicense as $key => $value) {
-                                      
+                               foreach ($stateLicense as $key => $value) {
                                     ?>
                                     <tr> 
-                                        <td><?php echo $value['State']['state']; ?> </td>
-                                        <td><?php echo $value['StateLicense']['license']; ?> </td>
+                                        <td><?php echo $value['states']->state; ?> </td>
+                                        <td><?php echo $value->license; ?> </td>
                                         <td>
-                                         <span><a ng-click="openPopUp('get', 'software_licensing/show_state_license/<?php echo $value['State']['id']; ?>', 'licensing_branch')" href="javascript:void(0)"><?php if(!empty($value['StateLicense']['count'])){
-                 echo $value['StateLicense']['count'];                            
+                                         <span><a ng-click="openPopUp('get', 'software_licensing/show_state_license/<?php echo $value['states']->id; ?>', 'licensing_branch')" href="javascript:void(0)"><?php if(!empty($value->count)){
+                 echo $value->count;                            
                                          }else{ echo "0";} ?></a></span></td>
                                     </tr>
                                     <?php
