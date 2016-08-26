@@ -10,7 +10,7 @@
                 </div>
                 <div class="clearfix"></div>
                 <h3>Active State License <span>
-                        <a class="com_admin_btns hding_span" ng-click="openPopUp('get', 'software_licensing/update_state_licensing', 're-assign statelicensedv updte_license')" href="javascript:void(0)">Update State Licenses</a></span> </h3>
+                        <a class="com_admin_btns hding_span" ng-click="openPopUp('get', 'company/software_licensing/update_state_licensing', 're-assign statelicensedv updte_license')" href="javascript:void(0)">Update State Licenses</a></span> </h3>
                 <div ng-init="getAllActiveStates()" class="table-responsive manage_licsn_tabl license_user state_licensing" ng-bind-html="getAllActiveState" addpopup>
                     <table class="table table-striped table-hover">
                         <tr class="bg_white">
@@ -27,7 +27,7 @@
                                         <td><?php echo $value['states']->state; ?> </td>
                                         <td><?php echo $value->license; ?> </td>
                                         <td>
-                                         <span><a ng-click="openPopUp('get', 'software_licensing/show_state_license/<?php echo $value['states']->id; ?>', 'licensing_branch')" href="javascript:void(0)"><?php if(!empty($value->count)){
+                                         <span><a ng-click="openPopUp('get', 'company/software_licensing/show_state_license/<?php echo $value['states']->id; ?>', 'licensing_branch')" href="javascript:void(0)"><?php if(!empty($value->count)){
                  echo $value->count;                            
                                          }else{ echo "0";} ?></a></span></td>
                                     </tr>
@@ -44,7 +44,7 @@
             </div>                                                                                              <div class="col-md-12 spc paddbtm30 sep_div tab_mar">
 
                 <h3>Branch Licenses<span>
-                        <a class="com_admin_btns hding_span" ng-click="openPopUp('get', 'software_licensing/add_branch', 'branch_dv')" href="javascript:void(0)">Add Branch Licenses</a>
+                        <a class="com_admin_btns hding_span" ng-click="openPopUp('get', 'company/software_licensing/add_branch', 'branch_dv')" href="javascript:void(0)">Add Branch Licenses</a>
                     </span> </h3>
                 <div class="table-responsive manage_licsn_tabl license_user statetable" ng-init="getAllBranches()" ng-bind-html="getAllBranche" addpopup>
                     <table class="table table-striped table-hover">

@@ -24,4 +24,11 @@ class EmployeeDetail extends Model
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    public function State() {
+        return $this->belongsTo('App\Model\State','state'); // links this->state_id to state.id
+    }
+    public function Branch() {
+        return $this->belongsTo('App\Model\Branch','branch_id'); // links this->state_id to state.id
+    }
 }

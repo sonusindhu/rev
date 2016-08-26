@@ -13,7 +13,7 @@
                                         <td><?php echo $value['states']->state; ?> </td>
                                         <td><?php echo $value->license; ?> </td>
                                         <td>
-                                         <span><a ng-click="openPopUp('get', 'software_licensing/show_state_license/<?php echo $value['states']->id; ?>', 'licensing_branch')" href="javascript:void(0)"><?php if(!empty($value->count)){
+                                         <span><a ng-click="openPopUp('get', 'company/software_licensing/show_state_license/<?php echo $value['states']->id; ?>', 'licensing_branch')" href="javascript:void(0)"><?php if(!empty($value->count)){
                  echo $value->count;                            
                                          }else{ echo "0";} ?></a></span></td>
                                     </tr>

@@ -29,7 +29,7 @@
                                         <td ><?php echo $value->phone; ?> </td>
                                         <td ><?php echo $value->nmls_number; ?> </td>
                                         <td class="cus_pro_td">
-                                            <a href="javascript:void(0);" ng-click="openPopUp('get', 'software_licensing/add_branch/<?php echo $value->id;?>', 'branch_dv')">
+                                            <a href="javascript:void(0);" ng-click="openPopUp('get', 'company/software_licensing/add_branch/<?php echo $value->id;?>', 'branch_dv')">
                                                 <img src="images/edit.png" alt=""/></a></td> 
                                                 <td class="cus_pro_td">
                                     <a href="javascript:void(0);" >  
@@ -74,7 +74,7 @@
                                                     <li>Code   <span><?php echo $value->code; ?></span></li>
                                                  <?php
                                                  }?>
-                                               <li> <button class="snd_msg btm_btns" ng-click="openPopUp('get', 'employee/send_message/89', 'trms_services send_msg')" type="button"><span></span>
+                                               <li> <button class="snd_msg btm_btns" ng-click="openPopUp('get', 'company/employee/send_message/89', 'trms_services send_msg')" type="button"><span></span>
                                             Send Message</button></li>
                                               
                                                  
@@ -98,7 +98,7 @@
                                             
                                             
                                             
-                                            <a  ng-click="deleteRecords('delRow<?php echo $key; ?>','software_licensing/delete_branch/<?php echo $id ; ?>')"  href="javascript:void(0)">
+                                            <a  ng-click="deleteRecords('delRow<?php echo $key; ?>','company/software_licensing/delete_branch/<?php echo $id ; ?>')"  href="javascript:void(0)">
                                                 <img src="images/trash.png" alt=""/></a></td>      
                                     </tr>
                                     <?php

@@ -1,10 +1,6 @@
-<?php 
-//echo "<pre>";
-//print_r($getAllFees); die;?>
-<div class="col-md-12 companyadmin_outer ">
-    <div class="col-md-12 spc form_fields spc  ">
+<div class="col-md-12 companyadmin_outer">
+    <div class="col-md-12 spc form_fields spc">
         <form>
-
             <div class="col-md-12 spc sep_div ">
                 <h3>Usage  <span><a class="com_admin_btns hding_span"  ng-click="openPopUp('get', 'company/employee/add_user_license/software_license', 'new_role_popup')"  href="javascript:void(0);">Add License</a></span></h3>
                 <div class="table-responsive manage_licsn_tabl soft_license_table">
@@ -75,9 +71,6 @@
                 </div>  
                 <div class="clearfix"></div> 
             </div>
-
-
-
             <div class="col-md-12 spc sep_div mar22">
                 <h3>Integrations<span><a class="com_admin_btns hding_span" href="#">Manage licenses</a></span></h3>
                 <div class="table-responsive manage_licsn_tabl soft_license_table">
@@ -150,13 +143,9 @@
             </div>
             <div class="col-md-12 spc sep_div ">
                 <h3>Software Features  <small> (Coming Soon) </small></h3>
-
             </div>
-
         </form>
     </div>
-
-
 </div> 
 
 

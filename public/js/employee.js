@@ -8,10 +8,10 @@ myApp.controller('empCtrl', ['$scope', '$http', '$sce', '$compile', function ($s
         $scope.messageNotifications = ''; //
         $scope.updateNmlsId = function (id) {
             var nmls = $('.nmlsid').val();
-            if(id==''){
-                var url=BASE_URL + 'company/software_licensing/updateNmlsId';
-            }else{
-                  var url=BASE_URL + 'company/software_licensing/updateNmlsId/'+id;
+            if (id == '') {
+                var url = BASE_URL + 'company/software_licensing/updateNmlsId';
+            } else {
+                var url = BASE_URL + 'company/software_licensing/updateNmlsId/' + id;
             }
             $http({
                 method: "post",
@@ -19,9 +19,11 @@ myApp.controller('empCtrl', ['$scope', '$http', '$sce', '$compile', function ($s
                 dataType: 'json',
                 data: $.param({
                     nmls: nmls,
+                    _token: csrf_token
                 }),
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-            }).then(function (response) {});
+            }).then(function (response) {
+            });
         }//
         $scope.spouseOuter = function () {
             $scope.addSpouseData = '';
@@ -642,8 +644,10 @@ myApp.controller('empCtrl', ['$scope', '$http', '$sce', '$compile', function ($s
             $('#addCertificationDetail').ajaxSubmit(options);
         }//
         $scope.validation = function (index, element, model) {
+            
 //            alert('input[name="data[' + model + '][' + index + ']"]');
             $('input[name="data[' + model + '][' + index + ']"]').addClass('error_border');
+//            $('input[name="data[' + model + '][' + index + ']"]').addClass('error_border');
             $('textarea[name="data[' + model + '][' + index + ']"]').addClass('error_border');
             $('select[name="data[' + model + '][' + index + ']"]').addClass('error_border');
             $('radio[name="data[' + model + '][' + index + ']"]').addClass('error_border');
@@ -1056,7 +1060,7 @@ myApp.controller('empCtrl', ['$scope', '$http', '$sce', '$compile', function ($s
             var myEl = angular.element(document.querySelector('.addEMp'));
             $http({
                 method: "post",
-                url: 'software_licensing/employeeByState/' + selectedItem,
+                url: 'company/software_licensing/employeeByState/' + selectedItem,
             }).then(function (response) {
                 tempData = $sce.trustAsHtml(response.data);
                 myEl.html($compile(response.data)($scope));
@@ -1385,7 +1389,7 @@ myApp.controller('empCtrl', ['$scope', '$http', '$sce', '$compile', function ($s
         $scope.getAllActiveStates = function () {
             $http({
                 method: "post",
-                url: BASE_URL+'company/software_licensing/getAllActiveState',
+                url: BASE_URL + 'company/software_licensing/getAllActiveState',
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'}
             }).then(function (response) {
                 tempData = $sce.trustAsHtml(response.data);
@@ -1395,7 +1399,7 @@ myApp.controller('empCtrl', ['$scope', '$http', '$sce', '$compile', function ($s
         $scope.getAllBranches = function () {
             $http({
                 method: "post",
-                url: BASE_URL+'company/software_licensing/getAllBranches',
+                url: BASE_URL + 'company/software_licensing/getAllBranches',
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'}
             }).then(function (response) {
                 tempData = $sce.trustAsHtml(response.data);

@@ -821,6 +821,7 @@ myApp.controller('dataCtrl', ['$scope', '$http', '$sce', '$compile', 'FileUpload
                     url: url,
                     type: 'POST',
                     dataType: 'json',
+                    data:{'_token':csrf_token},
                     success: function (response) {
                         if (response.status === true) {
                             $("#" + unit_id).remove();

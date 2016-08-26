@@ -18,12 +18,30 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 /* Company Admin section */
 Route::group(['prefix' => 'company'], function () {
+    /* Start Software Licensing and State Licensing */
     Route::get('software_licensing/json', 'SoftwareLicensingController@json');
     Route::get('software_licensing/state_licensing', 'SoftwareLicensingController@company_state_licensing');
     Route::post('software_licensing/getAllActiveState', 'SoftwareLicensingController@company_getAllActiveState');
     Route::post('software_licensing/getAllBranches', 'SoftwareLicensingController@company_getAllBranches');
     Route::post('software_licensing/updateNmlsId/','SoftwareLicensingController@company_updateNmlsId');
     Route::post('software_licensing/updateNmlsId/{id}', 'SoftwareLicensingController@company_updateNmlsId');
+    Route::get('software_licensing/update_state_licensing', 'SoftwareLicensingController@company_update_state_licensing');
+    Route::post('software_licensing/update_state_licensing', 'SoftwareLicensingController@company_update_state_licensing');
+    Route::get('software_licensing/show_state_license/{state_id}', 'SoftwareLicensingController@company_show_state_license');
+    Route::get('software_licensing/view_branch/{id}', 'SoftwareLicensingController@company_view_branch');
+    Route::get('software_licensing/add_branch', 'SoftwareLicensingController@company_add_branch');
+    Route::get('software_licensing/add_branch/{id}', 'SoftwareLicensingController@company_add_branch');
+    Route::post('software_licensing/add_branch/{id}', 'SoftwareLicensingController@company_add_branch');
+    Route::post('software_licensing/add_branch/', 'SoftwareLicensingController@company_add_branch');
+    Route::post('software_licensing/employeeByState/{id}', 'SoftwareLicensingController@company_employeeByState');
+    Route::post('software_licensing/delete_branch/{id}', 'SoftwareLicensingController@company_delete_branch');
+    /* end Software Licensing and State Licensing */
+    /* Start Profiles */
+    Route::get('profiles/index','ProfilesController@company_index');
+    /* End Profiles */
+    
+    
+    
     Route::get('employee/add_user_license/software_license', 'EmployeeController@company_add_user_license');
     Route::get('employee/add_user_license/', 'EmployeeController@company_add_user_license');
     Route::post('employee/add_user_license/{id}', 'EmployeeController@company_add_user_license');

@@ -57,18 +57,18 @@
         <!--<div class="col-md-11  clearfix send_msg_icon show" id="send_msg_icn"><p><a class="snd_msg" data-target="#myModal4" data-toggle="modal" href="javascript:"><span><img alt="" src="../../images/send_icon.png"></span>Send Message</a></p></div>-->
 
     </div>
-    <div class="col-md-12 copyryt show clearfix "><p>@ Copyright Reverse Advisor <span>
+    <div class="col-md-12 copyryt show clearfix ">
+        <p>@ Copyright Reverse Advisor 
+            <span>
                 <!--                <a data-target="#myModal" data-toggle="modal" href="javascript:"> Terms &amp; Privacy</a>-->
 
                 <a ng-click="openPopUp('get', '/developer/superadmin/superadmin/termsAndPrivacy', 'trms_services')"  href="#"> Terms &amp; Privacy</a>
 
 
-            </span></p></div>
+            </span>
+        </p>
+    </div>
 
 </section>
-
-
-
 </nav>
-
 </section>

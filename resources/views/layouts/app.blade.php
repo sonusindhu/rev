@@ -49,8 +49,8 @@
 
 
                 @yield('content')
-                
-                
+
+
             </section>
 
         </div>
@@ -59,7 +59,9 @@
             <p>Copyright ReverseAdvisor.com</p>
         </section>
 
-
+        <script>
+            var csrf_token = "<?php echo csrf_token(); ?>";
+        </script>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -72,14 +74,14 @@
         <script src="{!! asset('/js/basic.js') !!}"></script>
 
         <script>
-                    function setCookie(cname, cvalue) {
-                        var exdays = 30;
-                        var d = new Date();
-                        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-                        var expires = "expires=" + d.toUTCString();
-                        document.cookie = cname + "=" + cvalue + "; " + expires;
-                    }
-            
+            function setCookie(cname, cvalue) {
+                var exdays = 30;
+                var d = new Date();
+                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                var expires = "expires=" + d.toUTCString();
+                document.cookie = cname + "=" + cvalue + "; " + expires;
+            }
+
         </script>
         <script>
             $(document).ready(function () {

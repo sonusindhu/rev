@@ -3,13 +3,13 @@
     if (!empty($employee)) {
         foreach ($employee as $key => $value) {
             ?>
-            <option value="<?php echo $value['EmployeeDetail']['id']; ?>"><?php echo $value['EmployeeDetail']['emp_first_name'] . ' ' . $value['EmployeeDetail']['emp_last_name']; ?></option>
+            <option value="<?php echo $value->id; ?>"><?php echo $value->emp_first_name . ' ' . $value->emp_last_name; ?></option>
             <?php
         }
-    }else{
+    } else {
         ?>
-            <option value="">No Licensed MLOs</option>
-            <?php
+        <option value="">No Licensed MLOs</option>
+        <?php
     }
     ?>
 </select>
